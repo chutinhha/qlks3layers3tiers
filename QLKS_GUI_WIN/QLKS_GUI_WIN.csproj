@@ -49,17 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormKhachHang.cs">
+    <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKhachHang.Designer.cs">
-      <DependentUpon>FormKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormTraCuuPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTraCuuPhong.Designer.cs">
-      <DependentUpon>FormTraCuuPhong.cs</DependentUpon>
+    <Compile Include="frmKhachHang.designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPhong.cs">
       <SubType>Form</SubType>
@@ -86,14 +80,8 @@
     <Compile Include="UserControls\urlTraCuuPhong.designer.cs">
       <DependentUpon>urlTraCuuPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FormKhachHang.resx">
-      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
@@ -113,9 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\urlTraCuuPhong.resx">
       <DependentUpon>urlTraCuuPhong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

@@ -22,7 +22,7 @@ namespace _042082.UserControls
          *  ===> Tiếp tục viết phần thêm khách hàng
          */
         public QLKS_BUS_WebserviceSoapClient ws = new QLKS_BUS_WebserviceSoapClient();
-
+        
         public static int run;
         public static int ManagerComponents;
         public static string staticMaKhachHang;
