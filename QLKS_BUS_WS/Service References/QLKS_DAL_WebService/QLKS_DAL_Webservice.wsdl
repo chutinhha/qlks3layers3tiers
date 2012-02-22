@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getListKhachHang">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListKhachHangResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKhachHangDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KhachHangDTO" nillable="true" type="tns:KhachHangDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KhachHangDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaLoaiKH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenKhachHang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CMND" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiaChi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KhachHangDaiDien" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenKhachHang_EN" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getKhachHangById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByIdResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByNameResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByCMND">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CMND" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByCMNDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByCMNDResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByKind">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Kind" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByKindResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByKindResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByAddressResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByMulti">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Kind" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangByMultiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangByMultiResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NextID">
+        <s:complexType />
+      </s:element>
+      <s:element name="NextIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NextIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKhachHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kDTO" type="tns:KhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertKhachHangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInKHACHHANG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInKHACHHANGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaKhachHangInKHACHHANGResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInCTPHIEUTHUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInCTPHIEUTHUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaKhachHangInCTPHIEUTHUEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteKhachHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteKhachHangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateKhachHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kDTO" type="tns:KhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateKhachHangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListKhachHangDaiDien">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListKhachHangDaiDienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListKhachHangDaiDienResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListKhachHangDaiDienById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListKhachHangDaiDienByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListKhachHangDaiDienByIdResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KhachHangDaiDienisNULL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KhachHangDaiDienisNULLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KhachHangDaiDienisNULLResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangDaiDienNotNULL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangDaiDienNotNULLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangDaiDienNotNULLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangDaiDienisNULL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getKhachHangDaiDienisNULLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getKhachHangDaiDienisNULLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testMaKhachHangisKhachHangDaiDien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testMaKhachHangisKhachHangDaiDienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testMaKhachHangisKhachHangDaiDienResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListLoaiKhachHang">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListLoaiKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListLoaiKhachHangResult" type="tns:ArrayOfLoaiKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLoaiKhachHangDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LoaiKhachHangDTO" nillable="true" type="tns:LoaiKhachHangDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoaiKhachHangDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MaLoaiKH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenLoaiKH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HeSoKH" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDTO" type="tns:PhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PhongDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DonGia" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="GhiChu" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TinhTrang" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenPhong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaLoaiPhong" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListPhong">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListPhongResult" type="tns:ArrayOfPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPhongDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PhongDTO" nillable="true" type="tns:PhongDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="searchPhongById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchPhongByIdResult" type="tns:ArrayOfPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByKind">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kind" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByKindResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchPhongByKindResult" type="tns:ArrayOfPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchPhongByStatusResult" type="tns:ArrayOfPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByTuaLuaHotDua">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kind" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchPhongByTuaLuaHotDuaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="searchPhongByTuaLuaHotDuaResult" type="tns:ArrayOfPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeletePhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhongInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDTO" type="tns:PhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhongInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePhongInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhongStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TinhTrang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhongStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePhongStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListLoaiPhong">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListLoaiPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListLoaiPhongResult" type="tns:ArrayOfLoaiPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLoaiPhongDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LoaiPhongDTO" nillable="true" type="tns:LoaiPhongDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LoaiPhongDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MaLoaiPhong" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenLoaiPhong" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DonGia" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertLoaiPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtoLP" type="tns:LoaiPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertLoaiPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertLoaiPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLoaiPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtoLP" type="tns:LoaiPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLoaiPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLoaiPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteLoaiPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maLP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteLoaiPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteLoaiPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_MaLP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtoLP" type="tns:LoaiPhongDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_MaLPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KiemTra_MaLPResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_So">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_SoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KiemTra_SoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_Using">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maLP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_UsingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KiemTra_UsingResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDonGiaByLoaiPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaLoaiPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDonGiaByLoaiPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getDonGiaByLoaiPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDonGiaByMaPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDonGiaByMaPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getDonGiaByMaPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaPhongInPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaPhongInPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistMaPhongInPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getListKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:getListKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="getListKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:getListKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangById" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangByName" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByCMNDSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangByCMND" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByCMNDSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByCMNDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByKindSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangByKind" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByKindSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByKindResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangByAddress" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByMultiSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangByMulti" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangByMultiSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangByMultiResponse" />
+  </wsdl:message>
+  <wsdl:message name="NextIDSoapIn">
+    <wsdl:part name="parameters" element="tns:NextID" />
+  </wsdl:message>
+  <wsdl:message name="NextIDSoapOut">
+    <wsdl:part name="parameters" element="tns:NextIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="InsertKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInKHACHHANGSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInKHACHHANG" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInKHACHHANGSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInKHACHHANGResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInCTPHIEUTHUESoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInCTPHIEUTHUE" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInCTPHIEUTHUESoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInCTPHIEUTHUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="DeleteKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="UpdateKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListKhachHangDaiDienSoapIn">
+    <wsdl:part name="parameters" element="tns:getListKhachHangDaiDien" />
+  </wsdl:message>
+  <wsdl:message name="getListKhachHangDaiDienSoapOut">
+    <wsdl:part name="parameters" element="tns:getListKhachHangDaiDienResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListKhachHangDaiDienByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:getListKhachHangDaiDienById" />
+  </wsdl:message>
+  <wsdl:message name="getListKhachHangDaiDienByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:getListKhachHangDaiDienByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="KhachHangDaiDienisNULLSoapIn">
+    <wsdl:part name="parameters" element="tns:KhachHangDaiDienisNULL" />
+  </wsdl:message>
+  <wsdl:message name="KhachHangDaiDienisNULLSoapOut">
+    <wsdl:part name="parameters" element="tns:KhachHangDaiDienisNULLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangDaiDienNotNULLSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangDaiDienNotNULL" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangDaiDienNotNULLSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangDaiDienNotNULLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangDaiDienisNULLSoapIn">
+    <wsdl:part name="parameters" element="tns:getKhachHangDaiDienisNULL" />
+  </wsdl:message>
+  <wsdl:message name="getKhachHangDaiDienisNULLSoapOut">
+    <wsdl:part name="parameters" element="tns:getKhachHangDaiDienisNULLResponse" />
+  </wsdl:message>
+  <wsdl:message name="testMaKhachHangisKhachHangDaiDienSoapIn">
+    <wsdl:part name="parameters" element="tns:testMaKhachHangisKhachHangDaiDien" />
+  </wsdl:message>
+  <wsdl:message name="testMaKhachHangisKhachHangDaiDienSoapOut">
+    <wsdl:part name="parameters" element="tns:testMaKhachHangisKhachHangDaiDienResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListLoaiKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:getListLoaiKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="getListLoaiKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:getListLoaiKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPhong" />
+  </wsdl:message>
+  <wsdl:message name="InsertPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getListPhong" />
+  </wsdl:message>
+  <wsdl:message name="getListPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getListPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:searchPhongById" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:searchPhongByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByKindSoapIn">
+    <wsdl:part name="parameters" element="tns:searchPhongByKind" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByKindSoapOut">
+    <wsdl:part name="parameters" element="tns:searchPhongByKindResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:searchPhongByStatus" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:searchPhongByStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByTuaLuaHotDuaSoapIn">
+    <wsdl:part name="parameters" element="tns:searchPhongByTuaLuaHotDua" />
+  </wsdl:message>
+  <wsdl:message name="searchPhongByTuaLuaHotDuaSoapOut">
+    <wsdl:part name="parameters" element="tns:searchPhongByTuaLuaHotDuaResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistSoapIn">
+    <wsdl:part name="parameters" element="tns:testExist" />
+  </wsdl:message>
+  <wsdl:message name="testExistSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhongSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePhong" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhongSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhongInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePhongInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhongInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePhongInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhongStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePhongStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhongStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePhongStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListLoaiPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="getListLoaiPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertLoaiPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:insertLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="insertLoaiPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:insertLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLoaiPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLoaiPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteLoaiPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="DeleteLoaiPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_MaLPSoapIn">
+    <wsdl:part name="parameters" element="tns:KiemTra_MaLP" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_MaLPSoapOut">
+    <wsdl:part name="parameters" element="tns:KiemTra_MaLPResponse" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_SoSoapIn">
+    <wsdl:part name="parameters" element="tns:KiemTra_So" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_SoSoapOut">
+    <wsdl:part name="parameters" element="tns:KiemTra_SoResponse" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_UsingSoapIn">
+    <wsdl:part name="parameters" element="tns:KiemTra_Using" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_UsingSoapOut">
+    <wsdl:part name="parameters" element="tns:KiemTra_UsingResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDonGiaByLoaiPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getDonGiaByLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="getDonGiaByLoaiPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getDonGiaByLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDonGiaByMaPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getDonGiaByMaPhong" />
+  </wsdl:message>
+  <wsdl:message name="getDonGiaByMaPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getDonGiaByMaPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaPhongInPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistMaPhongInPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaPhongInPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistMaPhongInPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="QLKS_DAL_WebserviceSoap">
+    <wsdl:operation name="getListKhachHang">
+      <wsdl:input message="tns:getListKhachHangSoapIn" />
+      <wsdl:output message="tns:getListKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangById">
+      <wsdl:input message="tns:getKhachHangByIdSoapIn" />
+      <wsdl:output message="tns:getKhachHangByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByName">
+      <wsdl:input message="tns:getKhachHangByNameSoapIn" />
+      <wsdl:output message="tns:getKhachHangByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByCMND">
+      <wsdl:input message="tns:getKhachHangByCMNDSoapIn" />
+      <wsdl:output message="tns:getKhachHangByCMNDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByKind">
+      <wsdl:input message="tns:getKhachHangByKindSoapIn" />
+      <wsdl:output message="tns:getKhachHangByKindSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByAddress">
+      <wsdl:input message="tns:getKhachHangByAddressSoapIn" />
+      <wsdl:output message="tns:getKhachHangByAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByMulti">
+      <wsdl:input message="tns:getKhachHangByMultiSoapIn" />
+      <wsdl:output message="tns:getKhachHangByMultiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NextID">
+      <wsdl:input message="tns:NextIDSoapIn" />
+      <wsdl:output message="tns:NextIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertKhachHang">
+      <wsdl:input message="tns:InsertKhachHangSoapIn" />
+      <wsdl:output message="tns:InsertKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInKHACHHANG">
+      <wsdl:input message="tns:testExistsMaKhachHangInKHACHHANGSoapIn" />
+      <wsdl:output message="tns:testExistsMaKhachHangInKHACHHANGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE">
+      <wsdl:input message="tns:testExistsMaKhachHangInCTPHIEUTHUESoapIn" />
+      <wsdl:output message="tns:testExistsMaKhachHangInCTPHIEUTHUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKhachHang">
+      <wsdl:input message="tns:DeleteKhachHangSoapIn" />
+      <wsdl:output message="tns:DeleteKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKhachHang">
+      <wsdl:input message="tns:UpdateKhachHangSoapIn" />
+      <wsdl:output message="tns:UpdateKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDien">
+      <wsdl:input message="tns:getListKhachHangDaiDienSoapIn" />
+      <wsdl:output message="tns:getListKhachHangDaiDienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDienById">
+      <wsdl:input message="tns:getListKhachHangDaiDienByIdSoapIn" />
+      <wsdl:output message="tns:getListKhachHangDaiDienByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KhachHangDaiDienisNULL">
+      <wsdl:input message="tns:KhachHangDaiDienisNULLSoapIn" />
+      <wsdl:output message="tns:KhachHangDaiDienisNULLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienNotNULL">
+      <wsdl:input message="tns:getKhachHangDaiDienNotNULLSoapIn" />
+      <wsdl:output message="tns:getKhachHangDaiDienNotNULLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienisNULL">
+      <wsdl:input message="tns:getKhachHangDaiDienisNULLSoapIn" />
+      <wsdl:output message="tns:getKhachHangDaiDienisNULLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testMaKhachHangisKhachHangDaiDien">
+      <wsdl:input message="tns:testMaKhachHangisKhachHangDaiDienSoapIn" />
+      <wsdl:output message="tns:testMaKhachHangisKhachHangDaiDienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiKhachHang">
+      <wsdl:input message="tns:getListLoaiKhachHangSoapIn" />
+      <wsdl:output message="tns:getListLoaiKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhong">
+      <wsdl:input message="tns:InsertPhongSoapIn" />
+      <wsdl:output message="tns:InsertPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListPhong">
+      <wsdl:input message="tns:getListPhongSoapIn" />
+      <wsdl:output message="tns:getListPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongById">
+      <wsdl:input message="tns:searchPhongByIdSoapIn" />
+      <wsdl:output message="tns:searchPhongByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByKind">
+      <wsdl:input message="tns:searchPhongByKindSoapIn" />
+      <wsdl:output message="tns:searchPhongByKindSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByStatus">
+      <wsdl:input message="tns:searchPhongByStatusSoapIn" />
+      <wsdl:output message="tns:searchPhongByStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByTuaLuaHotDua">
+      <wsdl:input message="tns:searchPhongByTuaLuaHotDuaSoapIn" />
+      <wsdl:output message="tns:searchPhongByTuaLuaHotDuaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExist">
+      <wsdl:input message="tns:testExistSoapIn" />
+      <wsdl:output message="tns:testExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhong">
+      <wsdl:input message="tns:DeletePhongSoapIn" />
+      <wsdl:output message="tns:DeletePhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongInfo">
+      <wsdl:input message="tns:UpdatePhongInfoSoapIn" />
+      <wsdl:output message="tns:UpdatePhongInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongStatus">
+      <wsdl:input message="tns:UpdatePhongStatusSoapIn" />
+      <wsdl:output message="tns:UpdatePhongStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhong">
+      <wsdl:input message="tns:getListLoaiPhongSoapIn" />
+      <wsdl:output message="tns:getListLoaiPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertLoaiPhong">
+      <wsdl:input message="tns:insertLoaiPhongSoapIn" />
+      <wsdl:output message="tns:insertLoaiPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoaiPhong">
+      <wsdl:input message="tns:UpdateLoaiPhongSoapIn" />
+      <wsdl:output message="tns:UpdateLoaiPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoaiPhong">
+      <wsdl:input message="tns:DeleteLoaiPhongSoapIn" />
+      <wsdl:output message="tns:DeleteLoaiPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_MaLP">
+      <wsdl:input message="tns:KiemTra_MaLPSoapIn" />
+      <wsdl:output message="tns:KiemTra_MaLPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_So">
+      <wsdl:input message="tns:KiemTra_SoSoapIn" />
+      <wsdl:output message="tns:KiemTra_SoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_Using">
+      <wsdl:input message="tns:KiemTra_UsingSoapIn" />
+      <wsdl:output message="tns:KiemTra_UsingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByLoaiPhong">
+      <wsdl:input message="tns:getDonGiaByLoaiPhongSoapIn" />
+      <wsdl:output message="tns:getDonGiaByLoaiPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByMaPhong">
+      <wsdl:input message="tns:getDonGiaByMaPhongSoapIn" />
+      <wsdl:output message="tns:getDonGiaByMaPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhongInPhieuThue">
+      <wsdl:input message="tns:testExistMaPhongInPhieuThueSoapIn" />
+      <wsdl:output message="tns:testExistMaPhongInPhieuThueSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="QLKS_DAL_WebserviceSoap" type="tns:QLKS_DAL_WebserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getListKhachHang">
+      <soap:operation soapAction="http://tempuri.org/getListKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangById">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByName">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByCMND">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangByCMND" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByKind">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangByKind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByAddress">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangByAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByMulti">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangByMulti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextID">
+      <soap:operation soapAction="http://tempuri.org/NextID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKhachHang">
+      <soap:operation soapAction="http://tempuri.org/InsertKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInKHACHHANG">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaKhachHangInKHACHHANG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaKhachHangInCTPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKhachHang">
+      <soap:operation soapAction="http://tempuri.org/DeleteKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKhachHang">
+      <soap:operation soapAction="http://tempuri.org/UpdateKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDien">
+      <soap:operation soapAction="http://tempuri.org/getListKhachHangDaiDien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDienById">
+      <soap:operation soapAction="http://tempuri.org/getListKhachHangDaiDienById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KhachHangDaiDienisNULL">
+      <soap:operation soapAction="http://tempuri.org/KhachHangDaiDienisNULL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienNotNULL">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangDaiDienNotNULL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienisNULL">
+      <soap:operation soapAction="http://tempuri.org/getKhachHangDaiDienisNULL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testMaKhachHangisKhachHangDaiDien">
+      <soap:operation soapAction="http://tempuri.org/testMaKhachHangisKhachHangDaiDien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiKhachHang">
+      <soap:operation soapAction="http://tempuri.org/getListLoaiKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhong">
+      <soap:operation soapAction="http://tempuri.org/InsertPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhong">
+      <soap:operation soapAction="http://tempuri.org/getListPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongById">
+      <soap:operation soapAction="http://tempuri.org/searchPhongById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByKind">
+      <soap:operation soapAction="http://tempuri.org/searchPhongByKind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByStatus">
+      <soap:operation soapAction="http://tempuri.org/searchPhongByStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByTuaLuaHotDua">
+      <soap:operation soapAction="http://tempuri.org/searchPhongByTuaLuaHotDua" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExist">
+      <soap:operation soapAction="http://tempuri.org/testExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhong">
+      <soap:operation soapAction="http://tempuri.org/DeletePhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdatePhongInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdatePhongStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/getListLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/insertLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/UpdateLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/DeleteLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_MaLP">
+      <soap:operation soapAction="http://tempuri.org/KiemTra_MaLP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_So">
+      <soap:operation soapAction="http://tempuri.org/KiemTra_So" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_Using">
+      <soap:operation soapAction="http://tempuri.org/KiemTra_Using" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/getDonGiaByLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByMaPhong">
+      <soap:operation soapAction="http://tempuri.org/getDonGiaByMaPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhongInPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/testExistMaPhongInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="QLKS_DAL_WebserviceSoap12" type="tns:QLKS_DAL_WebserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getListKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/getListKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangById">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByName">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByCMND">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangByCMND" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByKind">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangByKind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByAddress">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangByAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangByMulti">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangByMulti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextID">
+      <soap12:operation soapAction="http://tempuri.org/NextID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/InsertKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInKHACHHANG">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaKhachHangInKHACHHANG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaKhachHangInCTPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/DeleteKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/UpdateKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDien">
+      <soap12:operation soapAction="http://tempuri.org/getListKhachHangDaiDien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListKhachHangDaiDienById">
+      <soap12:operation soapAction="http://tempuri.org/getListKhachHangDaiDienById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KhachHangDaiDienisNULL">
+      <soap12:operation soapAction="http://tempuri.org/KhachHangDaiDienisNULL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienNotNULL">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangDaiDienNotNULL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getKhachHangDaiDienisNULL">
+      <soap12:operation soapAction="http://tempuri.org/getKhachHangDaiDienisNULL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testMaKhachHangisKhachHangDaiDien">
+      <soap12:operation soapAction="http://tempuri.org/testMaKhachHangisKhachHangDaiDien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/getListLoaiKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhong">
+      <soap12:operation soapAction="http://tempuri.org/InsertPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhong">
+      <soap12:operation soapAction="http://tempuri.org/getListPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongById">
+      <soap12:operation soapAction="http://tempuri.org/searchPhongById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByKind">
+      <soap12:operation soapAction="http://tempuri.org/searchPhongByKind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByStatus">
+      <soap12:operation soapAction="http://tempuri.org/searchPhongByStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhongByTuaLuaHotDua">
+      <soap12:operation soapAction="http://tempuri.org/searchPhongByTuaLuaHotDua" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExist">
+      <soap12:operation soapAction="http://tempuri.org/testExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhong">
+      <soap12:operation soapAction="http://tempuri.org/DeletePhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePhongInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhongStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePhongStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhong">
+      <soap12:operation soapAction="http://tempuri.org/getListLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertLoaiPhong">
+      <soap12:operation soapAction="http://tempuri.org/insertLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoaiPhong">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoaiPhong">
+      <soap12:operation soapAction="http://tempuri.org/DeleteLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_MaLP">
+      <soap12:operation soapAction="http://tempuri.org/KiemTra_MaLP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_So">
+      <soap12:operation soapAction="http://tempuri.org/KiemTra_So" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_Using">
+      <soap12:operation soapAction="http://tempuri.org/KiemTra_Using" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByLoaiPhong">
+      <soap12:operation soapAction="http://tempuri.org/getDonGiaByLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDonGiaByMaPhong">
+      <soap12:operation soapAction="http://tempuri.org/getDonGiaByMaPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhongInPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/testExistMaPhongInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QLKS_DAL_Webservice">
+    <wsdl:port name="QLKS_DAL_WebserviceSoap" binding="tns:QLKS_DAL_WebserviceSoap">
+      <soap:address location="http://localhost:7001/QLKS_DAL_Webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="QLKS_DAL_WebserviceSoap12" binding="tns:QLKS_DAL_WebserviceSoap12">
+      <soap12:address location="http://localhost:7001/QLKS_DAL_Webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
