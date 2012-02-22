@@ -15,7 +15,7 @@ namespace _042082
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTraCuuPhong());
+            Application.Run(new frmKhachHang());
         }
     }
 }
