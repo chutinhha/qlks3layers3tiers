@@ -18,11 +18,6 @@ namespace QLKS_BUS_WS
     {
         public QLKS_DAL_WebserviceSoapClient ws = new QLKS_DAL_WebserviceSoapClient();
         [WebMethod]
-        public string HelloWorld()
-        {
-            return "Hello World";
-        }
-        [WebMethod]
         public KhachHangDTO[] getListKhachHang()
         {
             return ws.getListKhachHang();
