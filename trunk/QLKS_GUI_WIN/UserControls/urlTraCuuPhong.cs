@@ -13,7 +13,7 @@ namespace _042082.UserControls
 {
     public partial class urlTraCuuPhong : UserControl
     {
-        public QLKS_BUS_WebserviceSoapClient ws = new QLKS_BUS_WebserviceSoapClient();
+        //public QLKS_BUS_WebserviceSoapClient ws = new QLKS_BUS_WebserviceSoapClient();
         public static int run;
         public static string staticMaPhong;
         public static int OnPhieuThue;
@@ -48,12 +48,12 @@ namespace _042082.UserControls
         public urlTraCuuPhong()
         {
             InitializeComponent();
-            if (_042082.UserControls.urlTraCuuPhong.run == 1)
-            {
-                dt = ConvertPhongDTOtoDataTable(ws.getListPhong());
-                dp_binding();
-                dataGrid_DMP.DataSource = bdSource;
-            }
+            //if (_042082.UserControls.urlTraCuuPhong.run == 1)
+            //{
+            //    dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().getListPhong());
+            //    dp_binding();
+            //    dataGrid_DMP.DataSource = bdSource;
+            //}
             if (OnTraCuuPhong == 1)
             {
                 this.dataGrid_DMP.Size = new System.Drawing.Size(700, 400);
@@ -69,59 +69,65 @@ namespace _042082.UserControls
         }
         private void cmbSearch_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string[] strTitle = {"Mã Phòng", "Loại Phòng", "Tình Trạng", "Nhiều điều kiện","Xem tất cả"};
-            for (int i = 0; i < strTitle.Length; i++)
+            if (!this.DesignMode)
             {
-                if (cmbSearch.Text==strTitle[i])
+                string[] strTitle = { "Mã Phòng", "Loại Phòng", "Tình Trạng", "Nhiều điều kiện", "Xem tất cả" };
+                for (int i = 0; i < strTitle.Length; i++)
                 {
-                    id_Search = i;
-                    switch(i)
+                    if (cmbSearch.Text == strTitle[i])
                     {
-                        case 0: {
-                            txt_MaPhong.Enabled = true;
-                            cmb_LoaiPhong.Enabled = false;
-                            grbox_TinhTrang.Enabled = false;
-                            break; 
-                        }
-                        case 1: {
-                            this.LoadComBoBox();
-                            txt_MaPhong.Enabled = false;
-                            cmb_LoaiPhong.Enabled = true;
-                            grbox_TinhTrang.Enabled = false;
-                           // 
-                            // Enable combobox
-                            cmb_LoaiPhong.Visible = true;
-                            txt_LoaiPhong.Visible = false;
-                            break;
-                        }
-                        case 2:
+                        id_Search = i;
+                        switch (i)
                         {
-                            txt_MaPhong.Enabled = false;
-                            cmb_LoaiPhong.Enabled = false;
-                            grbox_TinhTrang.Enabled = true;
-                            //
-                            break;
-                        }
-                        case 3: {
-                            LoadComBoBox();
-                            txt_MaPhong.Text = "";
-                            txt_MaPhong.Enabled = false;
-                            cmb_LoaiPhong.Enabled = true;
-                            grbox_TinhTrang.Enabled = true;
-                            //
-                            break;
-                        }
-                        case 4:
-                        {
-                            txt_MaPhong.Text = "";
-                            txt_MaPhong.Enabled = false;
-                            cmb_LoaiPhong.Enabled = true;
-                            grbox_TinhTrang.Enabled = true;
-                            
-                            dt = ConvertPhongDTOtoDataTable(ws.getListPhong());
-                            bdSource.DataSource = dt;
-                            dataGrid_DMP.DataSource = bdSource;
-                            break;
+                            case 0:
+                                {
+                                    txt_MaPhong.Enabled = true;
+                                    cmb_LoaiPhong.Enabled = false;
+                                    grbox_TinhTrang.Enabled = false;
+                                    break;
+                                }
+                            case 1:
+                                {
+                                    this.LoadComBoBox();
+                                    txt_MaPhong.Enabled = false;
+                                    cmb_LoaiPhong.Enabled = true;
+                                    grbox_TinhTrang.Enabled = false;
+                                    // 
+                                    // Enable combobox
+                                    cmb_LoaiPhong.Visible = true;
+                                    txt_LoaiPhong.Visible = false;
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    txt_MaPhong.Enabled = false;
+                                    cmb_LoaiPhong.Enabled = false;
+                                    grbox_TinhTrang.Enabled = true;
+                                    //
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    LoadComBoBox();
+                                    txt_MaPhong.Text = "";
+                                    txt_MaPhong.Enabled = false;
+                                    cmb_LoaiPhong.Enabled = true;
+                                    grbox_TinhTrang.Enabled = true;
+                                    //
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    txt_MaPhong.Text = "";
+                                    txt_MaPhong.Enabled = false;
+                                    cmb_LoaiPhong.Enabled = true;
+                                    grbox_TinhTrang.Enabled = true;
+
+                                    dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().getListPhong());
+                                    bdSource.DataSource = dt;
+                                    dataGrid_DMP.DataSource = bdSource;
+                                    break;
+                                }
                         }
                     }
                 }
@@ -129,7 +135,7 @@ namespace _042082.UserControls
         }
         private void LoadComBoBox()
         {
-            cmb_LoaiPhong.DataSource = ws.getListLoaiPhong();
+            cmb_LoaiPhong.DataSource = new QLKS_BUS_WebserviceSoapClient().getListLoaiPhong();
             cmb_LoaiPhong.DisplayMember = "MaLoaiPhong";
             cmb_LoaiPhong.ValueMember = "MaLoaiPhong";
         }
@@ -146,7 +152,7 @@ namespace _042082.UserControls
                     pDTO.MaPhong = txt_MaPhong.Text;
                     dt.Reset();
                     
-                    dt = ConvertPhongDTOtoDataTable(ws.searchPhongById(pDTO.MaPhong));
+                    dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().searchPhongById(pDTO.MaPhong));
                     bdSource.DataSource = dt;
                     dataGrid_DMP.DataSource = bdSource;
                     break;
@@ -159,7 +165,7 @@ namespace _042082.UserControls
                     pDTO.MaPhong = txt_MaPhong.Text;
                     pDTO.MaLoaiPhong = cmb_LoaiPhong.Text;
                     pDTO.TinhTrang = rdb_Trong.Checked == true ? 0 : 1;
-                    dt = ConvertPhongDTOtoDataTable(ws.searchPhongByTuaLuaHotDua(pDTO.MaLoaiPhong, pDTO.TinhTrang));
+                    dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().searchPhongByTuaLuaHotDua(pDTO.MaLoaiPhong, pDTO.TinhTrang));
                     bdSource.DataSource = dt;
                     dataGrid_DMP.DataSource = bdSource;
                     break;
@@ -176,11 +182,14 @@ namespace _042082.UserControls
 
         private void rdb_Trong_CheckedChanged(object sender, EventArgs e)
         {
-            dt.Reset();
-            pDTO.TinhTrang = rdb_Trong.Checked == true ? 0 : 1;
-            dt = ConvertPhongDTOtoDataTable(ws.searchPhongByStatus(pDTO.TinhTrang));
-            bdSource.DataSource = dt;
-            dataGrid_DMP.DataSource = bdSource;
+            if (!this.DesignMode)
+            {
+                dt.Reset();
+                pDTO.TinhTrang = rdb_Trong.Checked == true ? 0 : 1;
+                dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().searchPhongByStatus(pDTO.TinhTrang));
+                bdSource.DataSource = dt;
+                dataGrid_DMP.DataSource = bdSource;
+            }
         }
 
         private void rdb_DangThue_CheckedChanged(object sender, EventArgs e)
@@ -195,13 +204,16 @@ namespace _042082.UserControls
 
         private void cmb_LoaiPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //string[] tmp = cmb_LoaiPhong.Text.Split(new string[] {"Loại"});
-            dt.Reset();
-            //LoadComBoBox();
-            pDTO.MaLoaiPhong = cmb_LoaiPhong.Text;
-            dt = ConvertPhongDTOtoDataTable(ws.searchPhongByKind(pDTO.MaLoaiPhong));
-            bdSource.DataSource = dt;
-            dataGrid_DMP.DataSource = bdSource;
+            if (!this.DesignMode)
+            {
+                //string[] tmp = cmb_LoaiPhong.Text.Split(new string[] {"Loại"});
+                dt.Reset();
+                //LoadComBoBox();
+                pDTO.MaLoaiPhong = cmb_LoaiPhong.Text;
+                dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().searchPhongByKind(pDTO.MaLoaiPhong));
+                bdSource.DataSource = dt;
+                dataGrid_DMP.DataSource = bdSource;
+            }
         }
 
         private void  dataGrid_DMP_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -282,6 +294,17 @@ namespace _042082.UserControls
             {
                 cmb_LoaiPhong.Visible = true;
                 txt_LoaiPhong.Visible = false;
+            }
+        }
+
+        private void urlTraCuuPhong_Load(object sender, EventArgs e)
+        {
+            if (!this.DesignMode)
+            {
+                //dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().getListPhong());
+                dt = ConvertPhongDTOtoDataTable(new QLKS_BUS_WebserviceSoapClient().getListPhong());
+                dp_binding();
+                dataGrid_DMP.DataSource = bdSource;
             }
         }
     }

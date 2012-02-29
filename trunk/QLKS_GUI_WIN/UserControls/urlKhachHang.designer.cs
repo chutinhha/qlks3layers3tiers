@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(urlKhachHang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(urlKhachHang));
             this.txt_TenKH = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txt_CMND = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txt_MaKH = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -45,7 +45,6 @@
             this.txt_TenKHDD = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.chk_Edit = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.moreDetail = new DevComponents.DotNetBar.ButtonX();
-            this.btSearch = new DevComponents.DotNetBar.ButtonX();
             this.lbl_KHDD = new DevComponents.DotNetBar.LabelX();
             this.txt_MaKHDD = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.chk_KHDD = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -62,18 +61,11 @@
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.bindingNavigatorKH = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.dataGridKH = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +80,14 @@
             this.cmb_MaLoaiKH = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.plKhachHang = new DevComponents.DotNetBar.PanelEx();
             this.chk_searchKHDD = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btSearch = new DevComponents.DotNetBar.ButtonX();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorKH)).BeginInit();
@@ -102,6 +102,7 @@
             // 
             // 
             this.txt_TenKH.Border.Class = "TextBoxBorder";
+            this.txt_TenKH.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_TenKH.Enabled = false;
             this.txt_TenKH.Location = new System.Drawing.Point(313, 74);
             this.txt_TenKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -116,6 +117,7 @@
             // 
             // 
             this.txt_CMND.Border.Class = "TextBoxBorder";
+            this.txt_CMND.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_CMND.Enabled = false;
             this.txt_CMND.Location = new System.Drawing.Point(108, 106);
             this.txt_CMND.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -129,6 +131,7 @@
             // 
             // 
             this.txt_MaKH.Border.Class = "TextBoxBorder";
+            this.txt_MaKH.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_MaKH.Enabled = false;
             this.txt_MaKH.Location = new System.Drawing.Point(108, 77);
             this.txt_MaKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -139,6 +142,11 @@
             // 
             // labelX1
             // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.Class = "";
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Location = new System.Drawing.Point(14, 77);
             this.labelX1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX1.Name = "labelX1";
@@ -148,6 +156,11 @@
             // 
             // labelX2
             // 
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.Class = "";
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Location = new System.Drawing.Point(262, 76);
             this.labelX2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX2.Name = "labelX2";
@@ -157,6 +170,11 @@
             // 
             // labelX3
             // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.Class = "";
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Location = new System.Drawing.Point(13, 106);
             this.labelX3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX3.Name = "labelX3";
@@ -170,6 +188,7 @@
             // 
             // 
             this.txt_LoaiKH.Border.Class = "TextBoxBorder";
+            this.txt_LoaiKH.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_LoaiKH.Enabled = false;
             this.txt_LoaiKH.Location = new System.Drawing.Point(313, 102);
             this.txt_LoaiKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -179,6 +198,11 @@
             // 
             // labelX4
             // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.Class = "";
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Location = new System.Drawing.Point(262, 103);
             this.labelX4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX4.Name = "labelX4";
@@ -192,6 +216,7 @@
             // 
             // 
             this.txt_DiaChi.Border.Class = "TextBoxBorder";
+            this.txt_DiaChi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_DiaChi.Enabled = false;
             this.txt_DiaChi.Location = new System.Drawing.Point(108, 133);
             this.txt_DiaChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -202,6 +227,11 @@
             // 
             // labelX5
             // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.Class = "";
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Location = new System.Drawing.Point(13, 134);
             this.labelX5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX5.Name = "labelX5";
@@ -234,6 +264,7 @@
             // 
             // 
             this.txt_TenKHDD.Border.Class = "TextBoxBorder";
+            this.txt_TenKHDD.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_TenKHDD.Enabled = false;
             this.txt_TenKHDD.Location = new System.Drawing.Point(357, 39);
             this.txt_TenKHDD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -243,6 +274,11 @@
             // 
             // chk_Edit
             // 
+            // 
+            // 
+            // 
+            this.chk_Edit.BackgroundStyle.Class = "";
+            this.chk_Edit.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.chk_Edit.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_Edit.Location = new System.Drawing.Point(153, 10);
             this.chk_Edit.Name = "chk_Edit";
@@ -257,24 +293,18 @@
             this.moreDetail.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.moreDetail.Location = new System.Drawing.Point(446, 12);
             this.moreDetail.Name = "moreDetail";
-            this.moreDetail.Size = new System.Drawing.Size(10, 21);
+            this.moreDetail.Size = new System.Drawing.Size(29, 21);
             this.moreDetail.TabIndex = 33;
-            this.moreDetail.Text = "Xem chi tiết";
+            this.moreDetail.Text = "?";
             this.moreDetail.Click += new System.EventHandler(this.moreDetail_Click);
-            // 
-            // btSearch
-            // 
-            this.btSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            //this.btSearch.Image = global::_042082.Properties.Resources.zoom_1;
-            this.btSearch.Location = new System.Drawing.Point(399, 11);
-            this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(41, 22);
-            this.btSearch.TabIndex = 32;
-            this.btSearch.Click += new System.EventHandler(this.btSearch_Click);
             // 
             // lbl_KHDD
             // 
+            // 
+            // 
+            // 
+            this.lbl_KHDD.BackgroundStyle.Class = "";
+            this.lbl_KHDD.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lbl_KHDD.Location = new System.Drawing.Point(153, 42);
             this.lbl_KHDD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lbl_KHDD.Name = "lbl_KHDD";
@@ -288,6 +318,7 @@
             // 
             // 
             this.txt_MaKHDD.Border.Class = "TextBoxBorder";
+            this.txt_MaKHDD.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_MaKHDD.Location = new System.Drawing.Point(264, 39);
             this.txt_MaKHDD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_MaKHDD.Name = "txt_MaKHDD";
@@ -297,6 +328,11 @@
             // 
             // chk_KHDD
             // 
+            // 
+            // 
+            // 
+            this.chk_KHDD.BackgroundStyle.Class = "";
+            this.chk_KHDD.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.chk_KHDD.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_KHDD.Location = new System.Drawing.Point(5, 38);
             this.chk_KHDD.Name = "chk_KHDD";
@@ -307,6 +343,11 @@
             // 
             // ckhKHMOI
             // 
+            // 
+            // 
+            // 
+            this.ckhKHMOI.BackgroundStyle.Class = "";
+            this.ckhKHMOI.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckhKHMOI.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckhKHMOI.Location = new System.Drawing.Point(5, 11);
             this.ckhKHMOI.Name = "ckhKHMOI";
@@ -317,6 +358,11 @@
             // 
             // labelX7
             // 
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.Class = "";
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.Location = new System.Drawing.Point(221, 14);
             this.labelX7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -418,48 +464,12 @@
             this.bindingNavigatorKH.TabIndex = 23;
             this.bindingNavigatorKH.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -480,37 +490,10 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::_042082.Properties.Resources.Icon_198;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // dataGridKH
             // 
@@ -536,8 +519,8 @@
             this.dataGridKH.Name = "dataGridKH";
             this.dataGridKH.Size = new System.Drawing.Size(496, 142);
             this.dataGridKH.TabIndex = 22;
-            this.dataGridKH.MouseLeave += new System.EventHandler(this.dataGridKH_MouseLeave);
             this.dataGridKH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKH_CellContentClick);
+            this.dataGridKH.MouseLeave += new System.EventHandler(this.dataGridKH_MouseLeave);
             // 
             // STT
             // 
@@ -675,6 +658,11 @@
             // 
             // chk_searchKHDD
             // 
+            // 
+            // 
+            // 
+            this.chk_searchKHDD.BackgroundStyle.Class = "";
+            this.chk_searchKHDD.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.chk_searchKHDD.Enabled = false;
             this.chk_searchKHDD.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_searchKHDD.Location = new System.Drawing.Point(194, 76);
@@ -682,6 +670,80 @@
             this.chk_searchKHDD.Size = new System.Drawing.Size(52, 22);
             this.chk_searchKHDD.TabIndex = 36;
             this.chk_searchKHDD.Text = "KHDD";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::_042082.Properties.Resources.Icon_198;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // btSearch
+            // 
+            this.btSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btSearch.Image = global::_042082.Properties.Resources.Loupe;
+            this.btSearch.Location = new System.Drawing.Point(399, 11);
+            this.btSearch.Name = "btSearch";
+            this.btSearch.Size = new System.Drawing.Size(41, 22);
+            this.btSearch.TabIndex = 32;
+            this.btSearch.Click += new System.EventHandler(this.btSearch_Click);
             // 
             // urlKhachHang
             // 
@@ -692,6 +754,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "urlKhachHang";
             this.Size = new System.Drawing.Size(517, 407);
+            this.Load += new System.EventHandler(this.urlKhachHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();

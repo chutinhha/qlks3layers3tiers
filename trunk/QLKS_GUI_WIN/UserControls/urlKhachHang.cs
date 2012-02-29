@@ -21,7 +21,7 @@ namespace _042082.UserControls
          *  Và các hàm như tìm kiếm theo địa chỉ và nhiều điều kiện
          *  ===> Tiếp tục viết phần thêm khách hàng
          */
-        public QLKS_BUS_WebserviceSoapClient ws = new QLKS_BUS_WebserviceSoapClient();
+        //public QLKS_BUS_WebserviceSoapClient ws = new QLKS_BUS_WebserviceSoapClient();
         
         public static int run;
         public static int ManagerComponents;
@@ -72,31 +72,18 @@ namespace _042082.UserControls
 
             // Run = 1 tức là UserControl chạy hẳn hoi trên 1 form. VD form QLKH, or PT
             //- không dùng cách này khi Design thì nó load dữ liệu lên --> nặng máy.
-            if (run == 1)
-            {
-                txt_MaKHDD.Enabled = false;
-                lbl_KHDD.Enabled = false;
-                chk_KHDD.Enabled = false;
-                btAdd.Enabled = false;
-                btDelete.Enabled = false;
-                btUpdate.Enabled = false;
-                dt =ConvertKhachHangDTOArrayToDataTable(ws.getListKhachHang());
-                dp_Bindind();
-                dataGridKH.DataSource = bdSource;
-                bindingNavigatorKH.BindingSource = bdSource;
-                // phát huy tác dụng của biến ManagetComponets
-                if (ManagerComponents == 1)
-                    OnLoad_frmHoaDon();
-                LoadLoaiKhachHang();
-            }
+            
         }
         private void refresh()
         {
-            ckhKHMOI.Checked = false;
-            chk_KHDD.Checked = false;
-            dt = ConvertKhachHangDTOArrayToDataTable(ws.getListKhachHang());
-            bdSource.DataSource = dt;
-            dataGridKH.DataSource = bdSource;
+            if (this.DesignMode == false)
+            {
+                ckhKHMOI.Checked = false;
+                chk_KHDD.Checked = false;
+                dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListKhachHang());
+                bdSource.DataSource = dt;
+                dataGridKH.DataSource = bdSource;
+            }
         }
         public void dp_Bindind()
         {
@@ -111,9 +98,10 @@ namespace _042082.UserControls
         }
         private void LoadLoaiKhachHang()
         {
-            cmb_MaLoaiKH.DataSource = ConvertLoaiKhachHangDTOArrayToDataTable(ws.getListLoaiKhachHang());
-            cmb_MaLoaiKH.DisplayMember = "TenLoaiKH";
-            cmb_MaLoaiKH.ValueMember = "MaLoaiKH";
+                
+                cmb_MaLoaiKH.DataSource = ConvertLoaiKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListLoaiKhachHang());
+                cmb_MaLoaiKH.DisplayMember = "TenLoaiKH";
+                cmb_MaLoaiKH.ValueMember = "MaLoaiKH";
         }
         private void reset()
         {
@@ -136,7 +124,7 @@ namespace _042082.UserControls
                 chk_searchKHDD.Enabled = false;
                 this.reset();
                 cmbSearch.Text = "";
-                txt_MaKH.Text = ws.NextID();
+                if(!this.DesignMode) txt_MaKH.Text = new QLKS_BUS_WebserviceSoapClient().NextID();
                 cmbSearch.Enabled = false;
                 btSearch.Enabled = false;
                 txt_MaKHDD.Enabled = true;
@@ -228,7 +216,7 @@ namespace _042082.UserControls
                 {
                     kDTO.MaLoaiKH = cmb_MaLoaiKH.SelectedValue.ToString();
                     dt.Reset();
-                    dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangByKind(kDTO.MaLoaiKH));
+                    if(!this.DesignMode) dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangByKind(kDTO.MaLoaiKH));
                     bdSource.DataSource = dt;
                     dataGridKH.DataSource = bdSource;
                 }
@@ -242,17 +230,17 @@ namespace _042082.UserControls
                 MessageBox.Show("Mã khách hàng rỗng");
                 return false;
             }
-            if (ws.testExistsMaKhachHangInKHACHHANG(txt_MaKH.Text) == 0 && (cmd == 2 || cmd==3))
+            if (new QLKS_BUS_WebserviceSoapClient().testExistsMaKhachHangInKHACHHANG(txt_MaKH.Text) == 0 && (cmd == 2 || cmd==3))
             {
                 MessageBox.Show("Mã khách hàng không tồn tại");
                 return false;
             }
-            if (ws.testExistsMaKhachHangInKHACHHANG(txt_MaKH.Text) == 1 && cmd == 1)
+            if (new QLKS_BUS_WebserviceSoapClient().testExistsMaKhachHangInKHACHHANG(txt_MaKH.Text) == 1 && cmd == 1)
             {
                 MessageBox.Show("Mã khách hàng đã tồn tại" );
                 return false;
             }
-            if((chk_KHDD.Checked ==false && (txt_MaKHDD.Text.Equals("") || ws.testExistsMaKhachHangInKHACHHANG(txt_MaKHDD.Text)==0) && (cmd==1 || cmd==2)))
+            if ((chk_KHDD.Checked == false && (txt_MaKHDD.Text.Equals("") || new QLKS_BUS_WebserviceSoapClient().testExistsMaKhachHangInKHACHHANG(txt_MaKHDD.Text) == 0) && (cmd == 1 || cmd == 2)))
             {
                 MessageBox.Show("Mã khách hàng đại diện không đúng");
                 return false;
@@ -267,7 +255,7 @@ namespace _042082.UserControls
                 MessageBox.Show("Loại khách hàng rỗng");
                 return false;
             }
-            if (ws.testExistsMaKhachHangInCTPHIEUTHUE(txt_MaKH.Text) > 0 && (cmd == 3 || cmd==2))
+            if (new QLKS_BUS_WebserviceSoapClient().testExistsMaKhachHangInCTPHIEUTHUE(txt_MaKH.Text) > 0 && (cmd == 3 || cmd==2))
             {
                 if(cmd==2)
                     MessageBox.Show("Không được sửa");
@@ -280,7 +268,7 @@ namespace _042082.UserControls
                 MessageBox.Show("Số CMND quá 9 Ký Tự");
                 return false;
             }
-            if(ws.testMaKhachHangisKhachHangDaiDien(txt_MaKH.Text)==1 && (cmd==2|| cmd==3))
+            if(new QLKS_BUS_WebserviceSoapClient().testMaKhachHangisKhachHangDaiDien(txt_MaKH.Text)==1 && (cmd==2|| cmd==3))
             {
                 if(cmd==2)
                    MessageBox.Show("Khách hàng đại diện không được sửa");
@@ -305,7 +293,7 @@ namespace _042082.UserControls
                 kDTO.MaLoaiKH = cmb_MaLoaiKH.SelectedValue.ToString();
                 kDTO.TenKhachHang = txt_TenKH.Text;
                 kDTO.TenKhachHang_EN = ConvertUniCodeToANSI(txt_TenKH.Text);
-                ws.InsertKhachHang(kDTO);
+                new QLKS_BUS_WebserviceSoapClient().InsertKhachHang(kDTO);
                 MessageBox.Show("Thêm thành công");
                 AddKhachHang = 0;
                 refresh();
@@ -320,7 +308,7 @@ namespace _042082.UserControls
                 if (testVaild(3))
                 {
                     kDTO.MaKhachHang = txt_MaKH.Text;
-                    ws.DeleteKhachHang(kDTO.MaKhachHang);
+                    new QLKS_BUS_WebserviceSoapClient().DeleteKhachHang(kDTO.MaKhachHang);
                     refresh();
                 }
             }
@@ -370,7 +358,7 @@ namespace _042082.UserControls
                 // Nếu trường hợp sửa gặp khách hàng chính là khách hàng đại diện.
                 if (kDTO.MaKhachHang.Equals(kDTO.KhachHangDaiDien))
                     kDTO.KhachHangDaiDien = "";
-                ws.UpdateKhachHang(kDTO);
+                new QLKS_BUS_WebserviceSoapClient().UpdateKhachHang(kDTO);
                 MessageBox.Show("Sửa thành công");
                 refresh();
             }
@@ -475,7 +463,7 @@ namespace _042082.UserControls
                          {
                              chk_searchKHDD.Enabled = false;
                              dt.Reset();
-                             dt =ConvertKhachHangDTOArrayToDataTable(ws.getListKhachHangDaiDien());
+                             if (this.DesignMode == false) dt =ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListKhachHangDaiDien());
                              bdSource.DataSource = dt;
                              dataGridKH.DataSource = bdSource;
                              break;
@@ -484,7 +472,7 @@ namespace _042082.UserControls
                          {
                              chk_searchKHDD.Enabled = false;
                              dt.Reset();
-                             dt = ConvertKhachHangDTOArrayToDataTable(ws.getListKhachHang());
+                             if (this.DesignMode == false) dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListKhachHang());
                              bdSource.DataSource = dt;
                              dataGridKH.DataSource = bdSource;
                              break;
@@ -509,9 +497,9 @@ namespace _042082.UserControls
                         kDTO.MaKhachHang = txt_MaKH.Text;
                         dt.Reset();
                         if (chk_searchKHDD.Checked == false)
-                            dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangById(kDTO.MaKhachHang));
+                            dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangById(kDTO.MaKhachHang));
                         else
-                            dt =ConvertKhachHangDTOArrayToDataTable(ws.getListKhachHangDaiDienById(kDTO.MaKhachHang));
+                            dt =ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListKhachHangDaiDienById(kDTO.MaKhachHang));
                         //MessageBox.Show(kBUS.getstrSQL());
                         break;
                     }
@@ -527,7 +515,7 @@ namespace _042082.UserControls
                     {
                         kDTO.CMND = txt_CMND.Text;
                         dt.Reset();
-                        dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangByCMND(kDTO.CMND));
+                        dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangByCMND(kDTO.CMND));
                         break;
 
                     }
@@ -535,7 +523,7 @@ namespace _042082.UserControls
                     {
                         kDTO.MaLoaiKH = cmb_MaLoaiKH.SelectedValue.ToString();
                         dt.Reset();
-                        dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangByKind(kDTO.MaLoaiKH));
+                        dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangByKind(kDTO.MaLoaiKH));
                         break;
 
                     }
@@ -543,7 +531,7 @@ namespace _042082.UserControls
                     {
                         kDTO.DiaChi = txt_DiaChi.Text;
                         dt.Reset();
-                        dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangByAddress(kDTO.DiaChi));
+                        dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangByAddress(kDTO.DiaChi));
                         break;
 
                     }
@@ -553,7 +541,7 @@ namespace _042082.UserControls
                         kDTO.MaLoaiKH = cmb_MaLoaiKH.Text;
                         kDTO.DiaChi = txt_DiaChi.Text;
                         dt.Reset();
-                        dt = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangByMulti(kDTO.TenKhachHang, kDTO.MaLoaiKH, kDTO.DiaChi));
+                        dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangByMulti(kDTO.TenKhachHang, kDTO.MaLoaiKH, kDTO.DiaChi));
                         break;
                     }
             }// end switch
@@ -568,9 +556,9 @@ namespace _042082.UserControls
         {
             DataTable tmp = new DataTable();
             if (txt_MaKHDD.Text.Equals(""))
-                tmp = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangById(txt_MaKH.Text));
+                tmp = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangById(txt_MaKH.Text));
             else
-                tmp = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangById(txt_MaKHDD.Text));
+                tmp = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangById(txt_MaKHDD.Text));
             if(tmp.Rows.Count>0)
                 MessageBox.Show("KHÁCH HÀNG ĐẠI DIỆN : " + tmp.Rows[0]["TenKhachHang"]);
         }
@@ -642,11 +630,11 @@ namespace _042082.UserControls
             DataTable tmp = new DataTable();
             if (txt_MaKHDD.Text.Equals(""))
             {
-                tmp =ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangById(txt_MaKH.Text));
+                tmp =ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangById(txt_MaKH.Text));
                 //txt_MaKHDD.Text = txt_MaKH.Text;
             }
             else
-                tmp = ConvertKhachHangDTOArrayToDataTable(ws.getKhachHangById(txt_MaKHDD.Text));
+                tmp = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getKhachHangById(txt_MaKHDD.Text));
             if (tmp.Rows.Count > 0)
                 txt_TenKHDD.Text = tmp.Rows[0]["TenKhachHang"].ToString();
 
@@ -680,6 +668,27 @@ namespace _042082.UserControls
 
                 //bdSource.DataSource = dt;
                 //dataGridKH.DataSource = bdSource;
+            }
+        }
+
+        private void urlKhachHang_Load(object sender, EventArgs e)
+        {
+            if (this.DesignMode == false)
+            {
+                txt_MaKHDD.Enabled = false;
+                lbl_KHDD.Enabled = false;
+                chk_KHDD.Enabled = false;
+                btAdd.Enabled = false;
+                btDelete.Enabled = false;
+                btUpdate.Enabled = false;
+                dt = ConvertKhachHangDTOArrayToDataTable(new QLKS_BUS_WebserviceSoapClient().getListKhachHang());
+                dp_Bindind();
+                dataGridKH.DataSource = bdSource;
+                bindingNavigatorKH.BindingSource = bdSource;
+                // phát huy tác dụng của biến ManagetComponets
+                if (ManagerComponents == 1)
+                    OnLoad_frmHoaDon();
+                LoadLoaiKhachHang();
             }
         }
     }

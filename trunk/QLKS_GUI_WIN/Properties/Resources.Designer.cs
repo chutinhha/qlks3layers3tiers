@@ -221,6 +221,13 @@ namespace _042082.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Loupe {
+            get {
+                object obj = ResourceManager.GetObject("Loupe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap LPTP {
             get {
                 object obj = ResourceManager.GetObject("LPTP", resourceCulture);
