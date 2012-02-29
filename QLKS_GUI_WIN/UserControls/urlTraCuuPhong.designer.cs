@@ -86,10 +86,10 @@
             this.plLoaiPhong.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.plLoaiPhong.Style.GradientAngle = 90;
             this.plLoaiPhong.TabIndex = 2;
-            this.plLoaiPhong.MouseLeave += new System.EventHandler(this.plLoaiPhong_MouseLeave);
-            this.plLoaiPhong.Leave += new System.EventHandler(this.plLoaiPhong_Leave);
             this.plLoaiPhong.Enter += new System.EventHandler(this.plLoaiPhong_Enter);
+            this.plLoaiPhong.Leave += new System.EventHandler(this.plLoaiPhong_Leave);
             this.plLoaiPhong.MouseEnter += new System.EventHandler(this.plLoaiPhong_MouseEnter);
+            this.plLoaiPhong.MouseLeave += new System.EventHandler(this.plLoaiPhong_MouseLeave);
             // 
             // txt_LoaiPhong
             // 
@@ -97,6 +97,7 @@
             // 
             // 
             this.txt_LoaiPhong.Border.Class = "TextBoxBorder";
+            this.txt_LoaiPhong.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_LoaiPhong.Enabled = false;
             this.txt_LoaiPhong.Location = new System.Drawing.Point(90, 63);
             this.txt_LoaiPhong.Name = "txt_LoaiPhong";
@@ -190,6 +191,11 @@
             // 
             // labelX5
             // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.Class = "";
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.Location = new System.Drawing.Point(14, 23);
             this.labelX5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -215,6 +221,11 @@
             // 
             // labelX3
             // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.Class = "";
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Location = new System.Drawing.Point(14, 61);
             this.labelX3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX3.Name = "labelX3";
@@ -224,6 +235,11 @@
             // 
             // labelX2
             // 
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.Class = "";
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Location = new System.Drawing.Point(264, 23);
             this.labelX2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX2.Name = "labelX2";
@@ -237,6 +253,7 @@
             // 
             // 
             this.txt_MaPhong.Border.Class = "TextBoxBorder";
+            this.txt_MaPhong.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txt_MaPhong.Enabled = false;
             this.txt_MaPhong.Location = new System.Drawing.Point(335, 22);
             this.txt_MaPhong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -269,10 +286,10 @@
             this.dataGrid_DMP.Name = "dataGrid_DMP";
             this.dataGrid_DMP.Size = new System.Drawing.Size(495, 152);
             this.dataGrid_DMP.TabIndex = 0;
-            this.dataGrid_DMP.MouseLeave += new System.EventHandler(this.dataGrid_DMP_MouseLeave);
             this.dataGrid_DMP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_DMP_CellClick);
-            this.dataGrid_DMP.MouseEnter += new System.EventHandler(this.dataGrid_DMP_MouseEnter);
             this.dataGrid_DMP.Click += new System.EventHandler(this.dataGrid_DMP_Click);
+            this.dataGrid_DMP.MouseEnter += new System.EventHandler(this.dataGrid_DMP_MouseEnter);
+            this.dataGrid_DMP.MouseLeave += new System.EventHandler(this.dataGrid_DMP_MouseLeave);
             // 
             // STT
             // 
@@ -328,6 +345,7 @@
             this.Controls.Add(this.plLoaiPhong);
             this.Name = "urlTraCuuPhong";
             this.Size = new System.Drawing.Size(510, 270);
+            this.Load += new System.EventHandler(this.urlTraCuuPhong_Load);
             this.Enter += new System.EventHandler(this.urlTraCuuPhong_Enter);
             this.plLoaiPhong.ResumeLayout(false);
             this.grbox_TinhTrang.ResumeLayout(false);
