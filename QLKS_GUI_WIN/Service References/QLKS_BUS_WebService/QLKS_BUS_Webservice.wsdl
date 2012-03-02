@@ -2,13 +2,134 @@
 <wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
-      <s:element name="HelloWorld">
-        <s:complexType />
-      </s:element>
-      <s:element name="HelloWorldResponse">
+      <s:element name="InsertCTHOADON">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtoCTHD" type="tns:CT_HoaDonDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CT_HoaDonDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaHoaDon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExtensionDataObject" />
+      <s:element name="InsertCTHOADONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCTHOADONResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaPT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maphong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaPTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaPTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_cthd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mahd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_cthdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="delete_cthdResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_tendangnhap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_tendangnhap" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_tendangnhapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KiemTra_tendangnhapResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_matkhau">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_tendangnhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KiemTra_matkhauResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KiemTra_matkhauResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="backup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="backupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="backupResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="restore">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="restoreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="restoreResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIdKUserByIdUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uDTO" type="tns:UserDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUser" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdKUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getIdKUserByIdUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getIdKUserByIdUserResult" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -39,7 +160,6 @@
           <s:element minOccurs="0" maxOccurs="1" name="TenKhachHang_EN" type="s:string" />
         </s:sequence>
       </s:complexType>
-      <s:complexType name="ExtensionDataObject" />
       <s:element name="getKhachHangById">
         <s:complexType>
           <s:sequence>
@@ -126,13 +246,13 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="NextID">
+      <s:element name="NextIDKhachHang">
         <s:complexType />
       </s:element>
-      <s:element name="NextIDResponse">
+      <s:element name="NextIDKhachHangResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="NextIDResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NextIDKhachHangResult" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -286,6 +406,48 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="InfoKH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maPT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InfoKHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InfoKHResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoKH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maKH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoKHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoKHResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TenKHDaiDien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaHD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TenKHDaiDienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TenKHDaiDienResult" type="tns:ArrayOfKhachHangDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="getListLoaiKhachHang">
         <s:complexType />
       </s:element>
@@ -406,17 +568,17 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="testExist">
+      <s:element name="testExistMaPhong">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="testExistResponse">
+      <s:element name="testExistMaPhongResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="testExistResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="testExistMaPhongResult" type="s:int" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -612,13 +774,670 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getValue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MaThamSo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getValueResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListThamSo">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListThamSoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListThamSoResult" type="tns:ArrayOfThamSoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfThamSoDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ThamSoDTO" nillable="true" type="tns:ThamSoDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ThamSoDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaThamSo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenThamSo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GiaTri" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="GhiChu" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateThamSo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mathamso" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="giatri" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateThamSoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateThamSoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getheso">
+        <s:complexType />
+      </s:element>
+      <s:element name="gethesoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gethesoResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getphuthu">
+        <s:complexType />
+      </s:element>
+      <s:element name="getphuthuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getphuthuResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getkhachtoida">
+        <s:complexType />
+      </s:element>
+      <s:element name="getkhachtoidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getkhachtoidaResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListPhieuThue">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListPhieuThueResult" type="tns:ArrayOfPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPhieuThueDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PhieuThueDTO" nillable="true" type="tns:PhieuThueDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PhieuThueDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="NgayTra" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="NgayThue" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NgayTra_ThucTe" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThanhToan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KhachHangDaiDien" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Songaythue" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Heso" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tienphuthu" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tienthue" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="testExistsMaPhongInPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhongInPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaPhongInPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaLoaiPhongByMaPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaLoaiPhongByMaPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaLoaiPhongByMaPhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsPhieuThueInPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsPhieuThueInPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsPhieuThueInPhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeletePhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ptDTO" type="tns:PhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_ngaytra_thucte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaHD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ngaytra_thucte" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_ngaytra_thucteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Update_ngaytra_thucteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NextIDPhieuThue">
+        <s:complexType />
+      </s:element>
+      <s:element name="NextIDPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NextIDPhieuThueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaPhieuThueInCTHOADON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaPhieuThueInCTHOADONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistMaPhieuThueInCTHOADONResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ptDTO" type="tns:PhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTinhTrangByMaPhong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTinhTrangByMaPhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTinhTrangByMaPhongResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getstrSQL">
+        <s:complexType />
+      </s:element>
+      <s:element name="getstrSQLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getstrSQLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInPHIEUTHUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInPHIEUTHUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaPhieuThueInPHIEUTHUEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTinhTrangPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTinhTrangPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getTinhTrangPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maHD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INResult" type="tns:ArrayOfPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListCTPhieuThue">
+        <s:complexType />
+      </s:element>
+      <s:element name="getListCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListCTPhieuThueResult" type="tns:ArrayOfCTPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCTPhieuThueDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTPhieuThueDTO" nillable="true" type="tns:CTPhieuThueDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTPhieuThueDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaCTPT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="NextIDCTPhieuThue">
+        <s:complexType />
+      </s:element>
+      <s:element name="NextIDCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NextIDCTPhieuThueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListByMaPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListByMaPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListByMaPhieuThueResult" type="tns:ArrayOfCTPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInCTPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaPhieuThueInCTPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaPhieuThueInPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaPhieuThueInPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaCTPTInCTPHIEUTHUE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaCTPT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistMaCTPTInCTPHIEUTHUEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistMaCTPTInCTPHIEUTHUEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInCTPHIEUTHUE2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaKhachHang" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testExistsMaKhachHangInCTPHIEUTHUE2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testExistsMaKhachHangInCTPHIEUTHUE2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCTPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ctptDTO" type="tns:CTPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCTPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCTPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ctptDTO" type="tns:CTPhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCTPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCTPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaCTPT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCTPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCTPhieuThueResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CountMaKhachHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CountMaKhachHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CountMaKhachHangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListMaCTPTByMaPhieuThue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaPhieuThue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getListMaCTPTByMaPhieuThueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getListMaCTPTByMaPhieuThueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getlistHoaDon">
+        <s:complexType />
+      </s:element>
+      <s:element name="getlistHoaDonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getlistHoaDonResult" type="tns:ArrayOfHoaDonDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHoaDonDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HoaDonDTO" nillable="true" type="tns:HoaDonDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HoaDonDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaHoaDon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenKhachHang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiaChi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NgayLap" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TriGia" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="ThanhToan" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Thanhtoan_HD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mahoadon" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tongtien" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Thanhtoan_HDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Thanhtoan_HDResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Thanhtoan_Phieuthue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maHD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="maphong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtoPT" type="tns:PhieuThueDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Thanhtoan_PhieuthueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Thanhtoan_PhieuthueResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Thanhtoan_Phong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maphong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Thanhtoan_PhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Thanhtoan_PhongResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LapHoaDon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtoHD" type="tns:HoaDonDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LapHoaDonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LapHoaDonResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kiemtra_loaikhach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maphieuthue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaLoaiKH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kiemtra_loaikhachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kiemtra_loaikhachResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dem_KH_Phong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="maphieuthue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dem_KH_PhongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dem_KH_PhongResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_hd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mahd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_hdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="delete_hdResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NextIDHoaDon">
+        <s:complexType />
+      </s:element>
+      <s:element name="NextIDHoaDonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NextIDHoaDonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
-  <wsdl:message name="HelloWorldSoapIn">
-    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  <wsdl:message name="InsertCTHOADONSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCTHOADON" />
   </wsdl:message>
-  <wsdl:message name="HelloWorldSoapOut">
-    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  <wsdl:message name="InsertCTHOADONSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCTHOADONResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaPTSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaPT" />
+  </wsdl:message>
+  <wsdl:message name="getMaPTSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaPTResponse" />
+  </wsdl:message>
+  <wsdl:message name="delete_cthdSoapIn">
+    <wsdl:part name="parameters" element="tns:delete_cthd" />
+  </wsdl:message>
+  <wsdl:message name="delete_cthdSoapOut">
+    <wsdl:part name="parameters" element="tns:delete_cthdResponse" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_tendangnhapSoapIn">
+    <wsdl:part name="parameters" element="tns:KiemTra_tendangnhap" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_tendangnhapSoapOut">
+    <wsdl:part name="parameters" element="tns:KiemTra_tendangnhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_matkhauSoapIn">
+    <wsdl:part name="parameters" element="tns:KiemTra_matkhau" />
+  </wsdl:message>
+  <wsdl:message name="KiemTra_matkhauSoapOut">
+    <wsdl:part name="parameters" element="tns:KiemTra_matkhauResponse" />
+  </wsdl:message>
+  <wsdl:message name="backupSoapIn">
+    <wsdl:part name="parameters" element="tns:backup" />
+  </wsdl:message>
+  <wsdl:message name="backupSoapOut">
+    <wsdl:part name="parameters" element="tns:backupResponse" />
+  </wsdl:message>
+  <wsdl:message name="restoreSoapIn">
+    <wsdl:part name="parameters" element="tns:restore" />
+  </wsdl:message>
+  <wsdl:message name="restoreSoapOut">
+    <wsdl:part name="parameters" element="tns:restoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="getIdKUserByIdUserSoapIn">
+    <wsdl:part name="parameters" element="tns:getIdKUserByIdUser" />
+  </wsdl:message>
+  <wsdl:message name="getIdKUserByIdUserSoapOut">
+    <wsdl:part name="parameters" element="tns:getIdKUserByIdUserResponse" />
   </wsdl:message>
   <wsdl:message name="getListKhachHangSoapIn">
     <wsdl:part name="parameters" element="tns:getListKhachHang" />
@@ -662,11 +1481,11 @@
   <wsdl:message name="getKhachHangByMultiSoapOut">
     <wsdl:part name="parameters" element="tns:getKhachHangByMultiResponse" />
   </wsdl:message>
-  <wsdl:message name="NextIDSoapIn">
-    <wsdl:part name="parameters" element="tns:NextID" />
+  <wsdl:message name="NextIDKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:NextIDKhachHang" />
   </wsdl:message>
-  <wsdl:message name="NextIDSoapOut">
-    <wsdl:part name="parameters" element="tns:NextIDResponse" />
+  <wsdl:message name="NextIDKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:NextIDKhachHangResponse" />
   </wsdl:message>
   <wsdl:message name="InsertKhachHangSoapIn">
     <wsdl:part name="parameters" element="tns:InsertKhachHang" />
@@ -734,6 +1553,24 @@
   <wsdl:message name="testMaKhachHangisKhachHangDaiDienSoapOut">
     <wsdl:part name="parameters" element="tns:testMaKhachHangisKhachHangDaiDienResponse" />
   </wsdl:message>
+  <wsdl:message name="InfoKHSoapIn">
+    <wsdl:part name="parameters" element="tns:InfoKH" />
+  </wsdl:message>
+  <wsdl:message name="InfoKHSoapOut">
+    <wsdl:part name="parameters" element="tns:InfoKHResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoKHSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoKH" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoKHSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoKHResponse" />
+  </wsdl:message>
+  <wsdl:message name="TenKHDaiDienSoapIn">
+    <wsdl:part name="parameters" element="tns:TenKHDaiDien" />
+  </wsdl:message>
+  <wsdl:message name="TenKHDaiDienSoapOut">
+    <wsdl:part name="parameters" element="tns:TenKHDaiDienResponse" />
+  </wsdl:message>
   <wsdl:message name="getListLoaiKhachHangSoapIn">
     <wsdl:part name="parameters" element="tns:getListLoaiKhachHang" />
   </wsdl:message>
@@ -776,11 +1613,11 @@
   <wsdl:message name="searchPhongByTuaLuaHotDuaSoapOut">
     <wsdl:part name="parameters" element="tns:searchPhongByTuaLuaHotDuaResponse" />
   </wsdl:message>
-  <wsdl:message name="testExistSoapIn">
-    <wsdl:part name="parameters" element="tns:testExist" />
+  <wsdl:message name="testExistMaPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistMaPhong" />
   </wsdl:message>
-  <wsdl:message name="testExistSoapOut">
-    <wsdl:part name="parameters" element="tns:testExistResponse" />
+  <wsdl:message name="testExistMaPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistMaPhongResponse" />
   </wsdl:message>
   <wsdl:message name="DeletePhongSoapIn">
     <wsdl:part name="parameters" element="tns:DeletePhong" />
@@ -860,10 +1697,290 @@
   <wsdl:message name="testExistMaPhongInPhieuThueSoapOut">
     <wsdl:part name="parameters" element="tns:testExistMaPhongInPhieuThueResponse" />
   </wsdl:message>
+  <wsdl:message name="getValueSoapIn">
+    <wsdl:part name="parameters" element="tns:getValue" />
+  </wsdl:message>
+  <wsdl:message name="getValueSoapOut">
+    <wsdl:part name="parameters" element="tns:getValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListThamSoSoapIn">
+    <wsdl:part name="parameters" element="tns:getListThamSo" />
+  </wsdl:message>
+  <wsdl:message name="getListThamSoSoapOut">
+    <wsdl:part name="parameters" element="tns:getListThamSoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateThamSoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateThamSo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateThamSoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateThamSoResponse" />
+  </wsdl:message>
+  <wsdl:message name="gethesoSoapIn">
+    <wsdl:part name="parameters" element="tns:getheso" />
+  </wsdl:message>
+  <wsdl:message name="gethesoSoapOut">
+    <wsdl:part name="parameters" element="tns:gethesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getphuthuSoapIn">
+    <wsdl:part name="parameters" element="tns:getphuthu" />
+  </wsdl:message>
+  <wsdl:message name="getphuthuSoapOut">
+    <wsdl:part name="parameters" element="tns:getphuthuResponse" />
+  </wsdl:message>
+  <wsdl:message name="getkhachtoidaSoapIn">
+    <wsdl:part name="parameters" element="tns:getkhachtoida" />
+  </wsdl:message>
+  <wsdl:message name="getkhachtoidaSoapOut">
+    <wsdl:part name="parameters" element="tns:getkhachtoidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:getListPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="getListPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:getListPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhongInPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhongInPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhongInPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhongInPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaLoaiPhongByMaPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaLoaiPhongByMaPhong" />
+  </wsdl:message>
+  <wsdl:message name="getMaLoaiPhongByMaPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaLoaiPhongByMaPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsPhieuThueInPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsPhieuThueInPhong" />
+  </wsdl:message>
+  <wsdl:message name="testExistsPhieuThueInPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsPhieuThueInPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="DeletePhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_ngaytra_thucteSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_ngaytra_thucte" />
+  </wsdl:message>
+  <wsdl:message name="Update_ngaytra_thucteSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_ngaytra_thucteResponse" />
+  </wsdl:message>
+  <wsdl:message name="NextIDPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:NextIDPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="NextIDPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:NextIDPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaPhieuThueInCTHOADONSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistMaPhieuThueInCTHOADON" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaPhieuThueInCTHOADONSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistMaPhieuThueInCTHOADONResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="InsertPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTinhTrangByMaPhongSoapIn">
+    <wsdl:part name="parameters" element="tns:getTinhTrangByMaPhong" />
+  </wsdl:message>
+  <wsdl:message name="getTinhTrangByMaPhongSoapOut">
+    <wsdl:part name="parameters" element="tns:getTinhTrangByMaPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="getstrSQLSoapIn">
+    <wsdl:part name="parameters" element="tns:getstrSQL" />
+  </wsdl:message>
+  <wsdl:message name="getstrSQLSoapOut">
+    <wsdl:part name="parameters" element="tns:getstrSQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInPHIEUTHUESoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInPHIEUTHUE" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInPHIEUTHUESoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInPHIEUTHUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTinhTrangPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:getTinhTrangPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="getTinhTrangPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:getTinhTrangPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="INSoapIn">
+    <wsdl:part name="parameters" element="tns:IN" />
+  </wsdl:message>
+  <wsdl:message name="INSoapOut">
+    <wsdl:part name="parameters" element="tns:INResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:getListCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="getListCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:getListCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="NextIDCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:NextIDCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="NextIDCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:NextIDCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListByMaPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:getListByMaPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="getListByMaPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:getListByMaPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaPhieuThueInPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaPhieuThueInPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaCTPTInCTPHIEUTHUESoapIn">
+    <wsdl:part name="parameters" element="tns:testExistMaCTPTInCTPHIEUTHUE" />
+  </wsdl:message>
+  <wsdl:message name="testExistMaCTPTInCTPHIEUTHUESoapOut">
+    <wsdl:part name="parameters" element="tns:testExistMaCTPTInCTPHIEUTHUEResponse" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInCTPHIEUTHUE2SoapIn">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInCTPHIEUTHUE2" />
+  </wsdl:message>
+  <wsdl:message name="testExistsMaKhachHangInCTPHIEUTHUE2SoapOut">
+    <wsdl:part name="parameters" element="tns:testExistsMaKhachHangInCTPHIEUTHUE2Response" />
+  </wsdl:message>
+  <wsdl:message name="InsertCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="InsertCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCTPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCTPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCTPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCTPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="CountMaKhachHangSoapIn">
+    <wsdl:part name="parameters" element="tns:CountMaKhachHang" />
+  </wsdl:message>
+  <wsdl:message name="CountMaKhachHangSoapOut">
+    <wsdl:part name="parameters" element="tns:CountMaKhachHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="getListMaCTPTByMaPhieuThueSoapIn">
+    <wsdl:part name="parameters" element="tns:getListMaCTPTByMaPhieuThue" />
+  </wsdl:message>
+  <wsdl:message name="getListMaCTPTByMaPhieuThueSoapOut">
+    <wsdl:part name="parameters" element="tns:getListMaCTPTByMaPhieuThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="getlistHoaDonSoapIn">
+    <wsdl:part name="parameters" element="tns:getlistHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="getlistHoaDonSoapOut">
+    <wsdl:part name="parameters" element="tns:getlistHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_HDSoapIn">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_HD" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_HDSoapOut">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_HDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_PhieuthueSoapIn">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_Phieuthue" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_PhieuthueSoapOut">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_PhieuthueResponse" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_PhongSoapIn">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_Phong" />
+  </wsdl:message>
+  <wsdl:message name="Thanhtoan_PhongSoapOut">
+    <wsdl:part name="parameters" element="tns:Thanhtoan_PhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="LapHoaDonSoapIn">
+    <wsdl:part name="parameters" element="tns:LapHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="LapHoaDonSoapOut">
+    <wsdl:part name="parameters" element="tns:LapHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="kiemtra_loaikhachSoapIn">
+    <wsdl:part name="parameters" element="tns:kiemtra_loaikhach" />
+  </wsdl:message>
+  <wsdl:message name="kiemtra_loaikhachSoapOut">
+    <wsdl:part name="parameters" element="tns:kiemtra_loaikhachResponse" />
+  </wsdl:message>
+  <wsdl:message name="dem_KH_PhongSoapIn">
+    <wsdl:part name="parameters" element="tns:dem_KH_Phong" />
+  </wsdl:message>
+  <wsdl:message name="dem_KH_PhongSoapOut">
+    <wsdl:part name="parameters" element="tns:dem_KH_PhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="delete_hdSoapIn">
+    <wsdl:part name="parameters" element="tns:delete_hd" />
+  </wsdl:message>
+  <wsdl:message name="delete_hdSoapOut">
+    <wsdl:part name="parameters" element="tns:delete_hdResponse" />
+  </wsdl:message>
+  <wsdl:message name="NextIDHoaDonSoapIn">
+    <wsdl:part name="parameters" element="tns:NextIDHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="NextIDHoaDonSoapOut">
+    <wsdl:part name="parameters" element="tns:NextIDHoaDonResponse" />
+  </wsdl:message>
   <wsdl:portType name="QLKS_BUS_WebserviceSoap">
-    <wsdl:operation name="HelloWorld">
-      <wsdl:input message="tns:HelloWorldSoapIn" />
-      <wsdl:output message="tns:HelloWorldSoapOut" />
+    <wsdl:operation name="InsertCTHOADON">
+      <wsdl:input message="tns:InsertCTHOADONSoapIn" />
+      <wsdl:output message="tns:InsertCTHOADONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaPT">
+      <wsdl:input message="tns:getMaPTSoapIn" />
+      <wsdl:output message="tns:getMaPTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_cthd">
+      <wsdl:input message="tns:delete_cthdSoapIn" />
+      <wsdl:output message="tns:delete_cthdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_tendangnhap">
+      <wsdl:input message="tns:KiemTra_tendangnhapSoapIn" />
+      <wsdl:output message="tns:KiemTra_tendangnhapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_matkhau">
+      <wsdl:input message="tns:KiemTra_matkhauSoapIn" />
+      <wsdl:output message="tns:KiemTra_matkhauSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="backup">
+      <wsdl:input message="tns:backupSoapIn" />
+      <wsdl:output message="tns:backupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="restore">
+      <wsdl:input message="tns:restoreSoapIn" />
+      <wsdl:output message="tns:restoreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getIdKUserByIdUser">
+      <wsdl:input message="tns:getIdKUserByIdUserSoapIn" />
+      <wsdl:output message="tns:getIdKUserByIdUserSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="getListKhachHang">
       <wsdl:input message="tns:getListKhachHangSoapIn" />
@@ -893,9 +2010,9 @@
       <wsdl:input message="tns:getKhachHangByMultiSoapIn" />
       <wsdl:output message="tns:getKhachHangByMultiSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="NextID">
-      <wsdl:input message="tns:NextIDSoapIn" />
-      <wsdl:output message="tns:NextIDSoapOut" />
+    <wsdl:operation name="NextIDKhachHang">
+      <wsdl:input message="tns:NextIDKhachHangSoapIn" />
+      <wsdl:output message="tns:NextIDKhachHangSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="InsertKhachHang">
       <wsdl:input message="tns:InsertKhachHangSoapIn" />
@@ -941,6 +2058,18 @@
       <wsdl:input message="tns:testMaKhachHangisKhachHangDaiDienSoapIn" />
       <wsdl:output message="tns:testMaKhachHangisKhachHangDaiDienSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="InfoKH">
+      <wsdl:input message="tns:InfoKHSoapIn" />
+      <wsdl:output message="tns:InfoKHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoKH">
+      <wsdl:input message="tns:GetInfoKHSoapIn" />
+      <wsdl:output message="tns:GetInfoKHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TenKHDaiDien">
+      <wsdl:input message="tns:TenKHDaiDienSoapIn" />
+      <wsdl:output message="tns:TenKHDaiDienSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="getListLoaiKhachHang">
       <wsdl:input message="tns:getListLoaiKhachHangSoapIn" />
       <wsdl:output message="tns:getListLoaiKhachHangSoapOut" />
@@ -969,9 +2098,9 @@
       <wsdl:input message="tns:searchPhongByTuaLuaHotDuaSoapIn" />
       <wsdl:output message="tns:searchPhongByTuaLuaHotDuaSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="testExist">
-      <wsdl:input message="tns:testExistSoapIn" />
-      <wsdl:output message="tns:testExistSoapOut" />
+    <wsdl:operation name="testExistMaPhong">
+      <wsdl:input message="tns:testExistMaPhongSoapIn" />
+      <wsdl:output message="tns:testExistMaPhongSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="DeletePhong">
       <wsdl:input message="tns:DeletePhongSoapIn" />
@@ -1025,11 +2154,242 @@
       <wsdl:input message="tns:testExistMaPhongInPhieuThueSoapIn" />
       <wsdl:output message="tns:testExistMaPhongInPhieuThueSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="getValue">
+      <wsdl:input message="tns:getValueSoapIn" />
+      <wsdl:output message="tns:getValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListThamSo">
+      <wsdl:input message="tns:getListThamSoSoapIn" />
+      <wsdl:output message="tns:getListThamSoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateThamSo">
+      <wsdl:input message="tns:UpdateThamSoSoapIn" />
+      <wsdl:output message="tns:UpdateThamSoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getheso">
+      <wsdl:input message="tns:gethesoSoapIn" />
+      <wsdl:output message="tns:gethesoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getphuthu">
+      <wsdl:input message="tns:getphuthuSoapIn" />
+      <wsdl:output message="tns:getphuthuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getkhachtoida">
+      <wsdl:input message="tns:getkhachtoidaSoapIn" />
+      <wsdl:output message="tns:getkhachtoidaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuThue">
+      <wsdl:input message="tns:getListPhieuThueSoapIn" />
+      <wsdl:output message="tns:getListPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhongInPhieuThue">
+      <wsdl:input message="tns:testExistsMaPhongInPhieuThueSoapIn" />
+      <wsdl:output message="tns:testExistsMaPhongInPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaLoaiPhongByMaPhong">
+      <wsdl:input message="tns:getMaLoaiPhongByMaPhongSoapIn" />
+      <wsdl:output message="tns:getMaLoaiPhongByMaPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsPhieuThueInPhong">
+      <wsdl:input message="tns:testExistsPhieuThueInPhongSoapIn" />
+      <wsdl:output message="tns:testExistsPhieuThueInPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhieuThue">
+      <wsdl:input message="tns:DeletePhieuThueSoapIn" />
+      <wsdl:output message="tns:DeletePhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhieuThue">
+      <wsdl:input message="tns:UpdatePhieuThueSoapIn" />
+      <wsdl:output message="tns:UpdatePhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_ngaytra_thucte">
+      <wsdl:input message="tns:Update_ngaytra_thucteSoapIn" />
+      <wsdl:output message="tns:Update_ngaytra_thucteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NextIDPhieuThue">
+      <wsdl:input message="tns:NextIDPhieuThueSoapIn" />
+      <wsdl:output message="tns:NextIDPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhieuThueInCTHOADON">
+      <wsdl:input message="tns:testExistMaPhieuThueInCTHOADONSoapIn" />
+      <wsdl:output message="tns:testExistMaPhieuThueInCTHOADONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhieuThue">
+      <wsdl:input message="tns:InsertPhieuThueSoapIn" />
+      <wsdl:output message="tns:InsertPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangByMaPhong">
+      <wsdl:input message="tns:getTinhTrangByMaPhongSoapIn" />
+      <wsdl:output message="tns:getTinhTrangByMaPhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getstrSQL">
+      <wsdl:input message="tns:getstrSQLSoapIn" />
+      <wsdl:output message="tns:getstrSQLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPHIEUTHUE">
+      <wsdl:input message="tns:testExistsMaPhieuThueInPHIEUTHUESoapIn" />
+      <wsdl:output message="tns:testExistsMaPhieuThueInPHIEUTHUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangPhieuThue">
+      <wsdl:input message="tns:getTinhTrangPhieuThueSoapIn" />
+      <wsdl:output message="tns:getTinhTrangPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IN">
+      <wsdl:input message="tns:INSoapIn" />
+      <wsdl:output message="tns:INSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListCTPhieuThue">
+      <wsdl:input message="tns:getListCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:getListCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NextIDCTPhieuThue">
+      <wsdl:input message="tns:NextIDCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:NextIDCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListByMaPhieuThue">
+      <wsdl:input message="tns:getListByMaPhieuThueSoapIn" />
+      <wsdl:output message="tns:getListByMaPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInCTPhieuThue">
+      <wsdl:input message="tns:testExistsMaPhieuThueInCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:testExistsMaPhieuThueInCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPhieuThue">
+      <wsdl:input message="tns:testExistsMaPhieuThueInPhieuThueSoapIn" />
+      <wsdl:output message="tns:testExistsMaPhieuThueInPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaCTPTInCTPHIEUTHUE">
+      <wsdl:input message="tns:testExistMaCTPTInCTPHIEUTHUESoapIn" />
+      <wsdl:output message="tns:testExistMaCTPTInCTPHIEUTHUESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE2">
+      <wsdl:input message="tns:testExistsMaKhachHangInCTPHIEUTHUE2SoapIn" />
+      <wsdl:output message="tns:testExistsMaKhachHangInCTPHIEUTHUE2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCTPhieuThue">
+      <wsdl:input message="tns:InsertCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:InsertCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTPhieuThue">
+      <wsdl:input message="tns:UpdateCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:UpdateCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCTPhieuThue">
+      <wsdl:input message="tns:DeleteCTPhieuThueSoapIn" />
+      <wsdl:output message="tns:DeleteCTPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CountMaKhachHang">
+      <wsdl:input message="tns:CountMaKhachHangSoapIn" />
+      <wsdl:output message="tns:CountMaKhachHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getListMaCTPTByMaPhieuThue">
+      <wsdl:input message="tns:getListMaCTPTByMaPhieuThueSoapIn" />
+      <wsdl:output message="tns:getListMaCTPTByMaPhieuThueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getlistHoaDon">
+      <wsdl:input message="tns:getlistHoaDonSoapIn" />
+      <wsdl:output message="tns:getlistHoaDonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_HD">
+      <wsdl:input message="tns:Thanhtoan_HDSoapIn" />
+      <wsdl:output message="tns:Thanhtoan_HDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phieuthue">
+      <wsdl:input message="tns:Thanhtoan_PhieuthueSoapIn" />
+      <wsdl:output message="tns:Thanhtoan_PhieuthueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phong">
+      <wsdl:input message="tns:Thanhtoan_PhongSoapIn" />
+      <wsdl:output message="tns:Thanhtoan_PhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LapHoaDon">
+      <wsdl:input message="tns:LapHoaDonSoapIn" />
+      <wsdl:output message="tns:LapHoaDonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemtra_loaikhach">
+      <wsdl:input message="tns:kiemtra_loaikhachSoapIn" />
+      <wsdl:output message="tns:kiemtra_loaikhachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dem_KH_Phong">
+      <wsdl:input message="tns:dem_KH_PhongSoapIn" />
+      <wsdl:output message="tns:dem_KH_PhongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_hd">
+      <wsdl:input message="tns:delete_hdSoapIn" />
+      <wsdl:output message="tns:delete_hdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NextIDHoaDon">
+      <wsdl:input message="tns:NextIDHoaDonSoapIn" />
+      <wsdl:output message="tns:NextIDHoaDonSoapOut" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="QLKS_BUS_WebserviceSoap" type="tns:QLKS_BUS_WebserviceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="HelloWorld">
-      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+    <wsdl:operation name="InsertCTHOADON">
+      <soap:operation soapAction="http://tempuri.org/InsertCTHOADON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaPT">
+      <soap:operation soapAction="http://tempuri.org/getMaPT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_cthd">
+      <soap:operation soapAction="http://tempuri.org/delete_cthd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_tendangnhap">
+      <soap:operation soapAction="http://tempuri.org/KiemTra_tendangnhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_matkhau">
+      <soap:operation soapAction="http://tempuri.org/KiemTra_matkhau" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="backup">
+      <soap:operation soapAction="http://tempuri.org/backup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restore">
+      <soap:operation soapAction="http://tempuri.org/restore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIdKUserByIdUser">
+      <soap:operation soapAction="http://tempuri.org/getIdKUserByIdUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1100,8 +2460,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="NextID">
-      <soap:operation soapAction="http://tempuri.org/NextID" style="document" />
+    <wsdl:operation name="NextIDKhachHang">
+      <soap:operation soapAction="http://tempuri.org/NextIDKhachHang" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1208,6 +2568,33 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="InfoKH">
+      <soap:operation soapAction="http://tempuri.org/InfoKH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoKH">
+      <soap:operation soapAction="http://tempuri.org/GetInfoKH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TenKHDaiDien">
+      <soap:operation soapAction="http://tempuri.org/TenKHDaiDien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getListLoaiKhachHang">
       <soap:operation soapAction="http://tempuri.org/getListLoaiKhachHang" style="document" />
       <wsdl:input>
@@ -1271,8 +2658,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="testExist">
-      <soap:operation soapAction="http://tempuri.org/testExist" style="document" />
+    <wsdl:operation name="testExistMaPhong">
+      <soap:operation soapAction="http://tempuri.org/testExistMaPhong" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1397,11 +2784,452 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getValue">
+      <soap:operation soapAction="http://tempuri.org/getValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListThamSo">
+      <soap:operation soapAction="http://tempuri.org/getListThamSo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateThamSo">
+      <soap:operation soapAction="http://tempuri.org/UpdateThamSo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getheso">
+      <soap:operation soapAction="http://tempuri.org/getheso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getphuthu">
+      <soap:operation soapAction="http://tempuri.org/getphuthu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getkhachtoida">
+      <soap:operation soapAction="http://tempuri.org/getkhachtoida" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/getListPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhongInPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaPhongInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaLoaiPhongByMaPhong">
+      <soap:operation soapAction="http://tempuri.org/getMaLoaiPhongByMaPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsPhieuThueInPhong">
+      <soap:operation soapAction="http://tempuri.org/testExistsPhieuThueInPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhieuThue">
+      <soap:operation soapAction="http://tempuri.org/DeletePhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhieuThue">
+      <soap:operation soapAction="http://tempuri.org/UpdatePhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_ngaytra_thucte">
+      <soap:operation soapAction="http://tempuri.org/Update_ngaytra_thucte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/NextIDPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhieuThueInCTHOADON">
+      <soap:operation soapAction="http://tempuri.org/testExistMaPhieuThueInCTHOADON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/InsertPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangByMaPhong">
+      <soap:operation soapAction="http://tempuri.org/getTinhTrangByMaPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getstrSQL">
+      <soap:operation soapAction="http://tempuri.org/getstrSQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPHIEUTHUE">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/getTinhTrangPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN">
+      <soap:operation soapAction="http://tempuri.org/IN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/getListCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/NextIDCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListByMaPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/getListByMaPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaCTPTInCTPHIEUTHUE">
+      <soap:operation soapAction="http://tempuri.org/testExistMaCTPTInCTPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE2">
+      <soap:operation soapAction="http://tempuri.org/testExistsMaKhachHangInCTPHIEUTHUE2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/InsertCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/UpdateCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCTPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/DeleteCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountMaKhachHang">
+      <soap:operation soapAction="http://tempuri.org/CountMaKhachHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListMaCTPTByMaPhieuThue">
+      <soap:operation soapAction="http://tempuri.org/getListMaCTPTByMaPhieuThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlistHoaDon">
+      <soap:operation soapAction="http://tempuri.org/getlistHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_HD">
+      <soap:operation soapAction="http://tempuri.org/Thanhtoan_HD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phieuthue">
+      <soap:operation soapAction="http://tempuri.org/Thanhtoan_Phieuthue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phong">
+      <soap:operation soapAction="http://tempuri.org/Thanhtoan_Phong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LapHoaDon">
+      <soap:operation soapAction="http://tempuri.org/LapHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemtra_loaikhach">
+      <soap:operation soapAction="http://tempuri.org/kiemtra_loaikhach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dem_KH_Phong">
+      <soap:operation soapAction="http://tempuri.org/dem_KH_Phong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_hd">
+      <soap:operation soapAction="http://tempuri.org/delete_hd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDHoaDon">
+      <soap:operation soapAction="http://tempuri.org/NextIDHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="QLKS_BUS_WebserviceSoap12" type="tns:QLKS_BUS_WebserviceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="HelloWorld">
-      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+    <wsdl:operation name="InsertCTHOADON">
+      <soap12:operation soapAction="http://tempuri.org/InsertCTHOADON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaPT">
+      <soap12:operation soapAction="http://tempuri.org/getMaPT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_cthd">
+      <soap12:operation soapAction="http://tempuri.org/delete_cthd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_tendangnhap">
+      <soap12:operation soapAction="http://tempuri.org/KiemTra_tendangnhap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KiemTra_matkhau">
+      <soap12:operation soapAction="http://tempuri.org/KiemTra_matkhau" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="backup">
+      <soap12:operation soapAction="http://tempuri.org/backup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="restore">
+      <soap12:operation soapAction="http://tempuri.org/restore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIdKUserByIdUser">
+      <soap12:operation soapAction="http://tempuri.org/getIdKUserByIdUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1472,8 +3300,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="NextID">
-      <soap12:operation soapAction="http://tempuri.org/NextID" style="document" />
+    <wsdl:operation name="NextIDKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/NextIDKhachHang" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1580,6 +3408,33 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="InfoKH">
+      <soap12:operation soapAction="http://tempuri.org/InfoKH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoKH">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoKH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TenKHDaiDien">
+      <soap12:operation soapAction="http://tempuri.org/TenKHDaiDien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getListLoaiKhachHang">
       <soap12:operation soapAction="http://tempuri.org/getListLoaiKhachHang" style="document" />
       <wsdl:input>
@@ -1643,8 +3498,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="testExist">
-      <soap12:operation soapAction="http://tempuri.org/testExist" style="document" />
+    <wsdl:operation name="testExistMaPhong">
+      <soap12:operation soapAction="http://tempuri.org/testExistMaPhong" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1762,6 +3617,384 @@
     </wsdl:operation>
     <wsdl:operation name="testExistMaPhongInPhieuThue">
       <soap12:operation soapAction="http://tempuri.org/testExistMaPhongInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getValue">
+      <soap12:operation soapAction="http://tempuri.org/getValue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListThamSo">
+      <soap12:operation soapAction="http://tempuri.org/getListThamSo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateThamSo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateThamSo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getheso">
+      <soap12:operation soapAction="http://tempuri.org/getheso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getphuthu">
+      <soap12:operation soapAction="http://tempuri.org/getphuthu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getkhachtoida">
+      <soap12:operation soapAction="http://tempuri.org/getkhachtoida" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/getListPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhongInPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaPhongInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaLoaiPhongByMaPhong">
+      <soap12:operation soapAction="http://tempuri.org/getMaLoaiPhongByMaPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsPhieuThueInPhong">
+      <soap12:operation soapAction="http://tempuri.org/testExistsPhieuThueInPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/DeletePhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_ngaytra_thucte">
+      <soap12:operation soapAction="http://tempuri.org/Update_ngaytra_thucte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/NextIDPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaPhieuThueInCTHOADON">
+      <soap12:operation soapAction="http://tempuri.org/testExistMaPhieuThueInCTHOADON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/InsertPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangByMaPhong">
+      <soap12:operation soapAction="http://tempuri.org/getTinhTrangByMaPhong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getstrSQL">
+      <soap12:operation soapAction="http://tempuri.org/getstrSQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPHIEUTHUE">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTinhTrangPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/getTinhTrangPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN">
+      <soap12:operation soapAction="http://tempuri.org/IN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/getListCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/NextIDCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListByMaPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/getListByMaPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaPhieuThueInPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaPhieuThueInPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistMaCTPTInCTPHIEUTHUE">
+      <soap12:operation soapAction="http://tempuri.org/testExistMaCTPTInCTPHIEUTHUE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testExistsMaKhachHangInCTPHIEUTHUE2">
+      <soap12:operation soapAction="http://tempuri.org/testExistsMaKhachHangInCTPHIEUTHUE2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/InsertCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCTPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCTPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountMaKhachHang">
+      <soap12:operation soapAction="http://tempuri.org/CountMaKhachHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListMaCTPTByMaPhieuThue">
+      <soap12:operation soapAction="http://tempuri.org/getListMaCTPTByMaPhieuThue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlistHoaDon">
+      <soap12:operation soapAction="http://tempuri.org/getlistHoaDon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_HD">
+      <soap12:operation soapAction="http://tempuri.org/Thanhtoan_HD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phieuthue">
+      <soap12:operation soapAction="http://tempuri.org/Thanhtoan_Phieuthue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thanhtoan_Phong">
+      <soap12:operation soapAction="http://tempuri.org/Thanhtoan_Phong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LapHoaDon">
+      <soap12:operation soapAction="http://tempuri.org/LapHoaDon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemtra_loaikhach">
+      <soap12:operation soapAction="http://tempuri.org/kiemtra_loaikhach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dem_KH_Phong">
+      <soap12:operation soapAction="http://tempuri.org/dem_KH_Phong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_hd">
+      <soap12:operation soapAction="http://tempuri.org/delete_hd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NextIDHoaDon">
+      <soap12:operation soapAction="http://tempuri.org/NextIDHoaDon" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

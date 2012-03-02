@@ -124,7 +124,7 @@ namespace _042082.UserControls
                 chk_searchKHDD.Enabled = false;
                 this.reset();
                 cmbSearch.Text = "";
-                if(!this.DesignMode) txt_MaKH.Text = new QLKS_BUS_WebserviceSoapClient().NextID();
+                if(!this.DesignMode) txt_MaKH.Text = new QLKS_BUS_WebserviceSoapClient().NextIDKhachHang();
                 cmbSearch.Enabled = false;
                 btSearch.Enabled = false;
                 txt_MaKHDD.Enabled = true;

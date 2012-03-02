@@ -56,20 +56,33 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTPhieuThueDAO.cs" />
+    <Compile Include="CT_HoaDonDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DTO\CT_HoaDonDTO_Ext.cs" />
+    <Compile Include="DTO\CTPhieuThueDTO.cs" />
+    <Compile Include="DTO\CT_HoaDonDTO.cs" />
+    <Compile Include="DTO\HoaDonDTO.cs" />
     <Compile Include="DTO\KhachHangDTO.cs" />
     <Compile Include="DTO\LoaiKhachHangDTO.cs" />
     <Compile Include="DTO\LoaiPhongDTO.cs" />
+    <Compile Include="DTO\PhieuThueDTO.cs" />
     <Compile Include="DTO\PhongDTO.cs" />
+    <Compile Include="DTO\ThamSoDTO.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="HoaDonDAO.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="LoaiKhachHangDAO.cs" />
     <Compile Include="LoaiPhongDAO.cs" />
+    <Compile Include="PhieuThueDAO.cs" />
     <Compile Include="PhongDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLKS_DAL_Webservice.asmx.cs">
       <DependentUpon>QLKS_DAL_Webservice.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ThamSoDAO.cs" />
+    <Compile Include="UserDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

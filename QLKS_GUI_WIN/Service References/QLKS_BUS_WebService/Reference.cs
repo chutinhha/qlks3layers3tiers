@@ -15,6 +15,236 @@ namespace _042082.QLKS_BUS_WebService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CT_HoaDonDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class CT_HoaDonDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaHoaDonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaPhieuThueField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaHoaDon {
+            get {
+                return this.MaHoaDonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaHoaDonField, value) != true)) {
+                    this.MaHoaDonField = value;
+                    this.RaisePropertyChanged("MaHoaDon");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaPhieuThue {
+            get {
+                return this.MaPhieuThueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaPhieuThueField, value) != true)) {
+                    this.MaPhieuThueField = value;
+                    this.RaisePropertyChanged("MaPhieuThue");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ExtensionDataObject", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ExtensionDataObject : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class UserDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        private int IdUserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PassWordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdKUserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int IdUser {
+            get {
+                return this.IdUserField;
+            }
+            set {
+                if ((this.IdUserField.Equals(value) != true)) {
+                    this.IdUserField = value;
+                    this.RaisePropertyChanged("IdUser");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string PassWord {
+            get {
+                return this.PassWordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PassWordField, value) != true)) {
+                    this.PassWordField = value;
+                    this.RaisePropertyChanged("PassWord");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string IdKUser {
+            get {
+                return this.IdKUserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdKUserField, value) != true)) {
+                    this.IdKUserField = value;
+                    this.RaisePropertyChanged("IdKUser");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="KhachHangDTO", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
     public partial class KhachHangDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -157,35 +387,6 @@ namespace _042082.QLKS_BUS_WebService {
                     this.TenKhachHang_ENField = value;
                     this.RaisePropertyChanged("TenKhachHang_EN");
                 }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ExtensionDataObject", Namespace="http://tempuri.org/")]
-    [System.SerializableAttribute()]
-    public partial class ExtensionDataObject : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
             }
         }
         
@@ -523,13 +724,594 @@ namespace _042082.QLKS_BUS_WebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ThamSoDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ThamSoDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        private int MaThamSoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TenThamSoField;
+        
+        private float GiaTriField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GhiChuField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int MaThamSo {
+            get {
+                return this.MaThamSoField;
+            }
+            set {
+                if ((this.MaThamSoField.Equals(value) != true)) {
+                    this.MaThamSoField = value;
+                    this.RaisePropertyChanged("MaThamSo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string TenThamSo {
+            get {
+                return this.TenThamSoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TenThamSoField, value) != true)) {
+                    this.TenThamSoField = value;
+                    this.RaisePropertyChanged("TenThamSo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=3)]
+        public float GiaTri {
+            get {
+                return this.GiaTriField;
+            }
+            set {
+                if ((this.GiaTriField.Equals(value) != true)) {
+                    this.GiaTriField = value;
+                    this.RaisePropertyChanged("GiaTri");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string GhiChu {
+            get {
+                return this.GhiChuField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GhiChuField, value) != true)) {
+                    this.GhiChuField = value;
+                    this.RaisePropertyChanged("GhiChu");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PhieuThueDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class PhieuThueDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        private System.DateTime NgayTraField;
+        
+        private System.DateTime NgayThueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaPhongField;
+        
+        private System.DateTime NgayTra_ThucTeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ThanhToanField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaPhieuThueField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string KhachHangDaiDienField;
+        
+        private int SongaythueField;
+        
+        private float HesoField;
+        
+        private float TienphuthuField;
+        
+        private float TienthueField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.DateTime NgayTra {
+            get {
+                return this.NgayTraField;
+            }
+            set {
+                if ((this.NgayTraField.Equals(value) != true)) {
+                    this.NgayTraField = value;
+                    this.RaisePropertyChanged("NgayTra");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
+        public System.DateTime NgayThue {
+            get {
+                return this.NgayThueField;
+            }
+            set {
+                if ((this.NgayThueField.Equals(value) != true)) {
+                    this.NgayThueField = value;
+                    this.RaisePropertyChanged("NgayThue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string MaPhong {
+            get {
+                return this.MaPhongField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaPhongField, value) != true)) {
+                    this.MaPhongField = value;
+                    this.RaisePropertyChanged("MaPhong");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public System.DateTime NgayTra_ThucTe {
+            get {
+                return this.NgayTra_ThucTeField;
+            }
+            set {
+                if ((this.NgayTra_ThucTeField.Equals(value) != true)) {
+                    this.NgayTra_ThucTeField = value;
+                    this.RaisePropertyChanged("NgayTra_ThucTe");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string ThanhToan {
+            get {
+                return this.ThanhToanField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ThanhToanField, value) != true)) {
+                    this.ThanhToanField = value;
+                    this.RaisePropertyChanged("ThanhToan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string MaPhieuThue {
+            get {
+                return this.MaPhieuThueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaPhieuThueField, value) != true)) {
+                    this.MaPhieuThueField = value;
+                    this.RaisePropertyChanged("MaPhieuThue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string KhachHangDaiDien {
+            get {
+                return this.KhachHangDaiDienField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.KhachHangDaiDienField, value) != true)) {
+                    this.KhachHangDaiDienField = value;
+                    this.RaisePropertyChanged("KhachHangDaiDien");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=8)]
+        public int Songaythue {
+            get {
+                return this.SongaythueField;
+            }
+            set {
+                if ((this.SongaythueField.Equals(value) != true)) {
+                    this.SongaythueField = value;
+                    this.RaisePropertyChanged("Songaythue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        public float Heso {
+            get {
+                return this.HesoField;
+            }
+            set {
+                if ((this.HesoField.Equals(value) != true)) {
+                    this.HesoField = value;
+                    this.RaisePropertyChanged("Heso");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
+        public float Tienphuthu {
+            get {
+                return this.TienphuthuField;
+            }
+            set {
+                if ((this.TienphuthuField.Equals(value) != true)) {
+                    this.TienphuthuField = value;
+                    this.RaisePropertyChanged("Tienphuthu");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=11)]
+        public float Tienthue {
+            get {
+                return this.TienthueField;
+            }
+            set {
+                if ((this.TienthueField.Equals(value) != true)) {
+                    this.TienthueField = value;
+                    this.RaisePropertyChanged("Tienthue");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CTPhieuThueDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class CTPhieuThueDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaCTPTField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaKhachHangField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaPhieuThueField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaCTPT {
+            get {
+                return this.MaCTPTField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaCTPTField, value) != true)) {
+                    this.MaCTPTField = value;
+                    this.RaisePropertyChanged("MaCTPT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaKhachHang {
+            get {
+                return this.MaKhachHangField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaKhachHangField, value) != true)) {
+                    this.MaKhachHangField = value;
+                    this.RaisePropertyChanged("MaKhachHang");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaPhieuThue {
+            get {
+                return this.MaPhieuThueField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaPhieuThueField, value) != true)) {
+                    this.MaPhieuThueField = value;
+                    this.RaisePropertyChanged("MaPhieuThue");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="HoaDonDTO", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class HoaDonDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaHoaDonField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TenKhachHangField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DiaChiField;
+        
+        private System.DateTime NgayLapField;
+        
+        private float TriGiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ThanhToanField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="ExtensionData", EmitDefaultValue=false)]
+        public _042082.QLKS_BUS_WebService.ExtensionDataObject ExtensionData1 {
+            get {
+                return this.ExtensionData1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionData1Field, value) != true)) {
+                    this.ExtensionData1Field = value;
+                    this.RaisePropertyChanged("ExtensionData1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string MaHoaDon {
+            get {
+                return this.MaHoaDonField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaHoaDonField, value) != true)) {
+                    this.MaHoaDonField = value;
+                    this.RaisePropertyChanged("MaHoaDon");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string TenKhachHang {
+            get {
+                return this.TenKhachHangField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TenKhachHangField, value) != true)) {
+                    this.TenKhachHangField = value;
+                    this.RaisePropertyChanged("TenKhachHang");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string DiaChi {
+            get {
+                return this.DiaChiField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DiaChiField, value) != true)) {
+                    this.DiaChiField = value;
+                    this.RaisePropertyChanged("DiaChi");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=4)]
+        public System.DateTime NgayLap {
+            get {
+                return this.NgayLapField;
+            }
+            set {
+                if ((this.NgayLapField.Equals(value) != true)) {
+                    this.NgayLapField = value;
+                    this.RaisePropertyChanged("NgayLap");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=5)]
+        public float TriGia {
+            get {
+                return this.TriGiaField;
+            }
+            set {
+                if ((this.TriGiaField.Equals(value) != true)) {
+                    this.TriGiaField = value;
+                    this.RaisePropertyChanged("TriGia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string ThanhToan {
+            get {
+                return this.ThanhToanField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ThanhToanField, value) != true)) {
+                    this.ThanhToanField = value;
+                    this.RaisePropertyChanged("ThanhToan");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap")]
     public interface QLKS_BUS_WebserviceSoap {
         
-        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        _042082.QLKS_BUS_WebService.HelloWorldResponse HelloWorld(_042082.QLKS_BUS_WebService.HelloWorldRequest request);
+        // CODEGEN: Generating message contract since element name dtoCTHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertCTHOADON", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.InsertCTHOADONResponse InsertCTHOADON(_042082.QLKS_BUS_WebService.InsertCTHOADONRequest request);
+        
+        // CODEGEN: Generating message contract since element name maphong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getMaPT", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getMaPTResponse getMaPT(_042082.QLKS_BUS_WebService.getMaPTRequest request);
+        
+        // CODEGEN: Generating message contract since element name mahd from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/delete_cthd", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.delete_cthdResponse delete_cthd(_042082.QLKS_BUS_WebService.delete_cthdRequest request);
+        
+        // CODEGEN: Generating message contract since element name _tendangnhap from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KiemTra_tendangnhap", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.KiemTra_tendangnhapResponse KiemTra_tendangnhap(_042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequest request);
+        
+        // CODEGEN: Generating message contract since element name _tendangnhap from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/KiemTra_matkhau", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.KiemTra_matkhauResponse KiemTra_matkhau(_042082.QLKS_BUS_WebService.KiemTra_matkhauRequest request);
+        
+        // CODEGEN: Generating message contract since element name path from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/backup", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.backupResponse backup(_042082.QLKS_BUS_WebService.backupRequest request);
+        
+        // CODEGEN: Generating message contract since element name path from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/restore", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.restoreResponse restore(_042082.QLKS_BUS_WebService.restoreRequest request);
+        
+        // CODEGEN: Generating message contract since element name uDTO from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getIdKUserByIdUser", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getIdKUserByIdUserResponse getIdKUserByIdUser(_042082.QLKS_BUS_WebService.getIdKUserByIdUserRequest request);
         
         // CODEGEN: Generating message contract since element name getListKhachHangResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListKhachHang", ReplyAction="*")]
@@ -559,9 +1341,9 @@ namespace _042082.QLKS_BUS_WebService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getKhachHangByMulti", ReplyAction="*")]
         _042082.QLKS_BUS_WebService.getKhachHangByMultiResponse getKhachHangByMulti(_042082.QLKS_BUS_WebService.getKhachHangByMultiRequest request);
         
-        // CODEGEN: Generating message contract since element name NextIDResult from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NextID", ReplyAction="*")]
-        _042082.QLKS_BUS_WebService.NextIDResponse NextID(_042082.QLKS_BUS_WebService.NextIDRequest request);
+        // CODEGEN: Generating message contract since element name NextIDKhachHangResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NextIDKhachHang", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.NextIDKhachHangResponse NextIDKhachHang(_042082.QLKS_BUS_WebService.NextIDKhachHangRequest request);
         
         // CODEGEN: Generating message contract since element name kDTO from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertKhachHang", ReplyAction="*")]
@@ -607,6 +1389,18 @@ namespace _042082.QLKS_BUS_WebService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testMaKhachHangisKhachHangDaiDien", ReplyAction="*")]
         _042082.QLKS_BUS_WebService.testMaKhachHangisKhachHangDaiDienResponse testMaKhachHangisKhachHangDaiDien(_042082.QLKS_BUS_WebService.testMaKhachHangisKhachHangDaiDienRequest request);
         
+        // CODEGEN: Generating message contract since element name maPT from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InfoKH", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.InfoKHResponse InfoKH(_042082.QLKS_BUS_WebService.InfoKHRequest request);
+        
+        // CODEGEN: Generating message contract since element name maKH from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetInfoKH", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.GetInfoKHResponse GetInfoKH(_042082.QLKS_BUS_WebService.GetInfoKHRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TenKHDaiDien", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.TenKHDaiDienResponse TenKHDaiDien(_042082.QLKS_BUS_WebService.TenKHDaiDienRequest request);
+        
         // CODEGEN: Generating message contract since element name getListLoaiKhachHangResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListLoaiKhachHang", ReplyAction="*")]
         _042082.QLKS_BUS_WebService.getListLoaiKhachHangResponse getListLoaiKhachHang(_042082.QLKS_BUS_WebService.getListLoaiKhachHangRequest request);
@@ -636,8 +1430,8 @@ namespace _042082.QLKS_BUS_WebService {
         _042082.QLKS_BUS_WebService.searchPhongByTuaLuaHotDuaResponse searchPhongByTuaLuaHotDua(_042082.QLKS_BUS_WebService.searchPhongByTuaLuaHotDuaRequest request);
         
         // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExist", ReplyAction="*")]
-        _042082.QLKS_BUS_WebService.testExistResponse testExist(_042082.QLKS_BUS_WebService.testExistRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistMaPhong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistMaPhongResponse testExistMaPhong(_042082.QLKS_BUS_WebService.testExistMaPhongRequest request);
         
         // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeletePhong", ReplyAction="*")]
@@ -690,48 +1484,185 @@ namespace _042082.QLKS_BUS_WebService {
         // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistMaPhongInPhieuThue", ReplyAction="*")]
         _042082.QLKS_BUS_WebService.testExistMaPhongInPhieuThueResponse testExistMaPhongInPhieuThue(_042082.QLKS_BUS_WebService.testExistMaPhongInPhieuThueRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getValue", ReplyAction="*")]
+        float getValue(int MaThamSo);
+        
+        // CODEGEN: Generating message contract since element name getListThamSoResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListThamSo", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getListThamSoResponse getListThamSo(_042082.QLKS_BUS_WebService.getListThamSoRequest request);
+        
+        // CODEGEN: Generating message contract since element name mathamso from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateThamSo", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.UpdateThamSoResponse UpdateThamSo(_042082.QLKS_BUS_WebService.UpdateThamSoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getheso", ReplyAction="*")]
+        float getheso();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getphuthu", ReplyAction="*")]
+        float getphuthu();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getkhachtoida", ReplyAction="*")]
+        float getkhachtoida();
+        
+        // CODEGEN: Generating message contract since element name getListPhieuThueResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getListPhieuThueResponse getListPhieuThue(_042082.QLKS_BUS_WebService.getListPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsMaPhongInPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueResponse testExistsMaPhongInPhieuThue(_042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getMaLoaiPhongByMaPhong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongResponse getMaLoaiPhongByMaPhong(_042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsPhieuThueInPhong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongResponse testExistsPhieuThueInPhong(_042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeletePhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.DeletePhieuThueResponse DeletePhieuThue(_042082.QLKS_BUS_WebService.DeletePhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name ptDTO from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdatePhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.UpdatePhieuThueResponse UpdatePhieuThue(_042082.QLKS_BUS_WebService.UpdatePhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Update_ngaytra_thucte", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.Update_ngaytra_thucteResponse Update_ngaytra_thucte(_042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequest request);
+        
+        // CODEGEN: Generating message contract since element name NextIDPhieuThueResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NextIDPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.NextIDPhieuThueResponse NextIDPhieuThue(_042082.QLKS_BUS_WebService.NextIDPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistMaPhieuThueInCTHOADON", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONResponse testExistMaPhieuThueInCTHOADON(_042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequest request);
+        
+        // CODEGEN: Generating message contract since element name ptDTO from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.InsertPhieuThueResponse InsertPhieuThue(_042082.QLKS_BUS_WebService.InsertPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getTinhTrangByMaPhong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongResponse getTinhTrangByMaPhong(_042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequest request);
+        
+        // CODEGEN: Generating message contract since element name getstrSQLResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getstrSQL", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getstrSQLResponse getstrSQL(_042082.QLKS_BUS_WebService.getstrSQLRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPT from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsMaPhieuThueInPHIEUTHUE", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUEResponse testExistsMaPhieuThueInPHIEUTHUE(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPT from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getTinhTrangPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueResponse getTinhTrangPhieuThue(_042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name maHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IN", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.INResponse IN(_042082.QLKS_BUS_WebService.INRequest request);
+        
+        // CODEGEN: Generating message contract since element name getListCTPhieuThueResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getListCTPhieuThueResponse getListCTPhieuThue(_042082.QLKS_BUS_WebService.getListCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name NextIDCTPhieuThueResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NextIDCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.NextIDCTPhieuThueResponse NextIDCTPhieuThue(_042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListByMaPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getListByMaPhieuThueResponse getListByMaPhieuThue(_042082.QLKS_BUS_WebService.getListByMaPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsMaPhieuThueInCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueResponse testExistsMaPhieuThueInCTPhieuThue(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since the wrapper name (testExistsMaPhieuThueInPhieuThue) of message testExistsMaPhieuThueInPhieuThueRequest does not match the default value (testExistsMaPhieuThueInPhieuThue1)
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsMaPhieuThueInPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueResponse1 testExistsMaPhieuThueInPhieuThue1(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueRequest1 request);
+        
+        // CODEGEN: Generating message contract since element name MaCTPT from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistMaCTPTInCTPHIEUTHUE", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUEResponse testExistMaCTPTInCTPHIEUTHUE(_042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequest request);
+        
+        // CODEGEN: Generating message contract since element name MaKhachHang from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/testExistsMaKhachHangInCTPHIEUTHUE2", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Response testExistsMaKhachHangInCTPHIEUTHUE2(_042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Request request);
+        
+        // CODEGEN: Generating message contract since element name ctptDTO from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.InsertCTPhieuThueResponse InsertCTPhieuThue(_042082.QLKS_BUS_WebService.InsertCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name ctptDTO from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/UpdateCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.UpdateCTPhieuThueResponse UpdateCTPhieuThue(_042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaCTPT from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteCTPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.DeleteCTPhieuThueResponse DeleteCTPhieuThue(_042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CountMaKhachHang", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.CountMaKhachHangResponse CountMaKhachHang(_042082.QLKS_BUS_WebService.CountMaKhachHangRequest request);
+        
+        // CODEGEN: Generating message contract since element name MaPhieuThue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getListMaCTPTByMaPhieuThue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueResponse getListMaCTPTByMaPhieuThue(_042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequest request);
+        
+        // CODEGEN: Generating message contract since element name getlistHoaDonResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getlistHoaDon", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.getlistHoaDonResponse getlistHoaDon(_042082.QLKS_BUS_WebService.getlistHoaDonRequest request);
+        
+        // CODEGEN: Generating message contract since element name mahoadon from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Thanhtoan_HD", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.Thanhtoan_HDResponse Thanhtoan_HD(_042082.QLKS_BUS_WebService.Thanhtoan_HDRequest request);
+        
+        // CODEGEN: Generating message contract since element name maHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Thanhtoan_Phieuthue", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueResponse Thanhtoan_Phieuthue(_042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequest request);
+        
+        // CODEGEN: Generating message contract since element name maphong from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Thanhtoan_Phong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.Thanhtoan_PhongResponse Thanhtoan_Phong(_042082.QLKS_BUS_WebService.Thanhtoan_PhongRequest request);
+        
+        // CODEGEN: Generating message contract since element name dtoHD from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/LapHoaDon", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.LapHoaDonResponse LapHoaDon(_042082.QLKS_BUS_WebService.LapHoaDonRequest request);
+        
+        // CODEGEN: Generating message contract since element name maphieuthue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/kiemtra_loaikhach", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.kiemtra_loaikhachResponse kiemtra_loaikhach(_042082.QLKS_BUS_WebService.kiemtra_loaikhachRequest request);
+        
+        // CODEGEN: Generating message contract since element name maphieuthue from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/dem_KH_Phong", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.dem_KH_PhongResponse dem_KH_Phong(_042082.QLKS_BUS_WebService.dem_KH_PhongRequest request);
+        
+        // CODEGEN: Generating message contract since element name mahd from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/delete_hd", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.delete_hdResponse delete_hd(_042082.QLKS_BUS_WebService.delete_hdRequest request);
+        
+        // CODEGEN: Generating message contract since element name NextIDHoaDonResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NextIDHoaDon", ReplyAction="*")]
+        _042082.QLKS_BUS_WebService.NextIDHoaDonResponse NextIDHoaDon(_042082.QLKS_BUS_WebService.NextIDHoaDonRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldRequest {
+    public partial class InsertCTHOADONRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.HelloWorldRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertCTHOADON", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertCTHOADONRequestBody Body;
         
-        public HelloWorldRequest() {
+        public InsertCTHOADONRequest() {
         }
         
-        public HelloWorldRequest(_042082.QLKS_BUS_WebService.HelloWorldRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class HelloWorldRequestBody {
-        
-        public HelloWorldRequestBody() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class HelloWorldResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.HelloWorldResponseBody Body;
-        
-        public HelloWorldResponse() {
-        }
-        
-        public HelloWorldResponse(_042082.QLKS_BUS_WebService.HelloWorldResponseBody Body) {
+        public InsertCTHOADONRequest(_042082.QLKS_BUS_WebService.InsertCTHOADONRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -740,16 +1671,530 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class HelloWorldResponseBody {
+    public partial class InsertCTHOADONRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string HelloWorldResult;
+        public _042082.QLKS_BUS_WebService.CT_HoaDonDTO dtoCTHD;
         
-        public HelloWorldResponseBody() {
+        public InsertCTHOADONRequestBody() {
         }
         
-        public HelloWorldResponseBody(string HelloWorldResult) {
-            this.HelloWorldResult = HelloWorldResult;
+        public InsertCTHOADONRequestBody(_042082.QLKS_BUS_WebService.CT_HoaDonDTO dtoCTHD) {
+            this.dtoCTHD = dtoCTHD;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertCTHOADONResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertCTHOADONResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertCTHOADONResponseBody Body;
+        
+        public InsertCTHOADONResponse() {
+        }
+        
+        public InsertCTHOADONResponse(_042082.QLKS_BUS_WebService.InsertCTHOADONResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsertCTHOADONResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool InsertCTHOADONResult;
+        
+        public InsertCTHOADONResponseBody() {
+        }
+        
+        public InsertCTHOADONResponseBody(bool InsertCTHOADONResult) {
+            this.InsertCTHOADONResult = InsertCTHOADONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getMaPTRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getMaPT", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getMaPTRequestBody Body;
+        
+        public getMaPTRequest() {
+        }
+        
+        public getMaPTRequest(_042082.QLKS_BUS_WebService.getMaPTRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getMaPTRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maphong;
+        
+        public getMaPTRequestBody() {
+        }
+        
+        public getMaPTRequestBody(string maphong) {
+            this.maphong = maphong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getMaPTResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getMaPTResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getMaPTResponseBody Body;
+        
+        public getMaPTResponse() {
+        }
+        
+        public getMaPTResponse(_042082.QLKS_BUS_WebService.getMaPTResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getMaPTResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getMaPTResult;
+        
+        public getMaPTResponseBody() {
+        }
+        
+        public getMaPTResponseBody(string getMaPTResult) {
+            this.getMaPTResult = getMaPTResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class delete_cthdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="delete_cthd", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.delete_cthdRequestBody Body;
+        
+        public delete_cthdRequest() {
+        }
+        
+        public delete_cthdRequest(_042082.QLKS_BUS_WebService.delete_cthdRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class delete_cthdRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string mahd;
+        
+        public delete_cthdRequestBody() {
+        }
+        
+        public delete_cthdRequestBody(string mahd) {
+            this.mahd = mahd;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class delete_cthdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="delete_cthdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.delete_cthdResponseBody Body;
+        
+        public delete_cthdResponse() {
+        }
+        
+        public delete_cthdResponse(_042082.QLKS_BUS_WebService.delete_cthdResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class delete_cthdResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool delete_cthdResult;
+        
+        public delete_cthdResponseBody() {
+        }
+        
+        public delete_cthdResponseBody(bool delete_cthdResult) {
+            this.delete_cthdResult = delete_cthdResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class KiemTra_tendangnhapRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="KiemTra_tendangnhap", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequestBody Body;
+        
+        public KiemTra_tendangnhapRequest() {
+        }
+        
+        public KiemTra_tendangnhapRequest(_042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class KiemTra_tendangnhapRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string _tendangnhap;
+        
+        public KiemTra_tendangnhapRequestBody() {
+        }
+        
+        public KiemTra_tendangnhapRequestBody(string _tendangnhap) {
+            this._tendangnhap = _tendangnhap;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class KiemTra_tendangnhapResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="KiemTra_tendangnhapResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.KiemTra_tendangnhapResponseBody Body;
+        
+        public KiemTra_tendangnhapResponse() {
+        }
+        
+        public KiemTra_tendangnhapResponse(_042082.QLKS_BUS_WebService.KiemTra_tendangnhapResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class KiemTra_tendangnhapResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool KiemTra_tendangnhapResult;
+        
+        public KiemTra_tendangnhapResponseBody() {
+        }
+        
+        public KiemTra_tendangnhapResponseBody(bool KiemTra_tendangnhapResult) {
+            this.KiemTra_tendangnhapResult = KiemTra_tendangnhapResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class KiemTra_matkhauRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="KiemTra_matkhau", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.KiemTra_matkhauRequestBody Body;
+        
+        public KiemTra_matkhauRequest() {
+        }
+        
+        public KiemTra_matkhauRequest(_042082.QLKS_BUS_WebService.KiemTra_matkhauRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class KiemTra_matkhauRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string _tendangnhap;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string _matkhau;
+        
+        public KiemTra_matkhauRequestBody() {
+        }
+        
+        public KiemTra_matkhauRequestBody(string _tendangnhap, string _matkhau) {
+            this._tendangnhap = _tendangnhap;
+            this._matkhau = _matkhau;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class KiemTra_matkhauResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="KiemTra_matkhauResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.KiemTra_matkhauResponseBody Body;
+        
+        public KiemTra_matkhauResponse() {
+        }
+        
+        public KiemTra_matkhauResponse(_042082.QLKS_BUS_WebService.KiemTra_matkhauResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class KiemTra_matkhauResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool KiemTra_matkhauResult;
+        
+        public KiemTra_matkhauResponseBody() {
+        }
+        
+        public KiemTra_matkhauResponseBody(bool KiemTra_matkhauResult) {
+            this.KiemTra_matkhauResult = KiemTra_matkhauResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class backupRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="backup", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.backupRequestBody Body;
+        
+        public backupRequest() {
+        }
+        
+        public backupRequest(_042082.QLKS_BUS_WebService.backupRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class backupRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string path;
+        
+        public backupRequestBody() {
+        }
+        
+        public backupRequestBody(string path) {
+            this.path = path;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class backupResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="backupResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.backupResponseBody Body;
+        
+        public backupResponse() {
+        }
+        
+        public backupResponse(_042082.QLKS_BUS_WebService.backupResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class backupResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool backupResult;
+        
+        public backupResponseBody() {
+        }
+        
+        public backupResponseBody(bool backupResult) {
+            this.backupResult = backupResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class restoreRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="restore", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.restoreRequestBody Body;
+        
+        public restoreRequest() {
+        }
+        
+        public restoreRequest(_042082.QLKS_BUS_WebService.restoreRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class restoreRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string path;
+        
+        public restoreRequestBody() {
+        }
+        
+        public restoreRequestBody(string path) {
+            this.path = path;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class restoreResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="restoreResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.restoreResponseBody Body;
+        
+        public restoreResponse() {
+        }
+        
+        public restoreResponse(_042082.QLKS_BUS_WebService.restoreResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class restoreResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool restoreResult;
+        
+        public restoreResponseBody() {
+        }
+        
+        public restoreResponseBody(bool restoreResult) {
+            this.restoreResult = restoreResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getIdKUserByIdUserRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getIdKUserByIdUser", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getIdKUserByIdUserRequestBody Body;
+        
+        public getIdKUserByIdUserRequest() {
+        }
+        
+        public getIdKUserByIdUserRequest(_042082.QLKS_BUS_WebService.getIdKUserByIdUserRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getIdKUserByIdUserRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.UserDTO uDTO;
+        
+        public getIdKUserByIdUserRequestBody() {
+        }
+        
+        public getIdKUserByIdUserRequestBody(_042082.QLKS_BUS_WebService.UserDTO uDTO) {
+            this.uDTO = uDTO;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getIdKUserByIdUserResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getIdKUserByIdUserResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getIdKUserByIdUserResponseBody Body;
+        
+        public getIdKUserByIdUserResponse() {
+        }
+        
+        public getIdKUserByIdUserResponse(_042082.QLKS_BUS_WebService.getIdKUserByIdUserResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getIdKUserByIdUserResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getIdKUserByIdUserResult;
+        
+        public getIdKUserByIdUserResponseBody() {
+        }
+        
+        public getIdKUserByIdUserResponseBody(string getIdKUserByIdUserResult) {
+            this.getIdKUserByIdUserResult = getIdKUserByIdUserResult;
         }
     }
     
@@ -1234,15 +2679,15 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class NextIDRequest {
+    public partial class NextIDKhachHangRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextID", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.NextIDRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDKhachHang", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDKhachHangRequestBody Body;
         
-        public NextIDRequest() {
+        public NextIDKhachHangRequest() {
         }
         
-        public NextIDRequest(_042082.QLKS_BUS_WebService.NextIDRequestBody Body) {
+        public NextIDKhachHangRequest(_042082.QLKS_BUS_WebService.NextIDKhachHangRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -1251,9 +2696,9 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute()]
-    public partial class NextIDRequestBody {
+    public partial class NextIDKhachHangRequestBody {
         
-        public NextIDRequestBody() {
+        public NextIDKhachHangRequestBody() {
         }
     }
     
@@ -1261,15 +2706,15 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class NextIDResponse {
+    public partial class NextIDKhachHangResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDResponse", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.NextIDResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDKhachHangResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDKhachHangResponseBody Body;
         
-        public NextIDResponse() {
+        public NextIDKhachHangResponse() {
         }
         
-        public NextIDResponse(_042082.QLKS_BUS_WebService.NextIDResponseBody Body) {
+        public NextIDKhachHangResponse(_042082.QLKS_BUS_WebService.NextIDKhachHangResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1278,16 +2723,16 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class NextIDResponseBody {
+    public partial class NextIDKhachHangResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string NextIDResult;
+        public string NextIDKhachHangResult;
         
-        public NextIDResponseBody() {
+        public NextIDKhachHangResponseBody() {
         }
         
-        public NextIDResponseBody(string NextIDResult) {
-            this.NextIDResult = NextIDResult;
+        public NextIDKhachHangResponseBody(string NextIDKhachHangResult) {
+            this.NextIDKhachHangResult = NextIDKhachHangResult;
         }
     }
     
@@ -2036,6 +3481,210 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InfoKHRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InfoKH", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InfoKHRequestBody Body;
+        
+        public InfoKHRequest() {
+        }
+        
+        public InfoKHRequest(_042082.QLKS_BUS_WebService.InfoKHRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoKHRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maPT;
+        
+        public InfoKHRequestBody() {
+        }
+        
+        public InfoKHRequestBody(string maPT) {
+            this.maPT = maPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InfoKHResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InfoKHResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InfoKHResponseBody Body;
+        
+        public InfoKHResponse() {
+        }
+        
+        public InfoKHResponse(_042082.QLKS_BUS_WebService.InfoKHResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InfoKHResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] InfoKHResult;
+        
+        public InfoKHResponseBody() {
+        }
+        
+        public InfoKHResponseBody(_042082.QLKS_BUS_WebService.KhachHangDTO[] InfoKHResult) {
+            this.InfoKHResult = InfoKHResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetInfoKHRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetInfoKH", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.GetInfoKHRequestBody Body;
+        
+        public GetInfoKHRequest() {
+        }
+        
+        public GetInfoKHRequest(_042082.QLKS_BUS_WebService.GetInfoKHRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetInfoKHRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maKH;
+        
+        public GetInfoKHRequestBody() {
+        }
+        
+        public GetInfoKHRequestBody(string maKH) {
+            this.maKH = maKH;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetInfoKHResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetInfoKHResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.GetInfoKHResponseBody Body;
+        
+        public GetInfoKHResponse() {
+        }
+        
+        public GetInfoKHResponse(_042082.QLKS_BUS_WebService.GetInfoKHResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetInfoKHResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] GetInfoKHResult;
+        
+        public GetInfoKHResponseBody() {
+        }
+        
+        public GetInfoKHResponseBody(_042082.QLKS_BUS_WebService.KhachHangDTO[] GetInfoKHResult) {
+            this.GetInfoKHResult = GetInfoKHResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TenKHDaiDienRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TenKHDaiDien", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.TenKHDaiDienRequestBody Body;
+        
+        public TenKHDaiDienRequest() {
+        }
+        
+        public TenKHDaiDienRequest(_042082.QLKS_BUS_WebService.TenKHDaiDienRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TenKHDaiDienRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaHD;
+        
+        public TenKHDaiDienRequestBody() {
+        }
+        
+        public TenKHDaiDienRequestBody(string MaHD) {
+            this.MaHD = MaHD;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class TenKHDaiDienResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="TenKHDaiDienResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.TenKHDaiDienResponseBody Body;
+        
+        public TenKHDaiDienResponse() {
+        }
+        
+        public TenKHDaiDienResponse(_042082.QLKS_BUS_WebService.TenKHDaiDienResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class TenKHDaiDienResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] TenKHDaiDienResult;
+        
+        public TenKHDaiDienResponseBody() {
+        }
+        
+        public TenKHDaiDienResponseBody(_042082.QLKS_BUS_WebService.KhachHangDTO[] TenKHDaiDienResult) {
+            this.TenKHDaiDienResult = TenKHDaiDienResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class getListLoaiKhachHangRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="getListLoaiKhachHang", Namespace="http://tempuri.org/", Order=0)]
@@ -2502,15 +4151,15 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class testExistRequest {
+    public partial class testExistMaPhongRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExist", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.testExistRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaPhong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaPhongRequestBody Body;
         
-        public testExistRequest() {
+        public testExistMaPhongRequest() {
         }
         
-        public testExistRequest(_042082.QLKS_BUS_WebService.testExistRequestBody Body) {
+        public testExistMaPhongRequest(_042082.QLKS_BUS_WebService.testExistMaPhongRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -2519,15 +4168,15 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class testExistRequestBody {
+    public partial class testExistMaPhongRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string MaPhong;
         
-        public testExistRequestBody() {
+        public testExistMaPhongRequestBody() {
         }
         
-        public testExistRequestBody(string MaPhong) {
+        public testExistMaPhongRequestBody(string MaPhong) {
             this.MaPhong = MaPhong;
         }
     }
@@ -2536,15 +4185,15 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class testExistResponse {
+    public partial class testExistMaPhongResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistResponse", Namespace="http://tempuri.org/", Order=0)]
-        public _042082.QLKS_BUS_WebService.testExistResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaPhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaPhongResponseBody Body;
         
-        public testExistResponse() {
+        public testExistMaPhongResponse() {
         }
         
-        public testExistResponse(_042082.QLKS_BUS_WebService.testExistResponseBody Body) {
+        public testExistMaPhongResponse(_042082.QLKS_BUS_WebService.testExistMaPhongResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -2553,16 +4202,16 @@ namespace _042082.QLKS_BUS_WebService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
-    public partial class testExistResponseBody {
+    public partial class testExistMaPhongResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public int testExistResult;
+        public int testExistMaPhongResult;
         
-        public testExistResponseBody() {
+        public testExistMaPhongResponseBody() {
         }
         
-        public testExistResponseBody(int testExistResult) {
-            this.testExistResult = testExistResult;
+        public testExistMaPhongResponseBody(int testExistMaPhongResult) {
+            this.testExistMaPhongResult = testExistMaPhongResult;
         }
     }
     
@@ -3447,6 +5096,2528 @@ namespace _042082.QLKS_BUS_WebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListThamSoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListThamSo", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListThamSoRequestBody Body;
+        
+        public getListThamSoRequest() {
+        }
+        
+        public getListThamSoRequest(_042082.QLKS_BUS_WebService.getListThamSoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class getListThamSoRequestBody {
+        
+        public getListThamSoRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListThamSoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListThamSoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListThamSoResponseBody Body;
+        
+        public getListThamSoResponse() {
+        }
+        
+        public getListThamSoResponse(_042082.QLKS_BUS_WebService.getListThamSoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListThamSoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.ThamSoDTO[] getListThamSoResult;
+        
+        public getListThamSoResponseBody() {
+        }
+        
+        public getListThamSoResponseBody(_042082.QLKS_BUS_WebService.ThamSoDTO[] getListThamSoResult) {
+            this.getListThamSoResult = getListThamSoResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateThamSoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateThamSo", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdateThamSoRequestBody Body;
+        
+        public UpdateThamSoRequest() {
+        }
+        
+        public UpdateThamSoRequest(_042082.QLKS_BUS_WebService.UpdateThamSoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateThamSoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string mathamso;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public float giatri;
+        
+        public UpdateThamSoRequestBody() {
+        }
+        
+        public UpdateThamSoRequestBody(string mathamso, float giatri) {
+            this.mathamso = mathamso;
+            this.giatri = giatri;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateThamSoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateThamSoResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdateThamSoResponseBody Body;
+        
+        public UpdateThamSoResponse() {
+        }
+        
+        public UpdateThamSoResponse(_042082.QLKS_BUS_WebService.UpdateThamSoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateThamSoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int UpdateThamSoResult;
+        
+        public UpdateThamSoResponseBody() {
+        }
+        
+        public UpdateThamSoResponseBody(int UpdateThamSoResult) {
+            this.UpdateThamSoResult = UpdateThamSoResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListPhieuThueRequestBody Body;
+        
+        public getListPhieuThueRequest() {
+        }
+        
+        public getListPhieuThueRequest(_042082.QLKS_BUS_WebService.getListPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class getListPhieuThueRequestBody {
+        
+        public getListPhieuThueRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListPhieuThueResponseBody Body;
+        
+        public getListPhieuThueResponse() {
+        }
+        
+        public getListPhieuThueResponse(_042082.QLKS_BUS_WebService.getListPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO[] getListPhieuThueResult;
+        
+        public getListPhieuThueResponseBody() {
+        }
+        
+        public getListPhieuThueResponseBody(_042082.QLKS_BUS_WebService.PhieuThueDTO[] getListPhieuThueResult) {
+            this.getListPhieuThueResult = getListPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhongInPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhongInPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequestBody Body;
+        
+        public testExistsMaPhongInPhieuThueRequest() {
+        }
+        
+        public testExistsMaPhongInPhieuThueRequest(_042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhongInPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhong;
+        
+        public testExistsMaPhongInPhieuThueRequestBody() {
+        }
+        
+        public testExistsMaPhongInPhieuThueRequestBody(string MaPhong) {
+            this.MaPhong = MaPhong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhongInPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhongInPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueResponseBody Body;
+        
+        public testExistsMaPhongInPhieuThueResponse() {
+        }
+        
+        public testExistsMaPhongInPhieuThueResponse(_042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhongInPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistsMaPhongInPhieuThueResult;
+        
+        public testExistsMaPhongInPhieuThueResponseBody() {
+        }
+        
+        public testExistsMaPhongInPhieuThueResponseBody(int testExistsMaPhongInPhieuThueResult) {
+            this.testExistsMaPhongInPhieuThueResult = testExistsMaPhongInPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getMaLoaiPhongByMaPhongRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getMaLoaiPhongByMaPhong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequestBody Body;
+        
+        public getMaLoaiPhongByMaPhongRequest() {
+        }
+        
+        public getMaLoaiPhongByMaPhongRequest(_042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getMaLoaiPhongByMaPhongRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhong;
+        
+        public getMaLoaiPhongByMaPhongRequestBody() {
+        }
+        
+        public getMaLoaiPhongByMaPhongRequestBody(string MaPhong) {
+            this.MaPhong = MaPhong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getMaLoaiPhongByMaPhongResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getMaLoaiPhongByMaPhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongResponseBody Body;
+        
+        public getMaLoaiPhongByMaPhongResponse() {
+        }
+        
+        public getMaLoaiPhongByMaPhongResponse(_042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getMaLoaiPhongByMaPhongResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getMaLoaiPhongByMaPhongResult;
+        
+        public getMaLoaiPhongByMaPhongResponseBody() {
+        }
+        
+        public getMaLoaiPhongByMaPhongResponseBody(string getMaLoaiPhongByMaPhongResult) {
+            this.getMaLoaiPhongByMaPhongResult = getMaLoaiPhongByMaPhongResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsPhieuThueInPhongRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsPhieuThueInPhong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequestBody Body;
+        
+        public testExistsPhieuThueInPhongRequest() {
+        }
+        
+        public testExistsPhieuThueInPhongRequest(_042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsPhieuThueInPhongRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhong;
+        
+        public testExistsPhieuThueInPhongRequestBody() {
+        }
+        
+        public testExistsPhieuThueInPhongRequestBody(string MaPhong) {
+            this.MaPhong = MaPhong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsPhieuThueInPhongResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsPhieuThueInPhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongResponseBody Body;
+        
+        public testExistsPhieuThueInPhongResponse() {
+        }
+        
+        public testExistsPhieuThueInPhongResponse(_042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsPhieuThueInPhongResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistsPhieuThueInPhongResult;
+        
+        public testExistsPhieuThueInPhongResponseBody() {
+        }
+        
+        public testExistsPhieuThueInPhongResponseBody(int testExistsPhieuThueInPhongResult) {
+            this.testExistsPhieuThueInPhongResult = testExistsPhieuThueInPhongResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeletePhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeletePhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.DeletePhieuThueRequestBody Body;
+        
+        public DeletePhieuThueRequest() {
+        }
+        
+        public DeletePhieuThueRequest(_042082.QLKS_BUS_WebService.DeletePhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeletePhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public DeletePhieuThueRequestBody() {
+        }
+        
+        public DeletePhieuThueRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeletePhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeletePhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.DeletePhieuThueResponseBody Body;
+        
+        public DeletePhieuThueResponse() {
+        }
+        
+        public DeletePhieuThueResponse(_042082.QLKS_BUS_WebService.DeletePhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeletePhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int DeletePhieuThueResult;
+        
+        public DeletePhieuThueResponseBody() {
+        }
+        
+        public DeletePhieuThueResponseBody(int DeletePhieuThueResult) {
+            this.DeletePhieuThueResult = DeletePhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdatePhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdatePhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdatePhieuThueRequestBody Body;
+        
+        public UpdatePhieuThueRequest() {
+        }
+        
+        public UpdatePhieuThueRequest(_042082.QLKS_BUS_WebService.UpdatePhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdatePhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO;
+        
+        public UpdatePhieuThueRequestBody() {
+        }
+        
+        public UpdatePhieuThueRequestBody(_042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO) {
+            this.ptDTO = ptDTO;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdatePhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdatePhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdatePhieuThueResponseBody Body;
+        
+        public UpdatePhieuThueResponse() {
+        }
+        
+        public UpdatePhieuThueResponse(_042082.QLKS_BUS_WebService.UpdatePhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdatePhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int UpdatePhieuThueResult;
+        
+        public UpdatePhieuThueResponseBody() {
+        }
+        
+        public UpdatePhieuThueResponseBody(int UpdatePhieuThueResult) {
+            this.UpdatePhieuThueResult = UpdatePhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Update_ngaytra_thucteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Update_ngaytra_thucte", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequestBody Body;
+        
+        public Update_ngaytra_thucteRequest() {
+        }
+        
+        public Update_ngaytra_thucteRequest(_042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Update_ngaytra_thucteRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaHD;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public System.DateTime ngaytra_thucte;
+        
+        public Update_ngaytra_thucteRequestBody() {
+        }
+        
+        public Update_ngaytra_thucteRequestBody(string MaHD, System.DateTime ngaytra_thucte) {
+            this.MaHD = MaHD;
+            this.ngaytra_thucte = ngaytra_thucte;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Update_ngaytra_thucteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Update_ngaytra_thucteResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Update_ngaytra_thucteResponseBody Body;
+        
+        public Update_ngaytra_thucteResponse() {
+        }
+        
+        public Update_ngaytra_thucteResponse(_042082.QLKS_BUS_WebService.Update_ngaytra_thucteResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Update_ngaytra_thucteResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int Update_ngaytra_thucteResult;
+        
+        public Update_ngaytra_thucteResponseBody() {
+        }
+        
+        public Update_ngaytra_thucteResponseBody(int Update_ngaytra_thucteResult) {
+            this.Update_ngaytra_thucteResult = Update_ngaytra_thucteResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDPhieuThueRequestBody Body;
+        
+        public NextIDPhieuThueRequest() {
+        }
+        
+        public NextIDPhieuThueRequest(_042082.QLKS_BUS_WebService.NextIDPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class NextIDPhieuThueRequestBody {
+        
+        public NextIDPhieuThueRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDPhieuThueResponseBody Body;
+        
+        public NextIDPhieuThueResponse() {
+        }
+        
+        public NextIDPhieuThueResponse(_042082.QLKS_BUS_WebService.NextIDPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class NextIDPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string NextIDPhieuThueResult;
+        
+        public NextIDPhieuThueResponseBody() {
+        }
+        
+        public NextIDPhieuThueResponseBody(string NextIDPhieuThueResult) {
+            this.NextIDPhieuThueResult = NextIDPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistMaPhieuThueInCTHOADONRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaPhieuThueInCTHOADON", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequestBody Body;
+        
+        public testExistMaPhieuThueInCTHOADONRequest() {
+        }
+        
+        public testExistMaPhieuThueInCTHOADONRequest(_042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistMaPhieuThueInCTHOADONRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public testExistMaPhieuThueInCTHOADONRequestBody() {
+        }
+        
+        public testExistMaPhieuThueInCTHOADONRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistMaPhieuThueInCTHOADONResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaPhieuThueInCTHOADONResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONResponseBody Body;
+        
+        public testExistMaPhieuThueInCTHOADONResponse() {
+        }
+        
+        public testExistMaPhieuThueInCTHOADONResponse(_042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistMaPhieuThueInCTHOADONResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistMaPhieuThueInCTHOADONResult;
+        
+        public testExistMaPhieuThueInCTHOADONResponseBody() {
+        }
+        
+        public testExistMaPhieuThueInCTHOADONResponseBody(int testExistMaPhieuThueInCTHOADONResult) {
+            this.testExistMaPhieuThueInCTHOADONResult = testExistMaPhieuThueInCTHOADONResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertPhieuThueRequestBody Body;
+        
+        public InsertPhieuThueRequest() {
+        }
+        
+        public InsertPhieuThueRequest(_042082.QLKS_BUS_WebService.InsertPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsertPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO;
+        
+        public InsertPhieuThueRequestBody() {
+        }
+        
+        public InsertPhieuThueRequestBody(_042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO) {
+            this.ptDTO = ptDTO;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertPhieuThueResponseBody Body;
+        
+        public InsertPhieuThueResponse() {
+        }
+        
+        public InsertPhieuThueResponse(_042082.QLKS_BUS_WebService.InsertPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsertPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int InsertPhieuThueResult;
+        
+        public InsertPhieuThueResponseBody() {
+        }
+        
+        public InsertPhieuThueResponseBody(int InsertPhieuThueResult) {
+            this.InsertPhieuThueResult = InsertPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getTinhTrangByMaPhongRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getTinhTrangByMaPhong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequestBody Body;
+        
+        public getTinhTrangByMaPhongRequest() {
+        }
+        
+        public getTinhTrangByMaPhongRequest(_042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getTinhTrangByMaPhongRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhong;
+        
+        public getTinhTrangByMaPhongRequestBody() {
+        }
+        
+        public getTinhTrangByMaPhongRequestBody(string MaPhong) {
+            this.MaPhong = MaPhong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getTinhTrangByMaPhongResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getTinhTrangByMaPhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongResponseBody Body;
+        
+        public getTinhTrangByMaPhongResponse() {
+        }
+        
+        public getTinhTrangByMaPhongResponse(_042082.QLKS_BUS_WebService.getTinhTrangByMaPhongResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getTinhTrangByMaPhongResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getTinhTrangByMaPhongResult;
+        
+        public getTinhTrangByMaPhongResponseBody() {
+        }
+        
+        public getTinhTrangByMaPhongResponseBody(string getTinhTrangByMaPhongResult) {
+            this.getTinhTrangByMaPhongResult = getTinhTrangByMaPhongResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getstrSQLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getstrSQL", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getstrSQLRequestBody Body;
+        
+        public getstrSQLRequest() {
+        }
+        
+        public getstrSQLRequest(_042082.QLKS_BUS_WebService.getstrSQLRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class getstrSQLRequestBody {
+        
+        public getstrSQLRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getstrSQLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getstrSQLResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getstrSQLResponseBody Body;
+        
+        public getstrSQLResponse() {
+        }
+        
+        public getstrSQLResponse(_042082.QLKS_BUS_WebService.getstrSQLResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getstrSQLResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getstrSQLResult;
+        
+        public getstrSQLResponseBody() {
+        }
+        
+        public getstrSQLResponseBody(string getstrSQLResult) {
+            this.getstrSQLResult = getstrSQLResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhieuThueInPHIEUTHUERequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhieuThueInPHIEUTHUE", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequestBody Body;
+        
+        public testExistsMaPhieuThueInPHIEUTHUERequest() {
+        }
+        
+        public testExistsMaPhieuThueInPHIEUTHUERequest(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhieuThueInPHIEUTHUERequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPT;
+        
+        public testExistsMaPhieuThueInPHIEUTHUERequestBody() {
+        }
+        
+        public testExistsMaPhieuThueInPHIEUTHUERequestBody(string MaPT) {
+            this.MaPT = MaPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhieuThueInPHIEUTHUEResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhieuThueInPHIEUTHUEResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUEResponseBody Body;
+        
+        public testExistsMaPhieuThueInPHIEUTHUEResponse() {
+        }
+        
+        public testExistsMaPhieuThueInPHIEUTHUEResponse(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUEResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhieuThueInPHIEUTHUEResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistsMaPhieuThueInPHIEUTHUEResult;
+        
+        public testExistsMaPhieuThueInPHIEUTHUEResponseBody() {
+        }
+        
+        public testExistsMaPhieuThueInPHIEUTHUEResponseBody(int testExistsMaPhieuThueInPHIEUTHUEResult) {
+            this.testExistsMaPhieuThueInPHIEUTHUEResult = testExistsMaPhieuThueInPHIEUTHUEResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getTinhTrangPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getTinhTrangPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequestBody Body;
+        
+        public getTinhTrangPhieuThueRequest() {
+        }
+        
+        public getTinhTrangPhieuThueRequest(_042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getTinhTrangPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPT;
+        
+        public getTinhTrangPhieuThueRequestBody() {
+        }
+        
+        public getTinhTrangPhieuThueRequestBody(string MaPT) {
+            this.MaPT = MaPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getTinhTrangPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getTinhTrangPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueResponseBody Body;
+        
+        public getTinhTrangPhieuThueResponse() {
+        }
+        
+        public getTinhTrangPhieuThueResponse(_042082.QLKS_BUS_WebService.getTinhTrangPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getTinhTrangPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int getTinhTrangPhieuThueResult;
+        
+        public getTinhTrangPhieuThueResponseBody() {
+        }
+        
+        public getTinhTrangPhieuThueResponseBody(int getTinhTrangPhieuThueResult) {
+            this.getTinhTrangPhieuThueResult = getTinhTrangPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class INRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="IN", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.INRequestBody Body;
+        
+        public INRequest() {
+        }
+        
+        public INRequest(_042082.QLKS_BUS_WebService.INRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class INRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maHD;
+        
+        public INRequestBody() {
+        }
+        
+        public INRequestBody(string maHD) {
+            this.maHD = maHD;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class INResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="INResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.INResponseBody Body;
+        
+        public INResponse() {
+        }
+        
+        public INResponse(_042082.QLKS_BUS_WebService.INResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class INResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO[] INResult;
+        
+        public INResponseBody() {
+        }
+        
+        public INResponseBody(_042082.QLKS_BUS_WebService.PhieuThueDTO[] INResult) {
+            this.INResult = INResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListCTPhieuThueRequestBody Body;
+        
+        public getListCTPhieuThueRequest() {
+        }
+        
+        public getListCTPhieuThueRequest(_042082.QLKS_BUS_WebService.getListCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class getListCTPhieuThueRequestBody {
+        
+        public getListCTPhieuThueRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListCTPhieuThueResponseBody Body;
+        
+        public getListCTPhieuThueResponse() {
+        }
+        
+        public getListCTPhieuThueResponse(_042082.QLKS_BUS_WebService.getListCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListCTPhieuThueResult;
+        
+        public getListCTPhieuThueResponseBody() {
+        }
+        
+        public getListCTPhieuThueResponseBody(_042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListCTPhieuThueResult) {
+            this.getListCTPhieuThueResult = getListCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequestBody Body;
+        
+        public NextIDCTPhieuThueRequest() {
+        }
+        
+        public NextIDCTPhieuThueRequest(_042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class NextIDCTPhieuThueRequestBody {
+        
+        public NextIDCTPhieuThueRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDCTPhieuThueResponseBody Body;
+        
+        public NextIDCTPhieuThueResponse() {
+        }
+        
+        public NextIDCTPhieuThueResponse(_042082.QLKS_BUS_WebService.NextIDCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class NextIDCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string NextIDCTPhieuThueResult;
+        
+        public NextIDCTPhieuThueResponseBody() {
+        }
+        
+        public NextIDCTPhieuThueResponseBody(string NextIDCTPhieuThueResult) {
+            this.NextIDCTPhieuThueResult = NextIDCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListByMaPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListByMaPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListByMaPhieuThueRequestBody Body;
+        
+        public getListByMaPhieuThueRequest() {
+        }
+        
+        public getListByMaPhieuThueRequest(_042082.QLKS_BUS_WebService.getListByMaPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListByMaPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public getListByMaPhieuThueRequestBody() {
+        }
+        
+        public getListByMaPhieuThueRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListByMaPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListByMaPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListByMaPhieuThueResponseBody Body;
+        
+        public getListByMaPhieuThueResponse() {
+        }
+        
+        public getListByMaPhieuThueResponse(_042082.QLKS_BUS_WebService.getListByMaPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListByMaPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListByMaPhieuThueResult;
+        
+        public getListByMaPhieuThueResponseBody() {
+        }
+        
+        public getListByMaPhieuThueResponseBody(_042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListByMaPhieuThueResult) {
+            this.getListByMaPhieuThueResult = getListByMaPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhieuThueInCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhieuThueInCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequestBody Body;
+        
+        public testExistsMaPhieuThueInCTPhieuThueRequest() {
+        }
+        
+        public testExistsMaPhieuThueInCTPhieuThueRequest(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhieuThueInCTPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public testExistsMaPhieuThueInCTPhieuThueRequestBody() {
+        }
+        
+        public testExistsMaPhieuThueInCTPhieuThueRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaPhieuThueInCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaPhieuThueInCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueResponseBody Body;
+        
+        public testExistsMaPhieuThueInCTPhieuThueResponse() {
+        }
+        
+        public testExistsMaPhieuThueInCTPhieuThueResponse(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaPhieuThueInCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistsMaPhieuThueInCTPhieuThueResult;
+        
+        public testExistsMaPhieuThueInCTPhieuThueResponseBody() {
+        }
+        
+        public testExistsMaPhieuThueInCTPhieuThueResponseBody(int testExistsMaPhieuThueInCTPhieuThueResult) {
+            this.testExistsMaPhieuThueInCTPhieuThueResult = testExistsMaPhieuThueInCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="testExistsMaPhieuThueInPhieuThue", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class testExistsMaPhieuThueInPhieuThueRequest1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public string MaPhieThue;
+        
+        public testExistsMaPhieuThueInPhieuThueRequest1() {
+        }
+        
+        public testExistsMaPhieuThueInPhieuThueRequest1(string MaPhieThue) {
+            this.MaPhieThue = MaPhieThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="testExistsMaPhieuThueInPhieuThueResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class testExistsMaPhieuThueInPhieuThueResponse1 {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public int testExistsMaPhieuThueInPhieuThueResult;
+        
+        public testExistsMaPhieuThueInPhieuThueResponse1() {
+        }
+        
+        public testExistsMaPhieuThueInPhieuThueResponse1(int testExistsMaPhieuThueInPhieuThueResult) {
+            this.testExistsMaPhieuThueInPhieuThueResult = testExistsMaPhieuThueInPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistMaCTPTInCTPHIEUTHUERequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaCTPTInCTPHIEUTHUE", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequestBody Body;
+        
+        public testExistMaCTPTInCTPHIEUTHUERequest() {
+        }
+        
+        public testExistMaCTPTInCTPHIEUTHUERequest(_042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistMaCTPTInCTPHIEUTHUERequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaCTPT;
+        
+        public testExistMaCTPTInCTPHIEUTHUERequestBody() {
+        }
+        
+        public testExistMaCTPTInCTPHIEUTHUERequestBody(string MaCTPT) {
+            this.MaCTPT = MaCTPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistMaCTPTInCTPHIEUTHUEResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistMaCTPTInCTPHIEUTHUEResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUEResponseBody Body;
+        
+        public testExistMaCTPTInCTPHIEUTHUEResponse() {
+        }
+        
+        public testExistMaCTPTInCTPHIEUTHUEResponse(_042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUEResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistMaCTPTInCTPHIEUTHUEResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistMaCTPTInCTPHIEUTHUEResult;
+        
+        public testExistMaCTPTInCTPHIEUTHUEResponseBody() {
+        }
+        
+        public testExistMaCTPTInCTPHIEUTHUEResponseBody(int testExistMaCTPTInCTPHIEUTHUEResult) {
+            this.testExistMaCTPTInCTPHIEUTHUEResult = testExistMaCTPTInCTPHIEUTHUEResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaKhachHangInCTPHIEUTHUE2Request {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaKhachHangInCTPHIEUTHUE2", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2RequestBody Body;
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2Request() {
+        }
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2Request(_042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2RequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaKhachHangInCTPHIEUTHUE2RequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaKhachHang;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string MaPhieuThue;
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2RequestBody() {
+        }
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2RequestBody(string MaKhachHang, string MaPhieuThue) {
+            this.MaKhachHang = MaKhachHang;
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class testExistsMaKhachHangInCTPHIEUTHUE2Response {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="testExistsMaKhachHangInCTPHIEUTHUE2Response", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody Body;
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2Response() {
+        }
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2Response(_042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int testExistsMaKhachHangInCTPHIEUTHUE2Result;
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody() {
+        }
+        
+        public testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody(int testExistsMaKhachHangInCTPHIEUTHUE2Result) {
+            this.testExistsMaKhachHangInCTPHIEUTHUE2Result = testExistsMaKhachHangInCTPHIEUTHUE2Result;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertCTPhieuThueRequestBody Body;
+        
+        public InsertCTPhieuThueRequest() {
+        }
+        
+        public InsertCTPhieuThueRequest(_042082.QLKS_BUS_WebService.InsertCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsertCTPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO;
+        
+        public InsertCTPhieuThueRequestBody() {
+        }
+        
+        public InsertCTPhieuThueRequestBody(_042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO) {
+            this.ctptDTO = ctptDTO;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.InsertCTPhieuThueResponseBody Body;
+        
+        public InsertCTPhieuThueResponse() {
+        }
+        
+        public InsertCTPhieuThueResponse(_042082.QLKS_BUS_WebService.InsertCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class InsertCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int InsertCTPhieuThueResult;
+        
+        public InsertCTPhieuThueResponseBody() {
+        }
+        
+        public InsertCTPhieuThueResponseBody(int InsertCTPhieuThueResult) {
+            this.InsertCTPhieuThueResult = InsertCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequestBody Body;
+        
+        public UpdateCTPhieuThueRequest() {
+        }
+        
+        public UpdateCTPhieuThueRequest(_042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateCTPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO;
+        
+        public UpdateCTPhieuThueRequestBody() {
+        }
+        
+        public UpdateCTPhieuThueRequestBody(_042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO) {
+            this.ctptDTO = ctptDTO;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class UpdateCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="UpdateCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.UpdateCTPhieuThueResponseBody Body;
+        
+        public UpdateCTPhieuThueResponse() {
+        }
+        
+        public UpdateCTPhieuThueResponse(_042082.QLKS_BUS_WebService.UpdateCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class UpdateCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int UpdateCTPhieuThueResult;
+        
+        public UpdateCTPhieuThueResponseBody() {
+        }
+        
+        public UpdateCTPhieuThueResponseBody(int UpdateCTPhieuThueResult) {
+            this.UpdateCTPhieuThueResult = UpdateCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteCTPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteCTPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequestBody Body;
+        
+        public DeleteCTPhieuThueRequest() {
+        }
+        
+        public DeleteCTPhieuThueRequest(_042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteCTPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaCTPT;
+        
+        public DeleteCTPhieuThueRequestBody() {
+        }
+        
+        public DeleteCTPhieuThueRequestBody(string MaCTPT) {
+            this.MaCTPT = MaCTPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class DeleteCTPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="DeleteCTPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.DeleteCTPhieuThueResponseBody Body;
+        
+        public DeleteCTPhieuThueResponse() {
+        }
+        
+        public DeleteCTPhieuThueResponse(_042082.QLKS_BUS_WebService.DeleteCTPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class DeleteCTPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int DeleteCTPhieuThueResult;
+        
+        public DeleteCTPhieuThueResponseBody() {
+        }
+        
+        public DeleteCTPhieuThueResponseBody(int DeleteCTPhieuThueResult) {
+            this.DeleteCTPhieuThueResult = DeleteCTPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CountMaKhachHangRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountMaKhachHang", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.CountMaKhachHangRequestBody Body;
+        
+        public CountMaKhachHangRequest() {
+        }
+        
+        public CountMaKhachHangRequest(_042082.QLKS_BUS_WebService.CountMaKhachHangRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CountMaKhachHangRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public CountMaKhachHangRequestBody() {
+        }
+        
+        public CountMaKhachHangRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class CountMaKhachHangResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="CountMaKhachHangResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.CountMaKhachHangResponseBody Body;
+        
+        public CountMaKhachHangResponse() {
+        }
+        
+        public CountMaKhachHangResponse(_042082.QLKS_BUS_WebService.CountMaKhachHangResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class CountMaKhachHangResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int CountMaKhachHangResult;
+        
+        public CountMaKhachHangResponseBody() {
+        }
+        
+        public CountMaKhachHangResponseBody(int CountMaKhachHangResult) {
+            this.CountMaKhachHangResult = CountMaKhachHangResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListMaCTPTByMaPhieuThueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListMaCTPTByMaPhieuThue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequestBody Body;
+        
+        public getListMaCTPTByMaPhieuThueRequest() {
+        }
+        
+        public getListMaCTPTByMaPhieuThueRequest(_042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListMaCTPTByMaPhieuThueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string MaPhieuThue;
+        
+        public getListMaCTPTByMaPhieuThueRequestBody() {
+        }
+        
+        public getListMaCTPTByMaPhieuThueRequestBody(string MaPhieuThue) {
+            this.MaPhieuThue = MaPhieuThue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getListMaCTPTByMaPhieuThueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getListMaCTPTByMaPhieuThueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueResponseBody Body;
+        
+        public getListMaCTPTByMaPhieuThueResponse() {
+        }
+        
+        public getListMaCTPTByMaPhieuThueResponse(_042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getListMaCTPTByMaPhieuThueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string getListMaCTPTByMaPhieuThueResult;
+        
+        public getListMaCTPTByMaPhieuThueResponseBody() {
+        }
+        
+        public getListMaCTPTByMaPhieuThueResponseBody(string getListMaCTPTByMaPhieuThueResult) {
+            this.getListMaCTPTByMaPhieuThueResult = getListMaCTPTByMaPhieuThueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getlistHoaDonRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getlistHoaDon", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getlistHoaDonRequestBody Body;
+        
+        public getlistHoaDonRequest() {
+        }
+        
+        public getlistHoaDonRequest(_042082.QLKS_BUS_WebService.getlistHoaDonRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class getlistHoaDonRequestBody {
+        
+        public getlistHoaDonRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class getlistHoaDonResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="getlistHoaDonResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.getlistHoaDonResponseBody Body;
+        
+        public getlistHoaDonResponse() {
+        }
+        
+        public getlistHoaDonResponse(_042082.QLKS_BUS_WebService.getlistHoaDonResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class getlistHoaDonResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.HoaDonDTO[] getlistHoaDonResult;
+        
+        public getlistHoaDonResponseBody() {
+        }
+        
+        public getlistHoaDonResponseBody(_042082.QLKS_BUS_WebService.HoaDonDTO[] getlistHoaDonResult) {
+            this.getlistHoaDonResult = getlistHoaDonResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_HDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_HD", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_HDRequestBody Body;
+        
+        public Thanhtoan_HDRequest() {
+        }
+        
+        public Thanhtoan_HDRequest(_042082.QLKS_BUS_WebService.Thanhtoan_HDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_HDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string mahoadon;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public double tongtien;
+        
+        public Thanhtoan_HDRequestBody() {
+        }
+        
+        public Thanhtoan_HDRequestBody(string mahoadon, double tongtien) {
+            this.mahoadon = mahoadon;
+            this.tongtien = tongtien;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_HDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_HDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_HDResponseBody Body;
+        
+        public Thanhtoan_HDResponse() {
+        }
+        
+        public Thanhtoan_HDResponse(_042082.QLKS_BUS_WebService.Thanhtoan_HDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_HDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool Thanhtoan_HDResult;
+        
+        public Thanhtoan_HDResponseBody() {
+        }
+        
+        public Thanhtoan_HDResponseBody(bool Thanhtoan_HDResult) {
+            this.Thanhtoan_HDResult = Thanhtoan_HDResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_PhieuthueRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_Phieuthue", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequestBody Body;
+        
+        public Thanhtoan_PhieuthueRequest() {
+        }
+        
+        public Thanhtoan_PhieuthueRequest(_042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_PhieuthueRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maHD;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string maphong;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO dtoPT;
+        
+        public Thanhtoan_PhieuthueRequestBody() {
+        }
+        
+        public Thanhtoan_PhieuthueRequestBody(string maHD, string maphong, _042082.QLKS_BUS_WebService.PhieuThueDTO dtoPT) {
+            this.maHD = maHD;
+            this.maphong = maphong;
+            this.dtoPT = dtoPT;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_PhieuthueResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_PhieuthueResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueResponseBody Body;
+        
+        public Thanhtoan_PhieuthueResponse() {
+        }
+        
+        public Thanhtoan_PhieuthueResponse(_042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_PhieuthueResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool Thanhtoan_PhieuthueResult;
+        
+        public Thanhtoan_PhieuthueResponseBody() {
+        }
+        
+        public Thanhtoan_PhieuthueResponseBody(bool Thanhtoan_PhieuthueResult) {
+            this.Thanhtoan_PhieuthueResult = Thanhtoan_PhieuthueResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_PhongRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_Phong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_PhongRequestBody Body;
+        
+        public Thanhtoan_PhongRequest() {
+        }
+        
+        public Thanhtoan_PhongRequest(_042082.QLKS_BUS_WebService.Thanhtoan_PhongRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_PhongRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maphong;
+        
+        public Thanhtoan_PhongRequestBody() {
+        }
+        
+        public Thanhtoan_PhongRequestBody(string maphong) {
+            this.maphong = maphong;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class Thanhtoan_PhongResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Thanhtoan_PhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.Thanhtoan_PhongResponseBody Body;
+        
+        public Thanhtoan_PhongResponse() {
+        }
+        
+        public Thanhtoan_PhongResponse(_042082.QLKS_BUS_WebService.Thanhtoan_PhongResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class Thanhtoan_PhongResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool Thanhtoan_PhongResult;
+        
+        public Thanhtoan_PhongResponseBody() {
+        }
+        
+        public Thanhtoan_PhongResponseBody(bool Thanhtoan_PhongResult) {
+            this.Thanhtoan_PhongResult = Thanhtoan_PhongResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class LapHoaDonRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="LapHoaDon", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.LapHoaDonRequestBody Body;
+        
+        public LapHoaDonRequest() {
+        }
+        
+        public LapHoaDonRequest(_042082.QLKS_BUS_WebService.LapHoaDonRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class LapHoaDonRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public _042082.QLKS_BUS_WebService.HoaDonDTO dtoHD;
+        
+        public LapHoaDonRequestBody() {
+        }
+        
+        public LapHoaDonRequestBody(_042082.QLKS_BUS_WebService.HoaDonDTO dtoHD) {
+            this.dtoHD = dtoHD;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class LapHoaDonResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="LapHoaDonResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.LapHoaDonResponseBody Body;
+        
+        public LapHoaDonResponse() {
+        }
+        
+        public LapHoaDonResponse(_042082.QLKS_BUS_WebService.LapHoaDonResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class LapHoaDonResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool LapHoaDonResult;
+        
+        public LapHoaDonResponseBody() {
+        }
+        
+        public LapHoaDonResponseBody(bool LapHoaDonResult) {
+            this.LapHoaDonResult = LapHoaDonResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class kiemtra_loaikhachRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="kiemtra_loaikhach", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.kiemtra_loaikhachRequestBody Body;
+        
+        public kiemtra_loaikhachRequest() {
+        }
+        
+        public kiemtra_loaikhachRequest(_042082.QLKS_BUS_WebService.kiemtra_loaikhachRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class kiemtra_loaikhachRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maphieuthue;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string MaLoaiKH;
+        
+        public kiemtra_loaikhachRequestBody() {
+        }
+        
+        public kiemtra_loaikhachRequestBody(string maphieuthue, string MaLoaiKH) {
+            this.maphieuthue = maphieuthue;
+            this.MaLoaiKH = MaLoaiKH;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class kiemtra_loaikhachResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="kiemtra_loaikhachResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.kiemtra_loaikhachResponseBody Body;
+        
+        public kiemtra_loaikhachResponse() {
+        }
+        
+        public kiemtra_loaikhachResponse(_042082.QLKS_BUS_WebService.kiemtra_loaikhachResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class kiemtra_loaikhachResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool kiemtra_loaikhachResult;
+        
+        public kiemtra_loaikhachResponseBody() {
+        }
+        
+        public kiemtra_loaikhachResponseBody(bool kiemtra_loaikhachResult) {
+            this.kiemtra_loaikhachResult = kiemtra_loaikhachResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class dem_KH_PhongRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="dem_KH_Phong", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.dem_KH_PhongRequestBody Body;
+        
+        public dem_KH_PhongRequest() {
+        }
+        
+        public dem_KH_PhongRequest(_042082.QLKS_BUS_WebService.dem_KH_PhongRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class dem_KH_PhongRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string maphieuthue;
+        
+        public dem_KH_PhongRequestBody() {
+        }
+        
+        public dem_KH_PhongRequestBody(string maphieuthue) {
+            this.maphieuthue = maphieuthue;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class dem_KH_PhongResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="dem_KH_PhongResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.dem_KH_PhongResponseBody Body;
+        
+        public dem_KH_PhongResponse() {
+        }
+        
+        public dem_KH_PhongResponse(_042082.QLKS_BUS_WebService.dem_KH_PhongResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class dem_KH_PhongResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int dem_KH_PhongResult;
+        
+        public dem_KH_PhongResponseBody() {
+        }
+        
+        public dem_KH_PhongResponseBody(int dem_KH_PhongResult) {
+            this.dem_KH_PhongResult = dem_KH_PhongResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class delete_hdRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="delete_hd", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.delete_hdRequestBody Body;
+        
+        public delete_hdRequest() {
+        }
+        
+        public delete_hdRequest(_042082.QLKS_BUS_WebService.delete_hdRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class delete_hdRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string mahd;
+        
+        public delete_hdRequestBody() {
+        }
+        
+        public delete_hdRequestBody(string mahd) {
+            this.mahd = mahd;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class delete_hdResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="delete_hdResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.delete_hdResponseBody Body;
+        
+        public delete_hdResponse() {
+        }
+        
+        public delete_hdResponse(_042082.QLKS_BUS_WebService.delete_hdResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class delete_hdResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool delete_hdResult;
+        
+        public delete_hdResponseBody() {
+        }
+        
+        public delete_hdResponseBody(bool delete_hdResult) {
+            this.delete_hdResult = delete_hdResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDHoaDonRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDHoaDon", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDHoaDonRequestBody Body;
+        
+        public NextIDHoaDonRequest() {
+        }
+        
+        public NextIDHoaDonRequest(_042082.QLKS_BUS_WebService.NextIDHoaDonRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class NextIDHoaDonRequestBody {
+        
+        public NextIDHoaDonRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NextIDHoaDonResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NextIDHoaDonResponse", Namespace="http://tempuri.org/", Order=0)]
+        public _042082.QLKS_BUS_WebService.NextIDHoaDonResponseBody Body;
+        
+        public NextIDHoaDonResponse() {
+        }
+        
+        public NextIDHoaDonResponse(_042082.QLKS_BUS_WebService.NextIDHoaDonResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class NextIDHoaDonResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string NextIDHoaDonResult;
+        
+        public NextIDHoaDonResponseBody() {
+        }
+        
+        public NextIDHoaDonResponseBody(string NextIDHoaDonResult) {
+            this.NextIDHoaDonResult = NextIDHoaDonResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface QLKS_BUS_WebserviceSoapChannel : _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap, System.ServiceModel.IClientChannel {
     }
@@ -3475,15 +7646,108 @@ namespace _042082.QLKS_BUS_WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        _042082.QLKS_BUS_WebService.HelloWorldResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.HelloWorld(_042082.QLKS_BUS_WebService.HelloWorldRequest request) {
-            return base.Channel.HelloWorld(request);
+        _042082.QLKS_BUS_WebService.InsertCTHOADONResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.InsertCTHOADON(_042082.QLKS_BUS_WebService.InsertCTHOADONRequest request) {
+            return base.Channel.InsertCTHOADON(request);
         }
         
-        public string HelloWorld() {
-            _042082.QLKS_BUS_WebService.HelloWorldRequest inValue = new _042082.QLKS_BUS_WebService.HelloWorldRequest();
-            inValue.Body = new _042082.QLKS_BUS_WebService.HelloWorldRequestBody();
-            _042082.QLKS_BUS_WebService.HelloWorldResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).HelloWorld(inValue);
-            return retVal.Body.HelloWorldResult;
+        public bool InsertCTHOADON(_042082.QLKS_BUS_WebService.CT_HoaDonDTO dtoCTHD) {
+            _042082.QLKS_BUS_WebService.InsertCTHOADONRequest inValue = new _042082.QLKS_BUS_WebService.InsertCTHOADONRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.InsertCTHOADONRequestBody();
+            inValue.Body.dtoCTHD = dtoCTHD;
+            _042082.QLKS_BUS_WebService.InsertCTHOADONResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).InsertCTHOADON(inValue);
+            return retVal.Body.InsertCTHOADONResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getMaPTResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getMaPT(_042082.QLKS_BUS_WebService.getMaPTRequest request) {
+            return base.Channel.getMaPT(request);
+        }
+        
+        public string getMaPT(string maphong) {
+            _042082.QLKS_BUS_WebService.getMaPTRequest inValue = new _042082.QLKS_BUS_WebService.getMaPTRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getMaPTRequestBody();
+            inValue.Body.maphong = maphong;
+            _042082.QLKS_BUS_WebService.getMaPTResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getMaPT(inValue);
+            return retVal.Body.getMaPTResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.delete_cthdResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.delete_cthd(_042082.QLKS_BUS_WebService.delete_cthdRequest request) {
+            return base.Channel.delete_cthd(request);
+        }
+        
+        public bool delete_cthd(string mahd) {
+            _042082.QLKS_BUS_WebService.delete_cthdRequest inValue = new _042082.QLKS_BUS_WebService.delete_cthdRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.delete_cthdRequestBody();
+            inValue.Body.mahd = mahd;
+            _042082.QLKS_BUS_WebService.delete_cthdResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).delete_cthd(inValue);
+            return retVal.Body.delete_cthdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.KiemTra_tendangnhapResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.KiemTra_tendangnhap(_042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequest request) {
+            return base.Channel.KiemTra_tendangnhap(request);
+        }
+        
+        public bool KiemTra_tendangnhap(string _tendangnhap) {
+            _042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequest inValue = new _042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.KiemTra_tendangnhapRequestBody();
+            inValue.Body._tendangnhap = _tendangnhap;
+            _042082.QLKS_BUS_WebService.KiemTra_tendangnhapResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).KiemTra_tendangnhap(inValue);
+            return retVal.Body.KiemTra_tendangnhapResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.KiemTra_matkhauResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.KiemTra_matkhau(_042082.QLKS_BUS_WebService.KiemTra_matkhauRequest request) {
+            return base.Channel.KiemTra_matkhau(request);
+        }
+        
+        public bool KiemTra_matkhau(string _tendangnhap, string _matkhau) {
+            _042082.QLKS_BUS_WebService.KiemTra_matkhauRequest inValue = new _042082.QLKS_BUS_WebService.KiemTra_matkhauRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.KiemTra_matkhauRequestBody();
+            inValue.Body._tendangnhap = _tendangnhap;
+            inValue.Body._matkhau = _matkhau;
+            _042082.QLKS_BUS_WebService.KiemTra_matkhauResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).KiemTra_matkhau(inValue);
+            return retVal.Body.KiemTra_matkhauResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.backupResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.backup(_042082.QLKS_BUS_WebService.backupRequest request) {
+            return base.Channel.backup(request);
+        }
+        
+        public bool backup(string path) {
+            _042082.QLKS_BUS_WebService.backupRequest inValue = new _042082.QLKS_BUS_WebService.backupRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.backupRequestBody();
+            inValue.Body.path = path;
+            _042082.QLKS_BUS_WebService.backupResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).backup(inValue);
+            return retVal.Body.backupResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.restoreResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.restore(_042082.QLKS_BUS_WebService.restoreRequest request) {
+            return base.Channel.restore(request);
+        }
+        
+        public bool restore(string path) {
+            _042082.QLKS_BUS_WebService.restoreRequest inValue = new _042082.QLKS_BUS_WebService.restoreRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.restoreRequestBody();
+            inValue.Body.path = path;
+            _042082.QLKS_BUS_WebService.restoreResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).restore(inValue);
+            return retVal.Body.restoreResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getIdKUserByIdUserResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getIdKUserByIdUser(_042082.QLKS_BUS_WebService.getIdKUserByIdUserRequest request) {
+            return base.Channel.getIdKUserByIdUser(request);
+        }
+        
+        public string getIdKUserByIdUser(_042082.QLKS_BUS_WebService.UserDTO uDTO) {
+            _042082.QLKS_BUS_WebService.getIdKUserByIdUserRequest inValue = new _042082.QLKS_BUS_WebService.getIdKUserByIdUserRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getIdKUserByIdUserRequestBody();
+            inValue.Body.uDTO = uDTO;
+            _042082.QLKS_BUS_WebService.getIdKUserByIdUserResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getIdKUserByIdUser(inValue);
+            return retVal.Body.getIdKUserByIdUserResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3579,15 +7843,15 @@ namespace _042082.QLKS_BUS_WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        _042082.QLKS_BUS_WebService.NextIDResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.NextID(_042082.QLKS_BUS_WebService.NextIDRequest request) {
-            return base.Channel.NextID(request);
+        _042082.QLKS_BUS_WebService.NextIDKhachHangResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.NextIDKhachHang(_042082.QLKS_BUS_WebService.NextIDKhachHangRequest request) {
+            return base.Channel.NextIDKhachHang(request);
         }
         
-        public string NextID() {
-            _042082.QLKS_BUS_WebService.NextIDRequest inValue = new _042082.QLKS_BUS_WebService.NextIDRequest();
-            inValue.Body = new _042082.QLKS_BUS_WebService.NextIDRequestBody();
-            _042082.QLKS_BUS_WebService.NextIDResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).NextID(inValue);
-            return retVal.Body.NextIDResult;
+        public string NextIDKhachHang() {
+            _042082.QLKS_BUS_WebService.NextIDKhachHangRequest inValue = new _042082.QLKS_BUS_WebService.NextIDKhachHangRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.NextIDKhachHangRequestBody();
+            _042082.QLKS_BUS_WebService.NextIDKhachHangResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).NextIDKhachHang(inValue);
+            return retVal.Body.NextIDKhachHangResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3733,6 +7997,45 @@ namespace _042082.QLKS_BUS_WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.InfoKHResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.InfoKH(_042082.QLKS_BUS_WebService.InfoKHRequest request) {
+            return base.Channel.InfoKH(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] InfoKH(string maPT) {
+            _042082.QLKS_BUS_WebService.InfoKHRequest inValue = new _042082.QLKS_BUS_WebService.InfoKHRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.InfoKHRequestBody();
+            inValue.Body.maPT = maPT;
+            _042082.QLKS_BUS_WebService.InfoKHResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).InfoKH(inValue);
+            return retVal.Body.InfoKHResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.GetInfoKHResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.GetInfoKH(_042082.QLKS_BUS_WebService.GetInfoKHRequest request) {
+            return base.Channel.GetInfoKH(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] GetInfoKH(string maKH) {
+            _042082.QLKS_BUS_WebService.GetInfoKHRequest inValue = new _042082.QLKS_BUS_WebService.GetInfoKHRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.GetInfoKHRequestBody();
+            inValue.Body.maKH = maKH;
+            _042082.QLKS_BUS_WebService.GetInfoKHResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).GetInfoKH(inValue);
+            return retVal.Body.GetInfoKHResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.TenKHDaiDienResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.TenKHDaiDien(_042082.QLKS_BUS_WebService.TenKHDaiDienRequest request) {
+            return base.Channel.TenKHDaiDien(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.KhachHangDTO[] TenKHDaiDien(string MaHD) {
+            _042082.QLKS_BUS_WebService.TenKHDaiDienRequest inValue = new _042082.QLKS_BUS_WebService.TenKHDaiDienRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.TenKHDaiDienRequestBody();
+            inValue.Body.MaHD = MaHD;
+            _042082.QLKS_BUS_WebService.TenKHDaiDienResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).TenKHDaiDien(inValue);
+            return retVal.Body.TenKHDaiDienResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         _042082.QLKS_BUS_WebService.getListLoaiKhachHangResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListLoaiKhachHang(_042082.QLKS_BUS_WebService.getListLoaiKhachHangRequest request) {
             return base.Channel.getListLoaiKhachHang(request);
         }
@@ -3823,16 +8126,16 @@ namespace _042082.QLKS_BUS_WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        _042082.QLKS_BUS_WebService.testExistResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExist(_042082.QLKS_BUS_WebService.testExistRequest request) {
-            return base.Channel.testExist(request);
+        _042082.QLKS_BUS_WebService.testExistMaPhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistMaPhong(_042082.QLKS_BUS_WebService.testExistMaPhongRequest request) {
+            return base.Channel.testExistMaPhong(request);
         }
         
-        public int testExist(string MaPhong) {
-            _042082.QLKS_BUS_WebService.testExistRequest inValue = new _042082.QLKS_BUS_WebService.testExistRequest();
-            inValue.Body = new _042082.QLKS_BUS_WebService.testExistRequestBody();
+        public int testExistMaPhong(string MaPhong) {
+            _042082.QLKS_BUS_WebService.testExistMaPhongRequest inValue = new _042082.QLKS_BUS_WebService.testExistMaPhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistMaPhongRequestBody();
             inValue.Body.MaPhong = MaPhong;
-            _042082.QLKS_BUS_WebService.testExistResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExist(inValue);
-            return retVal.Body.testExistResult;
+            _042082.QLKS_BUS_WebService.testExistMaPhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistMaPhong(inValue);
+            return retVal.Body.testExistMaPhongResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4002,6 +8305,514 @@ namespace _042082.QLKS_BUS_WebService {
             inValue.Body.MaPhong = MaPhong;
             _042082.QLKS_BUS_WebService.testExistMaPhongInPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistMaPhongInPhieuThue(inValue);
             return retVal.Body.testExistMaPhongInPhieuThueResult;
+        }
+        
+        public float getValue(int MaThamSo) {
+            return base.Channel.getValue(MaThamSo);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getListThamSoResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListThamSo(_042082.QLKS_BUS_WebService.getListThamSoRequest request) {
+            return base.Channel.getListThamSo(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.ThamSoDTO[] getListThamSo() {
+            _042082.QLKS_BUS_WebService.getListThamSoRequest inValue = new _042082.QLKS_BUS_WebService.getListThamSoRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getListThamSoRequestBody();
+            _042082.QLKS_BUS_WebService.getListThamSoResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getListThamSo(inValue);
+            return retVal.Body.getListThamSoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.UpdateThamSoResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.UpdateThamSo(_042082.QLKS_BUS_WebService.UpdateThamSoRequest request) {
+            return base.Channel.UpdateThamSo(request);
+        }
+        
+        public int UpdateThamSo(string mathamso, float giatri) {
+            _042082.QLKS_BUS_WebService.UpdateThamSoRequest inValue = new _042082.QLKS_BUS_WebService.UpdateThamSoRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.UpdateThamSoRequestBody();
+            inValue.Body.mathamso = mathamso;
+            inValue.Body.giatri = giatri;
+            _042082.QLKS_BUS_WebService.UpdateThamSoResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).UpdateThamSo(inValue);
+            return retVal.Body.UpdateThamSoResult;
+        }
+        
+        public float getheso() {
+            return base.Channel.getheso();
+        }
+        
+        public float getphuthu() {
+            return base.Channel.getphuthu();
+        }
+        
+        public float getkhachtoida() {
+            return base.Channel.getkhachtoida();
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getListPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListPhieuThue(_042082.QLKS_BUS_WebService.getListPhieuThueRequest request) {
+            return base.Channel.getListPhieuThue(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO[] getListPhieuThue() {
+            _042082.QLKS_BUS_WebService.getListPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.getListPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getListPhieuThueRequestBody();
+            _042082.QLKS_BUS_WebService.getListPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getListPhieuThue(inValue);
+            return retVal.Body.getListPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsMaPhongInPhieuThue(_042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequest request) {
+            return base.Channel.testExistsMaPhongInPhieuThue(request);
+        }
+        
+        public int testExistsMaPhongInPhieuThue(string MaPhong) {
+            _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueRequestBody();
+            inValue.Body.MaPhong = MaPhong;
+            _042082.QLKS_BUS_WebService.testExistsMaPhongInPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsMaPhongInPhieuThue(inValue);
+            return retVal.Body.testExistsMaPhongInPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getMaLoaiPhongByMaPhong(_042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequest request) {
+            return base.Channel.getMaLoaiPhongByMaPhong(request);
+        }
+        
+        public string getMaLoaiPhongByMaPhong(string MaPhong) {
+            _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequest inValue = new _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongRequestBody();
+            inValue.Body.MaPhong = MaPhong;
+            _042082.QLKS_BUS_WebService.getMaLoaiPhongByMaPhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getMaLoaiPhongByMaPhong(inValue);
+            return retVal.Body.getMaLoaiPhongByMaPhongResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsPhieuThueInPhong(_042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequest request) {
+            return base.Channel.testExistsPhieuThueInPhong(request);
+        }
+        
+        public int testExistsPhieuThueInPhong(string MaPhong) {
+            _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequest inValue = new _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongRequestBody();
+            inValue.Body.MaPhong = MaPhong;
+            _042082.QLKS_BUS_WebService.testExistsPhieuThueInPhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsPhieuThueInPhong(inValue);
+            return retVal.Body.testExistsPhieuThueInPhongResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.DeletePhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.DeletePhieuThue(_042082.QLKS_BUS_WebService.DeletePhieuThueRequest request) {
+            return base.Channel.DeletePhieuThue(request);
+        }
+        
+        public int DeletePhieuThue(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.DeletePhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.DeletePhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.DeletePhieuThueRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.DeletePhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).DeletePhieuThue(inValue);
+            return retVal.Body.DeletePhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.UpdatePhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.UpdatePhieuThue(_042082.QLKS_BUS_WebService.UpdatePhieuThueRequest request) {
+            return base.Channel.UpdatePhieuThue(request);
+        }
+        
+        public int UpdatePhieuThue(_042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO) {
+            _042082.QLKS_BUS_WebService.UpdatePhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.UpdatePhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.UpdatePhieuThueRequestBody();
+            inValue.Body.ptDTO = ptDTO;
+            _042082.QLKS_BUS_WebService.UpdatePhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).UpdatePhieuThue(inValue);
+            return retVal.Body.UpdatePhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.Update_ngaytra_thucteResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.Update_ngaytra_thucte(_042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequest request) {
+            return base.Channel.Update_ngaytra_thucte(request);
+        }
+        
+        public int Update_ngaytra_thucte(string MaHD, System.DateTime ngaytra_thucte) {
+            _042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequest inValue = new _042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.Update_ngaytra_thucteRequestBody();
+            inValue.Body.MaHD = MaHD;
+            inValue.Body.ngaytra_thucte = ngaytra_thucte;
+            _042082.QLKS_BUS_WebService.Update_ngaytra_thucteResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).Update_ngaytra_thucte(inValue);
+            return retVal.Body.Update_ngaytra_thucteResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.NextIDPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.NextIDPhieuThue(_042082.QLKS_BUS_WebService.NextIDPhieuThueRequest request) {
+            return base.Channel.NextIDPhieuThue(request);
+        }
+        
+        public string NextIDPhieuThue() {
+            _042082.QLKS_BUS_WebService.NextIDPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.NextIDPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.NextIDPhieuThueRequestBody();
+            _042082.QLKS_BUS_WebService.NextIDPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).NextIDPhieuThue(inValue);
+            return retVal.Body.NextIDPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistMaPhieuThueInCTHOADON(_042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequest request) {
+            return base.Channel.testExistMaPhieuThueInCTHOADON(request);
+        }
+        
+        public int testExistMaPhieuThueInCTHOADON(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequest inValue = new _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.testExistMaPhieuThueInCTHOADONResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistMaPhieuThueInCTHOADON(inValue);
+            return retVal.Body.testExistMaPhieuThueInCTHOADONResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.InsertPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.InsertPhieuThue(_042082.QLKS_BUS_WebService.InsertPhieuThueRequest request) {
+            return base.Channel.InsertPhieuThue(request);
+        }
+        
+        public int InsertPhieuThue(_042082.QLKS_BUS_WebService.PhieuThueDTO ptDTO) {
+            _042082.QLKS_BUS_WebService.InsertPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.InsertPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.InsertPhieuThueRequestBody();
+            inValue.Body.ptDTO = ptDTO;
+            _042082.QLKS_BUS_WebService.InsertPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).InsertPhieuThue(inValue);
+            return retVal.Body.InsertPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getTinhTrangByMaPhong(_042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequest request) {
+            return base.Channel.getTinhTrangByMaPhong(request);
+        }
+        
+        public string getTinhTrangByMaPhong(string MaPhong) {
+            _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequest inValue = new _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongRequestBody();
+            inValue.Body.MaPhong = MaPhong;
+            _042082.QLKS_BUS_WebService.getTinhTrangByMaPhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getTinhTrangByMaPhong(inValue);
+            return retVal.Body.getTinhTrangByMaPhongResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getstrSQLResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getstrSQL(_042082.QLKS_BUS_WebService.getstrSQLRequest request) {
+            return base.Channel.getstrSQL(request);
+        }
+        
+        public string getstrSQL() {
+            _042082.QLKS_BUS_WebService.getstrSQLRequest inValue = new _042082.QLKS_BUS_WebService.getstrSQLRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getstrSQLRequestBody();
+            _042082.QLKS_BUS_WebService.getstrSQLResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getstrSQL(inValue);
+            return retVal.Body.getstrSQLResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUEResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsMaPhieuThueInPHIEUTHUE(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequest request) {
+            return base.Channel.testExistsMaPhieuThueInPHIEUTHUE(request);
+        }
+        
+        public int testExistsMaPhieuThueInPHIEUTHUE(string MaPT) {
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequest inValue = new _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUERequestBody();
+            inValue.Body.MaPT = MaPT;
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPHIEUTHUEResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsMaPhieuThueInPHIEUTHUE(inValue);
+            return retVal.Body.testExistsMaPhieuThueInPHIEUTHUEResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getTinhTrangPhieuThue(_042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequest request) {
+            return base.Channel.getTinhTrangPhieuThue(request);
+        }
+        
+        public int getTinhTrangPhieuThue(string MaPT) {
+            _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueRequestBody();
+            inValue.Body.MaPT = MaPT;
+            _042082.QLKS_BUS_WebService.getTinhTrangPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getTinhTrangPhieuThue(inValue);
+            return retVal.Body.getTinhTrangPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.INResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.IN(_042082.QLKS_BUS_WebService.INRequest request) {
+            return base.Channel.IN(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.PhieuThueDTO[] IN(string maHD) {
+            _042082.QLKS_BUS_WebService.INRequest inValue = new _042082.QLKS_BUS_WebService.INRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.INRequestBody();
+            inValue.Body.maHD = maHD;
+            _042082.QLKS_BUS_WebService.INResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).IN(inValue);
+            return retVal.Body.INResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getListCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListCTPhieuThue(_042082.QLKS_BUS_WebService.getListCTPhieuThueRequest request) {
+            return base.Channel.getListCTPhieuThue(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListCTPhieuThue() {
+            _042082.QLKS_BUS_WebService.getListCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.getListCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getListCTPhieuThueRequestBody();
+            _042082.QLKS_BUS_WebService.getListCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getListCTPhieuThue(inValue);
+            return retVal.Body.getListCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.NextIDCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.NextIDCTPhieuThue(_042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequest request) {
+            return base.Channel.NextIDCTPhieuThue(request);
+        }
+        
+        public string NextIDCTPhieuThue() {
+            _042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.NextIDCTPhieuThueRequestBody();
+            _042082.QLKS_BUS_WebService.NextIDCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).NextIDCTPhieuThue(inValue);
+            return retVal.Body.NextIDCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getListByMaPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListByMaPhieuThue(_042082.QLKS_BUS_WebService.getListByMaPhieuThueRequest request) {
+            return base.Channel.getListByMaPhieuThue(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.CTPhieuThueDTO[] getListByMaPhieuThue(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.getListByMaPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.getListByMaPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getListByMaPhieuThueRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.getListByMaPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getListByMaPhieuThue(inValue);
+            return retVal.Body.getListByMaPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsMaPhieuThueInCTPhieuThue(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequest request) {
+            return base.Channel.testExistsMaPhieuThueInCTPhieuThue(request);
+        }
+        
+        public int testExistsMaPhieuThueInCTPhieuThue(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsMaPhieuThueInCTPhieuThue(inValue);
+            return retVal.Body.testExistsMaPhieuThueInCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueResponse1 _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsMaPhieuThueInPhieuThue1(_042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueRequest1 request) {
+            return base.Channel.testExistsMaPhieuThueInPhieuThue1(request);
+        }
+        
+        public int testExistsMaPhieuThueInPhieuThue1(string MaPhieThue) {
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueRequest1 inValue = new _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueRequest1();
+            inValue.MaPhieThue = MaPhieThue;
+            _042082.QLKS_BUS_WebService.testExistsMaPhieuThueInPhieuThueResponse1 retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsMaPhieuThueInPhieuThue1(inValue);
+            return retVal.testExistsMaPhieuThueInPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUEResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistMaCTPTInCTPHIEUTHUE(_042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequest request) {
+            return base.Channel.testExistMaCTPTInCTPHIEUTHUE(request);
+        }
+        
+        public int testExistMaCTPTInCTPHIEUTHUE(string MaCTPT) {
+            _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequest inValue = new _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUERequestBody();
+            inValue.Body.MaCTPT = MaCTPT;
+            _042082.QLKS_BUS_WebService.testExistMaCTPTInCTPHIEUTHUEResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistMaCTPTInCTPHIEUTHUE(inValue);
+            return retVal.Body.testExistMaCTPTInCTPHIEUTHUEResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Response _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.testExistsMaKhachHangInCTPHIEUTHUE2(_042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Request request) {
+            return base.Channel.testExistsMaKhachHangInCTPHIEUTHUE2(request);
+        }
+        
+        public int testExistsMaKhachHangInCTPHIEUTHUE2(string MaKhachHang, string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Request inValue = new _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Request();
+            inValue.Body = new _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2RequestBody();
+            inValue.Body.MaKhachHang = MaKhachHang;
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Response retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).testExistsMaKhachHangInCTPHIEUTHUE2(inValue);
+            return retVal.Body.testExistsMaKhachHangInCTPHIEUTHUE2Result;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.InsertCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.InsertCTPhieuThue(_042082.QLKS_BUS_WebService.InsertCTPhieuThueRequest request) {
+            return base.Channel.InsertCTPhieuThue(request);
+        }
+        
+        public int InsertCTPhieuThue(_042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO) {
+            _042082.QLKS_BUS_WebService.InsertCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.InsertCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.InsertCTPhieuThueRequestBody();
+            inValue.Body.ctptDTO = ctptDTO;
+            _042082.QLKS_BUS_WebService.InsertCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).InsertCTPhieuThue(inValue);
+            return retVal.Body.InsertCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.UpdateCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.UpdateCTPhieuThue(_042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequest request) {
+            return base.Channel.UpdateCTPhieuThue(request);
+        }
+        
+        public int UpdateCTPhieuThue(_042082.QLKS_BUS_WebService.CTPhieuThueDTO ctptDTO) {
+            _042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.UpdateCTPhieuThueRequestBody();
+            inValue.Body.ctptDTO = ctptDTO;
+            _042082.QLKS_BUS_WebService.UpdateCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).UpdateCTPhieuThue(inValue);
+            return retVal.Body.UpdateCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.DeleteCTPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.DeleteCTPhieuThue(_042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequest request) {
+            return base.Channel.DeleteCTPhieuThue(request);
+        }
+        
+        public int DeleteCTPhieuThue(string MaCTPT) {
+            _042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.DeleteCTPhieuThueRequestBody();
+            inValue.Body.MaCTPT = MaCTPT;
+            _042082.QLKS_BUS_WebService.DeleteCTPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).DeleteCTPhieuThue(inValue);
+            return retVal.Body.DeleteCTPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.CountMaKhachHangResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.CountMaKhachHang(_042082.QLKS_BUS_WebService.CountMaKhachHangRequest request) {
+            return base.Channel.CountMaKhachHang(request);
+        }
+        
+        public int CountMaKhachHang(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.CountMaKhachHangRequest inValue = new _042082.QLKS_BUS_WebService.CountMaKhachHangRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.CountMaKhachHangRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.CountMaKhachHangResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).CountMaKhachHang(inValue);
+            return retVal.Body.CountMaKhachHangResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getListMaCTPTByMaPhieuThue(_042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequest request) {
+            return base.Channel.getListMaCTPTByMaPhieuThue(request);
+        }
+        
+        public string getListMaCTPTByMaPhieuThue(string MaPhieuThue) {
+            _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequest inValue = new _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueRequestBody();
+            inValue.Body.MaPhieuThue = MaPhieuThue;
+            _042082.QLKS_BUS_WebService.getListMaCTPTByMaPhieuThueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getListMaCTPTByMaPhieuThue(inValue);
+            return retVal.Body.getListMaCTPTByMaPhieuThueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.getlistHoaDonResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.getlistHoaDon(_042082.QLKS_BUS_WebService.getlistHoaDonRequest request) {
+            return base.Channel.getlistHoaDon(request);
+        }
+        
+        public _042082.QLKS_BUS_WebService.HoaDonDTO[] getlistHoaDon() {
+            _042082.QLKS_BUS_WebService.getlistHoaDonRequest inValue = new _042082.QLKS_BUS_WebService.getlistHoaDonRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.getlistHoaDonRequestBody();
+            _042082.QLKS_BUS_WebService.getlistHoaDonResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).getlistHoaDon(inValue);
+            return retVal.Body.getlistHoaDonResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.Thanhtoan_HDResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.Thanhtoan_HD(_042082.QLKS_BUS_WebService.Thanhtoan_HDRequest request) {
+            return base.Channel.Thanhtoan_HD(request);
+        }
+        
+        public bool Thanhtoan_HD(string mahoadon, double tongtien) {
+            _042082.QLKS_BUS_WebService.Thanhtoan_HDRequest inValue = new _042082.QLKS_BUS_WebService.Thanhtoan_HDRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.Thanhtoan_HDRequestBody();
+            inValue.Body.mahoadon = mahoadon;
+            inValue.Body.tongtien = tongtien;
+            _042082.QLKS_BUS_WebService.Thanhtoan_HDResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).Thanhtoan_HD(inValue);
+            return retVal.Body.Thanhtoan_HDResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.Thanhtoan_Phieuthue(_042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequest request) {
+            return base.Channel.Thanhtoan_Phieuthue(request);
+        }
+        
+        public bool Thanhtoan_Phieuthue(string maHD, string maphong, _042082.QLKS_BUS_WebService.PhieuThueDTO dtoPT) {
+            _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequest inValue = new _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueRequestBody();
+            inValue.Body.maHD = maHD;
+            inValue.Body.maphong = maphong;
+            inValue.Body.dtoPT = dtoPT;
+            _042082.QLKS_BUS_WebService.Thanhtoan_PhieuthueResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).Thanhtoan_Phieuthue(inValue);
+            return retVal.Body.Thanhtoan_PhieuthueResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.Thanhtoan_PhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.Thanhtoan_Phong(_042082.QLKS_BUS_WebService.Thanhtoan_PhongRequest request) {
+            return base.Channel.Thanhtoan_Phong(request);
+        }
+        
+        public bool Thanhtoan_Phong(string maphong) {
+            _042082.QLKS_BUS_WebService.Thanhtoan_PhongRequest inValue = new _042082.QLKS_BUS_WebService.Thanhtoan_PhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.Thanhtoan_PhongRequestBody();
+            inValue.Body.maphong = maphong;
+            _042082.QLKS_BUS_WebService.Thanhtoan_PhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).Thanhtoan_Phong(inValue);
+            return retVal.Body.Thanhtoan_PhongResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.LapHoaDonResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.LapHoaDon(_042082.QLKS_BUS_WebService.LapHoaDonRequest request) {
+            return base.Channel.LapHoaDon(request);
+        }
+        
+        public bool LapHoaDon(_042082.QLKS_BUS_WebService.HoaDonDTO dtoHD) {
+            _042082.QLKS_BUS_WebService.LapHoaDonRequest inValue = new _042082.QLKS_BUS_WebService.LapHoaDonRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.LapHoaDonRequestBody();
+            inValue.Body.dtoHD = dtoHD;
+            _042082.QLKS_BUS_WebService.LapHoaDonResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).LapHoaDon(inValue);
+            return retVal.Body.LapHoaDonResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.kiemtra_loaikhachResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.kiemtra_loaikhach(_042082.QLKS_BUS_WebService.kiemtra_loaikhachRequest request) {
+            return base.Channel.kiemtra_loaikhach(request);
+        }
+        
+        public bool kiemtra_loaikhach(string maphieuthue, string MaLoaiKH) {
+            _042082.QLKS_BUS_WebService.kiemtra_loaikhachRequest inValue = new _042082.QLKS_BUS_WebService.kiemtra_loaikhachRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.kiemtra_loaikhachRequestBody();
+            inValue.Body.maphieuthue = maphieuthue;
+            inValue.Body.MaLoaiKH = MaLoaiKH;
+            _042082.QLKS_BUS_WebService.kiemtra_loaikhachResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).kiemtra_loaikhach(inValue);
+            return retVal.Body.kiemtra_loaikhachResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.dem_KH_PhongResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.dem_KH_Phong(_042082.QLKS_BUS_WebService.dem_KH_PhongRequest request) {
+            return base.Channel.dem_KH_Phong(request);
+        }
+        
+        public int dem_KH_Phong(string maphieuthue) {
+            _042082.QLKS_BUS_WebService.dem_KH_PhongRequest inValue = new _042082.QLKS_BUS_WebService.dem_KH_PhongRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.dem_KH_PhongRequestBody();
+            inValue.Body.maphieuthue = maphieuthue;
+            _042082.QLKS_BUS_WebService.dem_KH_PhongResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).dem_KH_Phong(inValue);
+            return retVal.Body.dem_KH_PhongResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.delete_hdResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.delete_hd(_042082.QLKS_BUS_WebService.delete_hdRequest request) {
+            return base.Channel.delete_hd(request);
+        }
+        
+        public bool delete_hd(string mahd) {
+            _042082.QLKS_BUS_WebService.delete_hdRequest inValue = new _042082.QLKS_BUS_WebService.delete_hdRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.delete_hdRequestBody();
+            inValue.Body.mahd = mahd;
+            _042082.QLKS_BUS_WebService.delete_hdResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).delete_hd(inValue);
+            return retVal.Body.delete_hdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        _042082.QLKS_BUS_WebService.NextIDHoaDonResponse _042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap.NextIDHoaDon(_042082.QLKS_BUS_WebService.NextIDHoaDonRequest request) {
+            return base.Channel.NextIDHoaDon(request);
+        }
+        
+        public string NextIDHoaDon() {
+            _042082.QLKS_BUS_WebService.NextIDHoaDonRequest inValue = new _042082.QLKS_BUS_WebService.NextIDHoaDonRequest();
+            inValue.Body = new _042082.QLKS_BUS_WebService.NextIDHoaDonRequestBody();
+            _042082.QLKS_BUS_WebService.NextIDHoaDonResponse retVal = ((_042082.QLKS_BUS_WebService.QLKS_BUS_WebserviceSoap)(this)).NextIDHoaDon(inValue);
+            return retVal.Body.NextIDHoaDonResult;
         }
     }
 }

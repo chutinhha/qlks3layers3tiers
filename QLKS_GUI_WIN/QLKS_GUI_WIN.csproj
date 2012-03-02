@@ -36,6 +36,9 @@
     <Reference Include="DevComponents.DotNetBar2">
       <HintPath>..\QLKS_1042050_1042082\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -49,17 +52,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmbackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbackup.designer.cs">
+      <DependentUpon>frmbackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSHoaDon.designer.cs">
+      <DependentUpon>frmDSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmKhachHang.designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuThue.designer.cs">
+      <DependentUpon>frmPhieuThue.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPhong.designer.cs">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQTHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQTHT.designer.cs">
+      <DependentUpon>frmQTHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrestore.designer.cs">
+      <DependentUpon>frmrestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoftwareVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoftwareVersion.designer.cs">
+      <DependentUpon>frmSoftwareVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThayDoiQD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThayDoiQD.designer.cs">
+      <DependentUpon>frmThayDoiQD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuPhong.cs" />
+    <Compile Include="frmTraCuuPhong.Designer.cs">
+      <DependentUpon>frmTraCuuPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,11 +147,41 @@
     <Compile Include="UserControls\urlTraCuuPhong.designer.cs">
       <DependentUpon>urlTraCuuPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmbackup.resx">
+      <DependentUpon>frmbackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDSHoaDon.resx">
+      <DependentUpon>frmDSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuThue.resx">
+      <DependentUpon>frmPhieuThue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQTHT.resx">
+      <DependentUpon>frmQTHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrestore.resx">
+      <DependentUpon>frmrestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoftwareVersion.resx">
+      <DependentUpon>frmSoftwareVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThayDoiQD.resx">
+      <DependentUpon>frmThayDoiQD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +210,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Service References\QLKS_BUS_WebService\QLKS_BUS_Webservice.wsdl" />
+    <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.CTPhieuThueDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.HoaDonDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.KhachHangDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -122,7 +225,13 @@
     <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.LoaiPhongDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.PhieuThueDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.PhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLKS_BUS_WebService\_042082.QLKS_BUS_WebService.ThamSoDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>

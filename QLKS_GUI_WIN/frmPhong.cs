@@ -115,9 +115,9 @@ namespace _042082
                 MessageBox.Show("Không vượt quá 4 ký tự");
                 return false;
             }
-            if (ws.testExist(pDTO.MaPhong)==1)
+            if (ws.testExistMaPhongInPhieuThue(pDTO.MaPhong)==1)
             {
-                MessageBox.Show("Mã Phòng  đã tồn tại");
+                MessageBox.Show("Mã Phòng đã tồn tại");
                 return false;
             }
             return true;

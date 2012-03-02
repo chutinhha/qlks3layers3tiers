@@ -255,5 +255,47 @@ namespace DAL
                 return 0;
             return 1;
         }
+
+        // Hàm mới cập nhật từ HOADON
+        public KhachHangDTO[] InfoKH(string maPT)
+        {
+            string sql = "select CTPHIEUTHUE.MaKhachHang,KHACHHANG.TenKhachHang,KHACHHANG.DiaChi,KHACHHANG.MaLoaiKH,LOAIKHACHHANG.TenLoaiKH, CMND, KHACHHANG.KhachHangDaiDien from LOAIKHACHHANG,KHACHHANG,CTPHIEUTHUE,PHIEUTHUE where KHACHHANG.MaLoaiKH=LOAIKHACHHANG.MaLoaiKH and KHACHHANG.MaKhachHang=CTPHIEUTHUE.MaKhachHang and CTPHIEUTHUE.MaPhieuThue=PHIEUTHUE.MaPhieuThue and PHIEUTHUE.MaPhieuThue='" + maPT + "'";
+            DataTable dt = ExecuteQuery(sql);
+            KhachHangDTO[] kDTOArr = new KhachHangDTO[dt.Rows.Count];
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                object kDTO = GetDataFromDataRow(dt, i);
+                kDTOArr[i] = (KhachHangDTO)kDTO;
+
+            }
+            return kDTOArr;
+        }
+
+        public KhachHangDTO[] GetInfoKH(string maKH)
+        {
+            string sql = "select distinct KHACHHANG.TenKhachHang,KHACHHANG.DiaChi,CMND,MaKhachHang,MaLoaiKH, KHACHHANG.KhachHangDaiDien from KHACHHANG,PHIEUTHUE where KHACHHANG.MaKhachHang=PHIEUTHUE.KhachHangDaiDien and PHIEUTHUE.KhachHangDaiDien='" + maKH + "'";
+            DataTable dt = ExecuteQuery(sql);
+            KhachHangDTO[] kDTOArr = new KhachHangDTO[dt.Rows.Count];
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                object kDTO = GetDataFromDataRow(dt, i);
+                kDTOArr[i] = (KhachHangDTO)kDTO;
+
+            }
+            return kDTOArr;
+        }
+        public KhachHangDTO[] TenKHDaiDien(string MaHD)
+        {
+            string sql = "select KHACHHANG.TenKhachHang,KHACHHANG.DiaChi from KHACHHANG,PHIEUTHUE,CTHOADON,HOADON where KHACHHANG.MaKhachHang=PHIEUTHUE.KhachHangDaiDien and PHIEUTHUE.MaPhieuThue=CTHOADON.MaPhieuThue and HOADON.MaHoaDOn=CTHOADON.MaHoaDon and HOADON.MaHoaDOn='" + MaHD + "'";
+            DataTable dt = ExecuteQuery(sql);
+            KhachHangDTO[] kDTOArr = new KhachHangDTO[dt.Rows.Count];
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                object kDTO = GetDataFromDataRow(dt, i);
+                kDTOArr[i] = (KhachHangDTO)kDTO;
+
+            }
+            return kDTOArr;
+        }
     }
 }
