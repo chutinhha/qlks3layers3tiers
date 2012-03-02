@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QLKS_BUS_Webservice.asmx" />
+    <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.CTPhieuThueDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.HoaDonDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -58,7 +64,13 @@
     <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.LoaiPhongDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.PhieuThueDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.PhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.ThamSoDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\QLKS_DAL_WebService\QLKS_DAL_Webservice.disco" />
@@ -68,14 +80,21 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
+    <Content Include="Service References\Web.config" />
+    <Content Include="Service References\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Web.Release.config">
+    <Content Include="Service References\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <None Include="Service References\QLKS_DAL_WebService\QLKS_DAL_Webservice.wsdl" />
+    <Content Include="web.config" />
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

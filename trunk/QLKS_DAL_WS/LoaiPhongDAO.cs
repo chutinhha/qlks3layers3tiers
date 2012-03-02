@@ -30,6 +30,7 @@ namespace DAL
 
             }
             return lpDTOArr;
+
         }
         public int insertLoaiPhong(LoaiPhongDTO dtoLP)
         {

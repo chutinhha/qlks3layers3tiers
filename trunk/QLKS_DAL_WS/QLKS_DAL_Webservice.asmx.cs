@@ -22,6 +22,7 @@ namespace QLKS_DAL_WS
         PhongDAO pDAO = new PhongDAO();
         LoaiPhongDAO lpDAO = new LoaiPhongDAO();
 
+        // ======================== KHACH HANG ================================
         [WebMethod]
         public KhachHangDTO[] getListKhachHang()
         {
@@ -59,7 +60,7 @@ namespace QLKS_DAL_WS
             return kDAO.getKhachHangByMulti(Name, Kind, Address);
         }
         [WebMethod]
-        public string NextID()
+        public string NextIDKhachHang()
         {
             return kDAO.NextID();
         }
@@ -121,7 +122,27 @@ namespace QLKS_DAL_WS
             return kDAO.testMaKhachHangisKhachHangDaiDien(MaKhachHang);
         }
 
+        // Mới cập nhật từ HOADON
+        [WebMethod]
+        public KhachHangDTO[] InfoKH(string maPT)
+        {
+            return kDAO.InfoKH(maPT);
+        }
+         [WebMethod]
+        public KhachHangDTO[] GetInfoKH(string maKH)
+        {
+            return kDAO.GetInfoKH(maKH);
+        }
+         [WebMethod]
+        public KhachHangDTO[] TenKHDaiDien(string MaHD)
+        {
+            return kDAO.TenKHDaiDien(MaHD);
+        }
+
+
         // ======================== XONG KHACH HANG ================================
+
+        // ======================== LOAI KHACH HANG ================================
         [WebMethod]
         public LoaiKhachHangDTO[] getListLoaiKhachHang()
         {
@@ -129,6 +150,8 @@ namespace QLKS_DAL_WS
             return lkDAO.getListLoaiKhachHang();
         }
         // ======================== XONG LOAI KHACH HANG ================================
+
+        // ======================== PHONG  ================================
         [WebMethod]
         public int InsertPhong(PhongDTO pDTO)
         {
@@ -161,7 +184,7 @@ namespace QLKS_DAL_WS
         }
 
         [WebMethod]
-        public int testExist(string MaPhong)
+        public int testExistMaPhong(string MaPhong)
         {
             return pDAO.testExist(MaPhong);
 
@@ -182,6 +205,8 @@ namespace QLKS_DAL_WS
             return pDAO.Update(MaPhong, TinhTrang);
         }
         // ======================== XONG PHONG  ================================
+
+        // ======================== LOAI PHONG  ================================
         [WebMethod]
         public LoaiPhongDTO[] getListLoaiPhong()
         {
@@ -232,6 +257,304 @@ namespace QLKS_DAL_WS
         {
             return pDAO.testExistMaPhongInPhieuThue(MaPhong);
         }
+        // ======================== XONG LOAI PHONG  ================================
 
+        // ======================== PHIEU THUE  ================================
+        [WebMethod]
+        public PhieuThueDTO[] getListPhieuThue()
+        {
+            return new PhieuThueDAO().getList();
+        }
+         [WebMethod]
+        public int testExistsMaPhongInPhieuThue(string MaPhong)
+        {
+            return new PhieuThueDAO().testExistMaPhongInPhieuThue(MaPhong);
+        }
+        [WebMethod]
+        public string getMaLoaiPhongByMaPhong(string MaPhong)
+        {
+            return new PhieuThueDAO().getMaLoaiPhongByMaPhong(MaPhong);
+        }
+        [WebMethod]
+        public int testExistsInPhong(string MaPhong)
+        {
+            return new PhieuThueDAO().testExistsMaPhongInPhong(MaPhong);
+        }
+        [WebMethod]
+        public int DeletePhieuThue(string MaPhieuThue)
+        {
+            return new PhieuThueDAO().Delete(MaPhieuThue);
+        }
+        [WebMethod]
+        public int UpdatePhieuThue(PhieuThueDTO ptDTO)
+        {
+            return new PhieuThueDAO().Update(ptDTO);
+        }
+        [WebMethod]
+        public int Update_ngaytra_thucte(string MaHD, DateTime ngaytra_thucte)
+        {
+            PhieuThueDAO daoPT = new PhieuThueDAO();
+            return daoPT.Update_ngaytra_thucte(MaHD, ngaytra_thucte);
+        }
+        [WebMethod]
+        public string NextIDPhieuThue()
+        {
+            return new PhieuThueDAO().NextID();
+        }
+        [WebMethod]
+        public int testExistMaPhieuThueInCTHOADON(string MaPhieuThue)
+        {
+            return new PhieuThueDAO().testExistMaPhieuThueInCTHOADON(MaPhieuThue);
+        }
+        [WebMethod]
+        public int InsertPhieuThue(PhieuThueDTO ptDTO)
+        {
+            return new PhieuThueDAO().Insert(ptDTO);
+        }
+        [WebMethod]
+        public string getTinhTrangByMaPhong(string MaPhong)
+        {
+            return new PhieuThueDAO().getTinhTrangByMaPhong(MaPhong);
+        }
+        [WebMethod]
+        public string getstrSQL()
+        {
+            return new PhieuThueDAO().getstrSQL();
+        }
+        [WebMethod]
+        public int testExistsMaPhieuThueInPHIEUTHUE(string MaPT)
+        {
+            return new PhieuThueDAO().testExistsMaPhieuThueInPHIEUTHUE(MaPT);
+        }
+        [WebMethod]
+        public int getTinhTrangPhieuThue(string MaPT)
+        {
+            return new PhieuThueDAO().getTinhTrangPhieuThue(MaPT);
+        }
+        // Mới cập nhật cừ HOADON
+        [WebMethod]
+        public PhieuThueDTO[] IN(string maHD)
+        {
+            return new PhieuThueDAO().IN(maHD);
+        }
+
+
+        // ======================== THAM SO  ================================
+        [WebMethod]
+        public float getValue(int MaThamSo)
+        {
+            return new ThamSoDAO().getValue(MaThamSo);
+        }
+        [WebMethod]
+        public ThamSoDTO[] getListThamSo()
+        {
+            return new ThamSoDAO().getListThamSo();
+        }
+        [WebMethod]
+        public int UpdateThamSo(string mathamso, float giatri)
+        {
+            return new ThamSoDAO().Update(mathamso,giatri);
+        }
+        [WebMethod]
+        public float getheso()
+        {
+            return new ThamSoDAO().getheso();
+        }
+        [WebMethod]
+        public float getphuthu()
+        {
+            return new ThamSoDAO().getphuthu();
+        }
+        [WebMethod]
+        public float getkhachtoida()
+        {
+            return new ThamSoDAO().getkhachtoida();
+        }
+
+
+        // ======================== CTPHIEUTHUE  ================================
+
+        [WebMethod]
+        public CTPhieuThueDTO[] getListCTPhieuThue()
+        {
+            return new CTPhieuThueDAO().getList();
+        }
+        [WebMethod]
+        public string NextIDCTPhieuThue()
+        {
+            return new CTPhieuThueDAO().NextID();
+        }
+        [WebMethod]
+        public CTPhieuThueDTO[] getListByMaPhieuThue(string MaPhieuThue)
+        {
+            return new CTPhieuThueDAO().getListByMaPhieuThue(MaPhieuThue);
+        }
+        [WebMethod]
+        public int testExistsMaPhieuThueInCTPhieuThue(string MaPhieuThue)
+        {
+            return new CTPhieuThueDAO().testExistsMaPhieuThueInCTPhieuThue(MaPhieuThue);
+        }
+        [WebMethod]
+        public int testExistsMaPhieuThueInPhieuThue(string MaPhieThue)
+        {
+            return new CTPhieuThueDAO().testExistsMaPhieuThueInPhieuThue(MaPhieThue);
+        }
+        [WebMethod]
+        public int testExistMaCTPTInCTPHIEUTHUE(string MaCTPT)
+        {
+            return new CTPhieuThueDAO().testExistMaCTPTInCTPHIEUTHUE(MaCTPT);
+        }
+        //========> ĐÃ LÀM BÊN KHACHANG ==> NÊN BỊ BÁO LỖI TRÙNG METHOD. --> BỎ ĐI
+        [WebMethod]
+        public int testExistsMaKhachHangInCTPHIEUTHUE2(string MaKhachHang, string MaPhieuThue)// Thực ra mà mã phiếu thuê
+        {
+            return new CTPhieuThueDAO().testExistsMaKhachHangInCTPHIEUTHUE(MaKhachHang, MaPhieuThue);
+        }
+        [WebMethod]
+        public int InsertCTPhieuThue(CTPhieuThueDTO ctptDTO)
+        {
+            return new CTPhieuThueDAO().Insert(ctptDTO);
+        }
+        [WebMethod]
+        public int UpdateCTPhieuThue(CTPhieuThueDTO ctptDTO)
+        {
+            return new CTPhieuThueDAO().Update(ctptDTO);
+        }
+        [WebMethod]
+        public int DeleteCTPhieuThue(string MaCTPT)
+        {
+            return new CTPhieuThueDAO().Delete(MaCTPT);
+        }
+        [WebMethod]
+        public int CountMaKhachHang(string MaPhieuThue)
+        {
+            return new CTPhieuThueDAO().CountMaKhachHang(MaPhieuThue);
+        }
+        [WebMethod]
+        public string getListMaCTPTByMaPhieuThue(string MaPhieuThue)
+        {
+            return new CTPhieuThueDAO().getListMaCTPTByMaPhieuThue(MaPhieuThue);
+        }
+
+        // ======================== HOA DON  ================================
+        // - Một số hàm chuyển sang KhachHang và PhieuThue
+        // - Một số hàm thì chưa hiểu lắm
+
+        [WebMethod]
+        public HoaDonDTO[] getlistHoaDon()
+        {
+            return new HoaDonDAO().getlistHoaDon();
+        }
+        // ===> Chưa hiểu lắm
+
+        //public DataTable Phong_KH(string _maphong)
+        //{
+        //    string thanhtoan = "0";
+        //    string sql = "select PHIEUTHUE.MaPhong,PHIEUTHUE.NgayThue,CTPHIEUTHUE.MaKhachHang,TenKhachHang,KHACHHANG.MaLoaiKH,CMND from CTPHIEUTHUE,PHIEUTHUE,KHACHHANG,LOAIKHACHHANG WHERE KHACHHANG.MaLoaiKH=LOAIKHACHHANG.MaLoaiKH and KHACHHANG.MaKhachHang=CTPHIEUTHUE.MaKhachHang and CTPHIEUTHUE.MaPhieuThue=PHIEUTHUE.MaPhieuThue and PHIEUTHUE.ThanhToan='" + thanhtoan + "' and PHIEUTHUE.MaPhong='" + _maphong + "'";
+        //    return dp.ExecuteQuery(sql);
+        //}
+        [WebMethod]
+        public bool Thanhtoan_HD(string mahoadon, double tongtien)
+        {
+            return new HoaDonDAO().Thanhtoan_HD(mahoadon, tongtien);
+        }
+        [WebMethod]
+        public bool Thanhtoan_Phieuthue(string maHD, string maphong, PhieuThueDTO dtoPT)
+        {
+            return new HoaDonDAO().Thanhtoan_Phieuthue(maHD, maphong, dtoPT);
+        }
+
+        // UpdatePhongStatus
+        [WebMethod]
+        public bool Thanhtoan_Phong(string maphong)
+        {
+            return new HoaDonDAO().Thanhtoan_Phong(maphong);
+        }
+        [WebMethod]
+        public bool LapHoaDon(HoaDonDTO dtoHD)
+        {
+            return new HoaDonDAO().LapHoaDon(dtoHD);
+        }
+        //// Là làm cái gì
+        //public DataTable Xem(string KHdaidien)
+        //{
+        //    string sql = "Select PHIEUTHUE.MaPhieuThue,PHIEUTHUE.MaPhong,PHONG.TenPhong,PHIEUTHUE.NgayTra from PHIEUTHUE,PHONG Where  PHIEUTHUE.MaPhong = PHONG.MaPhong and PHIEUTHUE.KhachHangDaiDien='" + KHdaidien + "' and PHIEUTHUE.ThanhToan='0'";
+        //    return dp.ExecuteQuery(sql);
+        //}
+        //// Là làm cái gì
+        //public DataTable CT_HoaDon(string MaHD)
+        //{
+        //    string sql = "select PHIEUTHUE.MaPhieuThue,PHIEUTHUE.MaPhong,PHIEUTHUE.NgayThue,PHIEUTHUE.NgayTra,LOAIPHONG.DonGia,DATEDIFF(dd,PHIEUTHUE.NgayThue,PHIEUTHUE.NgayTra)as SoNgayThue from HOADON,CTHOADON,PHIEUTHUE,PHONG,LOAIPHONG WHERE HOADON.MaHoaDon=CTHOADON.MaHoaDon and CTHOADON.MaPhieuThue=PHIEUTHUE.MaPhieuThue and PHIEUTHUE.MaPhong=PHONG.MaPhong and PHONG.MaLoaiPhong=LOAIPHONG.MaLoaiPhong and HOADON.MaHoaDon='" + MaHD + "'";
+        //    return dp.ExecuteQuery(sql);
+        //}
+        [WebMethod]
+        public bool kiemtra_loaikhach(string maphieuthue, string MaLoaiKH)
+        {
+            return new HoaDonDAO().kiemtra_loaikhach(maphieuthue, MaLoaiKH);
+        }
+        [WebMethod]
+        public int dem_KH_Phong(string maphieuthue)
+        {
+            return new HoaDonDAO().dem_KH_Phong(maphieuthue);
+        }
+        [WebMethod]
+        public bool delete_hd(string mahd)
+        {
+            return new HoaDonDAO().delete_hd(mahd);
+        }
+        [WebMethod]
+        public string NextIDHoaDon()
+        {
+            return new HoaDonDAO().NextID();
+        }
+
+        // ======================= CT_HOADON
+        [WebMethod]
+        public bool InsertCTHOADON(CT_HoaDonDTO dtoCTHD)
+        {
+            return new CT_HoaDonDAO().Them(dtoCTHD);
+        }
+
+        [WebMethod]
+        public string getMaPT(string maphong)
+        {
+            return new CT_HoaDonDAO().getMaPT(maphong);
+        }
+
+        [WebMethod]
+        public bool delete_cthd(string mahd)
+        {
+            return new CT_HoaDonDAO().delete_cthd(mahd);
+        }
+
+        // User DTO ======================================
+
+         [WebMethod]
+        public bool KiemTra_tendangnhap(string _tendangnhap)
+        {
+            return new UserDAO().KiemTra_tendangnhap(_tendangnhap);
+        }
+         [WebMethod]
+        public bool KiemTra_matkhau(string _tendangnhap, string _matkhau)
+        {
+            return new UserDAO().KiemTra_matkhau(_tendangnhap, _matkhau);
+        }
+         [WebMethod]
+        public bool backup(string path)
+        {
+            return new UserDAO().backup(path);
+        }
+
+         [WebMethod]
+        public bool restore(string path)
+        {
+            return new UserDAO().restore(path);
+        }
+
+         [WebMethod]
+        public string getIdKUserByIdUser(UserDTO uDTO)
+        {
+            return new UserDAO().getIdKUserByIdUser(uDTO);
+        }
     }
 }
