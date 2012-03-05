@@ -15,5 +15,10 @@ namespace _042082
         {
             InitializeComponent();
         }
+
+        private void frmTraCuuPhong_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frm_Main.activeFrom[4] = 4;
+        }
     }
 }
