@@ -177,7 +177,7 @@ namespace _042082
 
         private void frmPhong_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //frm_Main.activeFrom[5] = 5;
+            frm_Main.activeFrom[5] = 5;
             foreach (DevComponents.DotNetBar.Office2007Form f in this.MdiChildren)
             {
                 if (!f.IsDisposed)

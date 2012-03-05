@@ -23,7 +23,7 @@ namespace _042082
 
         private void frmKhachHang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //frm_Main.activeFrom[8] = 8;
+            frm_Main.activeFrom[8] = 8;
 
         }
     }

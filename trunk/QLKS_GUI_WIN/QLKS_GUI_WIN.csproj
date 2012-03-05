@@ -118,7 +118,9 @@
     <Compile Include="frmThayDoiQD.designer.cs">
       <DependentUpon>frmThayDoiQD.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTraCuuPhong.cs" />
+    <Compile Include="frmTraCuuPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTraCuuPhong.Designer.cs">
       <DependentUpon>frmTraCuuPhong.cs</DependentUpon>
     </Compile>
@@ -179,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThayDoiQD.resx">
       <DependentUpon>frmThayDoiQD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuPhong.resx">
+      <DependentUpon>frmTraCuuPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>

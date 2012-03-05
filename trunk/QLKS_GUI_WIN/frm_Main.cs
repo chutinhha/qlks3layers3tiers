@@ -22,7 +22,7 @@ namespace _042082
          * 6 : Quản lý loại phòng ==> Cùng chức năng 2 - Phân Quyền
          * 7 : Lập hòa dơn thanh toán
          * 8 : Quản lý khách hàng
-         * 9 : Quản lý loại khác hàng ==> Cùng chức năng 2 - Phân Quyền
+         * 9 : Quản lý loại khách hàng ==> Cùng chức năng 2 - Phân Quyền
          * 10 : Báo cáo thống kê
          * 11 : Export
          * 12 : Import
@@ -285,7 +285,7 @@ namespace _042082
 
         private void btiTXBaoCaoTK_Click(object sender, EventArgs e)
         {
-            frmShow(new frmBaoCaoTK(),10);
+            //frmShow(new frmBaoCaoTK(),10);
         }
 
         private void btiTXExport_Click(object sender, EventArgs e)

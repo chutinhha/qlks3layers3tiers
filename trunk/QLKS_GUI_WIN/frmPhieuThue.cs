@@ -651,7 +651,7 @@ namespace _042082
 
         private void frmPhieuThue_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //frm_Main.activeFrom[3] = 3;
+            frm_Main.activeFrom[3] = 3;
         }
 
         private void dataGridViewPhieuThue_CellContentClick(object sender, DataGridViewCellEventArgs e)
