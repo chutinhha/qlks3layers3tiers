@@ -1,0 +1,2591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QLKS_BUS_WS.QLKS_BUS_Webservice" Collapsed="true">
+    <Position X="10" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQChPEIaA3HiAiKHQSgAh5DShBhdAkgiEYSW4tiEEAg=</HashCode>
+      <FileName>QLKS_BUS_Webservice.asmx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CT_HoaDonDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAACAAAAAAAAAIAgAAAEEAEAAAAAAIAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UserDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgQCCCAAggAAAAAAAAQAgAAAIAAEIAAAAAIAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAACCAAABAAAAAYAAAAEgAAACCCFAAAAAAaQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LoaiKhachHangDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACCACAAAAAAAIAAAAAgAAACAAEAAAAAAIBAAQ=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.PhongDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAASBAAAAAAAACAAgEAAgABACAAEAAAAQAIAAAI=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LoaiPhongDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBAAACBAAIAAAAAAAAgAAAgAAACAAEAAAAAAIAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.PhieuThueDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>goEAAKACBAAAAABAABACEAAAgAQAEEAEBAAEQAIQAJI=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.ThamSoDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAICIAAACAgQBAAAAEAAAAACIQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CTPhieuThueDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAAAABAAAAQAAAAAAgAAAEEAFAAAAAAIAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.HoaDonDTO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAACAAEACAAAAAAAEAIEgAAgACCEAAAACAIQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTHOADONRequest" Collapsed="true">
+    <Position X="15.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTHOADONRequestBody" Collapsed="true">
+    <Position X="17" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTHOADONResponse" Collapsed="true">
+    <Position X="18.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTHOADONResponseBody" Collapsed="true">
+    <Position X="20.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaPTRequest" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaPTRequestBody" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaPTResponse" Collapsed="true">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaPTResponseBody" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_cthdRequest" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_cthdRequestBody" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_cthdResponse" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_cthdResponseBody" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_tendangnhapRequest" Collapsed="true">
+    <Position X="24" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_tendangnhapRequestBody" Collapsed="true">
+    <Position X="25.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_tendangnhapResponse" Collapsed="true">
+    <Position X="27.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_tendangnhapResponseBody" Collapsed="true">
+    <Position X="29.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_matkhauRequest" Collapsed="true">
+    <Position X="10" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_matkhauRequestBody" Collapsed="true">
+    <Position X="11.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_matkhauResponse" Collapsed="true">
+    <Position X="13.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_matkhauResponseBody" Collapsed="true">
+    <Position X="15.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.backupRequest" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.backupRequestBody" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.backupResponse" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.backupResponseBody" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.restoreRequest" Collapsed="true">
+    <Position X="13.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.restoreRequestBody" Collapsed="true">
+    <Position X="15.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.restoreResponse" Collapsed="true">
+    <Position X="17" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.restoreResponseBody" Collapsed="true">
+    <Position X="18.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getIdKUserByIdUserRequest" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getIdKUserByIdUserRequestBody" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getIdKUserByIdUserResponse" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getIdKUserByIdUserResponseBody" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangRequest" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangRequestBody" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangResponse" Collapsed="true">
+    <Position X="24" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangResponseBody" Collapsed="true">
+    <Position X="25.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByIdRequest" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByIdRequestBody" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByIdResponse" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByIdResponseBody" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByNameRequest" Collapsed="true">
+    <Position X="34.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByNameRequestBody" Collapsed="true">
+    <Position X="36.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByNameResponse" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByNameResponseBody" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByCMNDRequest" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByCMNDRequestBody" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByCMNDResponse" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByCMNDResponseBody" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByKindRequest" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByKindRequestBody" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByKindResponse" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByKindResponseBody" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByAddressRequest" Collapsed="true">
+    <Position X="34.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByAddressRequestBody" Collapsed="true">
+    <Position X="36.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByAddressResponse" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByAddressResponseBody" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByMultiRequest" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByMultiRequestBody" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByMultiResponse" Collapsed="true">
+    <Position X="31" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangByMultiResponseBody" Collapsed="true">
+    <Position X="32.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDKhachHangRequest" Collapsed="true">
+    <Position X="27.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDKhachHangRequestBody" Collapsed="true">
+    <Position X="29.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDKhachHangResponse" Collapsed="true">
+    <Position X="31" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDKhachHangResponseBody" Collapsed="true">
+    <Position X="32.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertKhachHangRequest" Collapsed="true">
+    <Position X="29.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertKhachHangRequestBody" Collapsed="true">
+    <Position X="31" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertKhachHangResponse" Collapsed="true">
+    <Position X="32.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertKhachHangResponseBody" Collapsed="true">
+    <Position X="34.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInKHACHHANGRequest" Collapsed="true">
+    <Position X="34.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInKHACHHANGRequestBody" Collapsed="true">
+    <Position X="36.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInKHACHHANGResponse" Collapsed="true">
+    <Position X="3" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInKHACHHANGResponseBody" Collapsed="true">
+    <Position X="4.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUERequest" Collapsed="true">
+    <Position X="27.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUERequestBody" Collapsed="true">
+    <Position X="29.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUEResponse" Collapsed="true">
+    <Position X="31" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUEResponseBody" Collapsed="true">
+    <Position X="32.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteKhachHangRequest" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteKhachHangRequestBody" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteKhachHangResponse" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteKhachHangResponseBody" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateKhachHangRequest" Collapsed="true">
+    <Position X="4.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateKhachHangRequestBody" Collapsed="true">
+    <Position X="6.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateKhachHangResponse" Collapsed="true">
+    <Position X="8.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateKhachHangResponseBody" Collapsed="true">
+    <Position X="10" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienRequest" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienRequestBody" Collapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienResponse" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienResponseBody" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienByIdRequest" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienByIdRequestBody" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienByIdResponse" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListKhachHangDaiDienByIdResponseBody" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDaiDienisNULLRequest" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDaiDienisNULLRequestBody" Collapsed="true">
+    <Position X="24" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDaiDienisNULLResponse" Collapsed="true">
+    <Position X="25.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KhachHangDaiDienisNULLResponseBody" Collapsed="true">
+    <Position X="27.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienNotNULLRequest" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienNotNULLRequestBody" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienNotNULLResponse" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienNotNULLResponseBody" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienisNULLRequest" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienisNULLRequestBody" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienisNULLResponse" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getKhachHangDaiDienisNULLResponseBody" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testMaKhachHangisKhachHangDaiDienRequest" Collapsed="true">
+    <Position X="31" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testMaKhachHangisKhachHangDaiDienRequestBody" Collapsed="true">
+    <Position X="32.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testMaKhachHangisKhachHangDaiDienResponse" Collapsed="true">
+    <Position X="34.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testMaKhachHangisKhachHangDaiDienResponseBody" Collapsed="true">
+    <Position X="36.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InfoKHRequest" Collapsed="true">
+    <Position X="36.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InfoKHRequestBody" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InfoKHResponse" Collapsed="true">
+    <Position X="4.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InfoKHResponseBody" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.GetInfoKHRequest" Collapsed="true">
+    <Position X="27.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.GetInfoKHRequestBody" Collapsed="true">
+    <Position X="29.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.GetInfoKHResponse" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.GetInfoKHResponseBody" Collapsed="true">
+    <Position X="32.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.TenKHDaiDienRequest" Collapsed="true">
+    <Position X="13.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.TenKHDaiDienRequestBody" Collapsed="true">
+    <Position X="15.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.TenKHDaiDienResponse" Collapsed="true">
+    <Position X="17" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.TenKHDaiDienResponseBody" Collapsed="true">
+    <Position X="18.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiKhachHangRequest" Collapsed="true">
+    <Position X="27.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiKhachHangRequestBody" Collapsed="true">
+    <Position X="29.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiKhachHangResponse" Collapsed="true">
+    <Position X="31" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiKhachHangResponseBody" Collapsed="true">
+    <Position X="32.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhongRequest" Collapsed="true">
+    <Position X="15.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhongRequestBody" Collapsed="true">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhongResponse" Collapsed="true">
+    <Position X="18.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhongResponseBody" Collapsed="true">
+    <Position X="20.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhongRequest" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhongRequestBody" Collapsed="true">
+    <Position X="22.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhongResponse" Collapsed="true">
+    <Position X="24" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhongResponseBody" Collapsed="true">
+    <Position X="25.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByIdRequest" Collapsed="true">
+    <Position X="20.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByIdRequestBody" Collapsed="true">
+    <Position X="22.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByIdResponse" Collapsed="true">
+    <Position X="24" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByIdResponseBody" Collapsed="true">
+    <Position X="25.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByKindRequest" Collapsed="true">
+    <Position X="27.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByKindRequestBody" Collapsed="true">
+    <Position X="29.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByKindResponse" Collapsed="true">
+    <Position X="31" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByKindResponseBody" Collapsed="true">
+    <Position X="32.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByStatusRequest" Collapsed="true">
+    <Position X="34.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByStatusRequestBody" Collapsed="true">
+    <Position X="36.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByStatusResponse" Collapsed="true">
+    <Position X="3" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByStatusResponseBody" Collapsed="true">
+    <Position X="4.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByTuaLuaHotDuaRequest" Collapsed="true">
+    <Position X="6.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByTuaLuaHotDuaRequestBody" Collapsed="true">
+    <Position X="8.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByTuaLuaHotDuaResponse" Collapsed="true">
+    <Position X="10" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.searchPhongByTuaLuaHotDuaResponseBody" Collapsed="true">
+    <Position X="11.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongRequest" Collapsed="true">
+    <Position X="6.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongRequestBody" Collapsed="true">
+    <Position X="8.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongResponse" Collapsed="true">
+    <Position X="10" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongResponseBody" Collapsed="true">
+    <Position X="11.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhongRequest" Collapsed="true">
+    <Position X="27.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhongRequestBody" Collapsed="true">
+    <Position X="29.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhongResponse" Collapsed="true">
+    <Position X="31" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhongResponseBody" Collapsed="true">
+    <Position X="32.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongInfoRequest" Collapsed="true">
+    <Position X="25.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongInfoRequestBody" Collapsed="true">
+    <Position X="27.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongInfoResponse" Collapsed="true">
+    <Position X="29.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongInfoResponseBody" Collapsed="true">
+    <Position X="31" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongStatusRequest" Collapsed="true">
+    <Position X="32.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongStatusRequestBody" Collapsed="true">
+    <Position X="34.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongStatusResponse" Collapsed="true">
+    <Position X="36.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhongStatusResponseBody" Collapsed="true">
+    <Position X="3" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiPhongRequest" Collapsed="true">
+    <Position X="34.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiPhongRequestBody" Collapsed="true">
+    <Position X="36.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiPhongResponse" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListLoaiPhongResponseBody" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.insertLoaiPhongRequest" Collapsed="true">
+    <Position X="36.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.insertLoaiPhongRequestBody" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.insertLoaiPhongResponse" Collapsed="true">
+    <Position X="4.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.insertLoaiPhongResponseBody" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateLoaiPhongRequest" Collapsed="true">
+    <Position X="11.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateLoaiPhongRequestBody" Collapsed="true">
+    <Position X="13.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateLoaiPhongResponse" Collapsed="true">
+    <Position X="15.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateLoaiPhongResponseBody" Collapsed="true">
+    <Position X="17" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteLoaiPhongRequest" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteLoaiPhongRequestBody" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteLoaiPhongResponse" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteLoaiPhongResponseBody" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_MaLPRequest" Collapsed="true">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_MaLPRequestBody" Collapsed="true">
+    <Position X="4.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_MaLPResponse" Collapsed="true">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_MaLPResponseBody" Collapsed="true">
+    <Position X="8.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_SoRequest" Collapsed="true">
+    <Position X="17" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_SoRequestBody" Collapsed="true">
+    <Position X="18.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_SoResponse" Collapsed="true">
+    <Position X="20.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_SoResponseBody" Collapsed="true">
+    <Position X="22.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_UsingRequest" Collapsed="true">
+    <Position X="31" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_UsingRequestBody" Collapsed="true">
+    <Position X="32.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_UsingResponse" Collapsed="true">
+    <Position X="34.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.KiemTra_UsingResponseBody" Collapsed="true">
+    <Position X="36.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByLoaiPhongRequest" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByLoaiPhongRequestBody" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByLoaiPhongResponse" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByLoaiPhongResponseBody" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByMaPhongRequest" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByMaPhongRequestBody" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByMaPhongResponse" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getDonGiaByMaPhongResponseBody" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongInPhieuThueRequest" Collapsed="true">
+    <Position X="34.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongInPhieuThueRequestBody" Collapsed="true">
+    <Position X="36.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongInPhieuThueResponse" Collapsed="true">
+    <Position X="3" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhongInPhieuThueResponseBody" Collapsed="true">
+    <Position X="4.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhieuThueRequest" Collapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhieuThueRequestBody" Collapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhieuThueResponse" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListPhieuThueResponseBody" Collapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhongInPhieuThueRequest" Collapsed="true">
+    <Position X="24" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhongInPhieuThueRequestBody" Collapsed="true">
+    <Position X="25.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhongInPhieuThueResponse" Collapsed="true">
+    <Position X="27.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhongInPhieuThueResponseBody" Collapsed="true">
+    <Position X="29.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaLoaiPhongByMaPhongRequest" Collapsed="true">
+    <Position X="34.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaLoaiPhongByMaPhongRequestBody" Collapsed="true">
+    <Position X="36.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaLoaiPhongByMaPhongResponse" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getMaLoaiPhongByMaPhongResponseBody" Collapsed="true">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsInPhongRequest" Collapsed="true">
+    <Position X="13.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsInPhongRequestBody" Collapsed="true">
+    <Position X="15.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsInPhongResponse" Collapsed="true">
+    <Position X="17" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsInPhongResponseBody" Collapsed="true">
+    <Position X="18.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhieuThueRequest" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhieuThueRequestBody" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhieuThueResponse" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeletePhieuThueResponseBody" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhieuThueRequest" Collapsed="true">
+    <Position X="18.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhieuThueRequestBody" Collapsed="true">
+    <Position X="20.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhieuThueResponse" Collapsed="true">
+    <Position X="22.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdatePhieuThueResponseBody" Collapsed="true">
+    <Position X="24" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Update_ngaytra_thucteRequest" Collapsed="true">
+    <Position X="25.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Update_ngaytra_thucteRequestBody" Collapsed="true">
+    <Position X="27.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Update_ngaytra_thucteResponse" Collapsed="true">
+    <Position X="29.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Update_ngaytra_thucteResponseBody" Collapsed="true">
+    <Position X="31" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDPhieuThueRequest" Collapsed="true">
+    <Position X="34.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDPhieuThueRequestBody" Collapsed="true">
+    <Position X="36.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDPhieuThueResponse" Collapsed="true">
+    <Position X="3" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDPhieuThueResponseBody" Collapsed="true">
+    <Position X="4.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhieuThueInCTHOADONRequest" Collapsed="true">
+    <Position X="27.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhieuThueInCTHOADONRequestBody" Collapsed="true">
+    <Position X="29.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhieuThueInCTHOADONResponse" Collapsed="true">
+    <Position X="31" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaPhieuThueInCTHOADONResponseBody" Collapsed="true">
+    <Position X="32.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhieuThueRequest" Collapsed="true">
+    <Position X="8.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhieuThueRequestBody" Collapsed="true">
+    <Position X="10" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhieuThueResponse" Collapsed="true">
+    <Position X="11.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertPhieuThueResponseBody" Collapsed="true">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangByMaPhongRequest" Collapsed="true">
+    <Position X="20.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangByMaPhongRequestBody" Collapsed="true">
+    <Position X="22.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangByMaPhongResponse" Collapsed="true">
+    <Position X="24" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangByMaPhongResponseBody" Collapsed="true">
+    <Position X="25.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getstrSQLRequest" Collapsed="true">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getstrSQLRequestBody" Collapsed="true">
+    <Position X="15.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getstrSQLResponse" Collapsed="true">
+    <Position X="17" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getstrSQLResponseBody" Collapsed="true">
+    <Position X="18.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPHIEUTHUERequest" Collapsed="true">
+    <Position X="13.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPHIEUTHUERequestBody" Collapsed="true">
+    <Position X="17" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPHIEUTHUEResponse" Collapsed="true">
+    <Position X="18.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPHIEUTHUEResponseBody" Collapsed="true">
+    <Position X="22.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangPhieuThueRequest" Collapsed="true">
+    <Position X="27.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangPhieuThueRequestBody" Collapsed="true">
+    <Position X="29.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangPhieuThueResponse" Collapsed="true">
+    <Position X="31" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getTinhTrangPhieuThueResponseBody" Collapsed="true">
+    <Position X="32.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.INRequest" Collapsed="true">
+    <Position X="8.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.INRequestBody" Collapsed="true">
+    <Position X="10" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.INResponse" Collapsed="true">
+    <Position X="11.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.INResponseBody" Collapsed="true">
+    <Position X="13.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListThamSoRequest" Collapsed="true">
+    <Position X="27.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListThamSoRequestBody" Collapsed="true">
+    <Position X="29.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListThamSoResponse" Collapsed="true">
+    <Position X="31" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListThamSoResponseBody" Collapsed="true">
+    <Position X="32.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateThamSoRequest" Collapsed="true">
+    <Position X="4.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateThamSoRequestBody" Collapsed="true">
+    <Position X="6.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateThamSoResponse" Collapsed="true">
+    <Position X="8.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateThamSoResponseBody" Collapsed="true">
+    <Position X="10" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListCTPhieuThueRequest" Collapsed="true">
+    <Position X="27.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="29.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListCTPhieuThueResponse" Collapsed="true">
+    <Position X="31" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="32.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDCTPhieuThueRequest" Collapsed="true">
+    <Position X="13.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="15.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDCTPhieuThueResponse" Collapsed="true">
+    <Position X="17" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="18.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListByMaPhieuThueRequest" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListByMaPhieuThueRequestBody" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListByMaPhieuThueResponse" Collapsed="true">
+    <Position X="24" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListByMaPhieuThueResponseBody" Collapsed="true">
+    <Position X="25.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInCTPhieuThueRequest" Collapsed="true">
+    <Position X="6.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="8.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInCTPhieuThueResponse" Collapsed="true">
+    <Position X="10" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="11.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPhieuThueRequest1" Collapsed="true">
+    <Position X="15.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaPhieuThueInPhieuThueResponse1" Collapsed="true">
+    <Position X="20.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaCTPTInCTPHIEUTHUERequest" Collapsed="true">
+    <Position X="20.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaCTPTInCTPHIEUTHUERequestBody" Collapsed="true">
+    <Position X="22.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaCTPTInCTPHIEUTHUEResponse" Collapsed="true">
+    <Position X="24" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistMaCTPTInCTPHIEUTHUEResponseBody" Collapsed="true">
+    <Position X="25.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Request" Collapsed="true">
+    <Position X="20.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUE2RequestBody" Collapsed="true">
+    <Position X="22.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUE2Response" Collapsed="true">
+    <Position X="24" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.testExistsMaKhachHangInCTPHIEUTHUE2ResponseBody" Collapsed="true">
+    <Position X="25.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTPhieuThueRequest" Collapsed="true">
+    <Position X="22.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="24" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTPhieuThueResponse" Collapsed="true">
+    <Position X="25.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.InsertCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="27.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateCTPhieuThueRequest" Collapsed="true">
+    <Position X="32.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="34.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateCTPhieuThueResponse" Collapsed="true">
+    <Position X="36.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.UpdateCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="3" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteCTPhieuThueRequest" Collapsed="true">
+    <Position X="34.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteCTPhieuThueRequestBody" Collapsed="true">
+    <Position X="36.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteCTPhieuThueResponse" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.DeleteCTPhieuThueResponseBody" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CountMaKhachHangRequest" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CountMaKhachHangRequestBody" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CountMaKhachHangResponse" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.CountMaKhachHangResponseBody" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListMaCTPTByMaPhieuThueRequest" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListMaCTPTByMaPhieuThueRequestBody" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListMaCTPTByMaPhieuThueResponse" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getListMaCTPTByMaPhieuThueResponseBody" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getlistHoaDonRequest" Collapsed="true">
+    <Position X="34.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getlistHoaDonRequestBody" Collapsed="true">
+    <Position X="36.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getlistHoaDonResponse" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.getlistHoaDonResponseBody" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_HDRequest" Collapsed="true">
+    <Position X="4.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_HDRequestBody" Collapsed="true">
+    <Position X="6.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_HDResponse" Collapsed="true">
+    <Position X="8.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_HDResponseBody" Collapsed="true">
+    <Position X="10" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhieuthueRequest" Collapsed="true">
+    <Position X="11.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhieuthueRequestBody" Collapsed="true">
+    <Position X="13.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAEAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhieuthueResponse" Collapsed="true">
+    <Position X="15.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhieuthueResponseBody" Collapsed="true">
+    <Position X="17" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhongRequest" Collapsed="true">
+    <Position X="18.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhongRequestBody" Collapsed="true">
+    <Position X="20.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhongResponse" Collapsed="true">
+    <Position X="22.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.Thanhtoan_PhongResponseBody" Collapsed="true">
+    <Position X="24" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LapHoaDonRequest" Collapsed="true">
+    <Position X="3" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LapHoaDonRequestBody" Collapsed="true">
+    <Position X="4.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LapHoaDonResponse" Collapsed="true">
+    <Position X="6.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.LapHoaDonResponseBody" Collapsed="true">
+    <Position X="8.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.kiemtra_loaikhachRequest" Collapsed="true">
+    <Position X="31" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.kiemtra_loaikhachRequestBody" Collapsed="true">
+    <Position X="32.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.kiemtra_loaikhachResponse" Collapsed="true">
+    <Position X="34.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.kiemtra_loaikhachResponseBody" Collapsed="true">
+    <Position X="36.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.dem_KH_PhongRequest" Collapsed="true">
+    <Position X="34.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.dem_KH_PhongRequestBody" Collapsed="true">
+    <Position X="36.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.dem_KH_PhongResponse" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.dem_KH_PhongResponseBody" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_hdRequest" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_hdRequestBody" Collapsed="true">
+    <Position X="29.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_hdResponse" Collapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.delete_hdResponseBody" Collapsed="true">
+    <Position X="32.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDHoaDonRequest" Collapsed="true">
+    <Position X="20.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDHoaDonRequestBody" Collapsed="true">
+    <Position X="22.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDHoaDonResponse" Collapsed="true">
+    <Position X="24" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.NextIDHoaDonResponseBody" Collapsed="true">
+    <Position X="25.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QLKS_BUS_WS.QLKS_DAL_WebService.QLKS_DAL_WebserviceSoapClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YSjlfcueE/3uTzOHwSkg97HSjJjfcto+HISW4tiIEIk=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="QLKS_BUS_WS.QLKS_DAL_WebService.QLKS_DAL_WebserviceSoap" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IQChPMIaA3HiCiKHASgAh5DShBhdAkgiEISW4tiAEAg=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QLKS_BUS_WS.QLKS_DAL_WebService.QLKS_DAL_WebserviceSoapChannel" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\QLKS_DAL_WebService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QLKS_BUS_Webservice.asmx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Service References\QLKS_DAL_WebService\QLKS_BUS_WS.QLKS_DAL_WebService.CTPhieuThueDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -87,7 +89,6 @@
     <Content Include="Service References\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Service References\QLKS_DAL_WebService\QLKS_DAL_Webservice.wsdl" />
     <Content Include="web.config" />
     <Content Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
@@ -95,8 +96,11 @@
     <Content Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </Content>
+    <None Include="Service References\QLKS_DAL_WebService\QLKS_DAL_Webservice.wsdl" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhachHangBUS.cs" />
+    <Compile Include="LoaiKhachHangBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLKS_BUS_Webservice.asmx.cs">
       <DependentUpon>QLKS_BUS_Webservice.asmx</DependentUpon>
