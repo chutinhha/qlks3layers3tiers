@@ -6,7 +6,7 @@ using System.Data;
 using DAL.DTO;
 namespace DAL
 {
-    public class UserDAO
+    public class UserDAO:DataProvider
     {
         DataProvider dp = new DataProvider();
         public bool KiemTra_tendangnhap(string _tendangnhap)
